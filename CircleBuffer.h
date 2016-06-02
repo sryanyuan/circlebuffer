@@ -1,13 +1,14 @@
 #ifndef _INC_CIRCLEBUFFER_
 #define _INC_CIRCLEBUFFER_
 //////////////////////////////////////////////////////////////////////////
+#include <vector>
+//////////////////////////////////////////////////////////////////////////
 template <class T>
 class CircleBuffer
 {
 public:
 	CircleBuffer()
 	{
-		m_pItems = NULL;
 		Clear();
 	}
 	~CircleBuffer()
@@ -16,39 +17,35 @@ public:
 	}
 
 public:
-	bool Init(int _nItemCount, int _nItemPerPage)
+	void Init(int _nItemCount)
 	{
 		Clear();
-		m_pItems = new T[_nItemCount];
+		m_xItems.resize(_nItemCount);
 		m_nBufferSize = _nItemCount;
-		m_nItemPerPage = _nItemPerPage;
 	}
 	void Clear()
 	{
-		if(NULL != m_pItems)
-		{
-			delete[] m_pItems;
-			m_pItems = NULL;
-		}
+		m_xItems.clear();
 		m_nTailPtr = 0;
 		m_nBufferSize = 0;
-		m_nCurPtr = 0;
-		m_nItemPerPage = 0;
+		m_nInsertTimes = 0;
 	}
 
-	void AppendItem(T* _pItem)
+	T* AppendItem(T* _pItem)
 	{
-		int nNextPtr = m_nTail + 1;
+		int nNextPtr = m_nTailPtr + 1;
 		if(nNextPtr >= m_nBufferSize)
 		{
 			nNextPtr %= m_nBufferSize;
 		}
 
 		//	copy the content
-		memcpy(&m_pItems[nNextPtr], _pItem, sizeof(T));
+		memcpy(&m_xItems[nNextPtr], _pItem, sizeof(T));
 
 		//	update the tail ptr
-		++m_nTailPtr;
+		SetTailPtrOffset(1);
+
+		return &m_xItems[nNextPtr];
 	}
 
 	T* GetNextItem()
@@ -59,60 +56,60 @@ public:
 			nNextPtr %= m_nBufferSize;
 		}
 
-		return &m_pItems[nNextPtr];
-	}
-	const T* GetNextItem()
-	{
-		int nNextPtr = m_nTailPtr + 1;
-		if(nNextPtr >= m_nBufferSize)
-		{
-			nNextPtr %= m_nBufferSize;
-		}
-
-		return &m_pItems[nNextPtr];
+		return &m_xItems[nNextPtr];
 	}
 
 	T* GetCurrentItem()
 	{
-		return &m_pItems[m_nTailPtr % m_nBufferSize];
-	}
-	const T* GetCurrentItem()
-	{
-		return &m_pItems[m_nTailPtr % m_nBufferSize];
+		return &m_xItems[m_nTailPtr % m_nBufferSize];
 	}
 
 	T* GetItemFromTail(int _nTailOffset)
 	{
-		if(m_nTailPtr < m_nBufferSize)
-		{
-			//	normal
-			int nIndex = m_nTailPtr + _nTailOffset;
-			if(nIndex < 0)
-			{
-				return NULL;
-			}
+		int nFinalIndex = m_nTailPtr - _nTailOffset;
 
-			return &m_pItems[nIndex];
+		if(nFinalIndex >= 0)
+		{
+			nFinalIndex %= m_nBufferSize;
 		}
 		else
 		{
-			//	reverse
-			int nFinalIndex = m_nTailPtr % m_nBufferSize;
-			int nIndex = nFinalIndex + _nTailOffset;
-
-			if(nIndex >= 0)
-			{
-				return &m_pItems[nIndex];
-			}
+			int nNegtive = -(nFinalIndex / m_nBufferSize) + 1;
+			nFinalIndex += m_nBufferSize * nNegtive;
 		}
+
+		return &m_xItems[nFinalIndex];
+	}
+
+	int GetInsertTimes()
+	{
+		return m_nInsertTimes;
+	}
+
+	void SetTailPtrOffset(int _nOffset)
+	{
+		if(_nOffset < 0)
+		{
+			return;
+		}
+		m_nTailPtr += _nOffset;
+		m_nInsertTimes += _nOffset;
+	}
+
+	int GetItemCount()
+	{
+		if(m_nInsertTimes <= m_nBufferSize)
+		{
+			return m_nInsertTimes;
+		}
+		return m_nBufferSize;
 	}
 
 protected:
-	T* m_pItems;
+	std::vector<T> m_xItems;
 	int m_nTailPtr;
 	int m_nBufferSize;
-	int m_nCurPtr;
-	int m_nItemPerPage;
+	int m_nInsertTimes;
 };
 //////////////////////////////////////////////////////////////////////////
 #endif
