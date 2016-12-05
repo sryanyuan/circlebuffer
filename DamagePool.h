@@ -26,13 +26,15 @@ public:
 
 public:
 	void Insert(int _nUid, int _nValue);
-	void GetSortedAccumulatedInfo(AccumulatedInfoResults& _refResults);
+	void GetSortedAccumulatedInfo(AccumulatedInfoResults& _refResults, int* _pSum);
 	void Clear();
-	const AccumulatedInfoMap& GetAccumulatedInfoMap() {return m_xAccumulatedInfoMap;}
+
+	const AccumulatedInfoMap& GetAccumulatedInfoMap()	{return m_xAccumulatedInfoMap;}
+	void SetExpireTime(time_t _nEt)						{m_nExpireTime = _nEt;}
 
 protected:
 	AccumulatedInfoMap m_xAccumulatedInfoMap;
-	int m_nExpireTime;
+	time_t m_nExpireTime;
 };
 //////////////////////////////////////////////////////////////////////////
 #endif

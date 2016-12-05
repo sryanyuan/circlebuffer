@@ -13,7 +13,8 @@ bool SortAccumulatedInfoGreater(const AccumulatedInfo& _refLeft, const Accumulat
 //////////////////////////////////////////////////////////////////////////
 DamagePool::DamagePool()
 {
-	m_nExpireTime = 0;
+	// default expire seconds is 30
+	m_nExpireTime = 30;
 }
 
 DamagePool::~DamagePool()
@@ -53,22 +54,35 @@ void DamagePool::Insert(int _nUid, int _nValue)
 	m_xAccumulatedInfoMap.insert(std::make_pair(_nUid, info));
 }
 
-void DamagePool::GetSortedAccumulatedInfo(AccumulatedInfoResults& _refResults)
+void DamagePool::GetSortedAccumulatedInfo(AccumulatedInfoResults& _refResults, int* _pSum)
 {
+	time_t tn;
+	time(&tn);
 	// using max heap , the max element will be the first one
 	if (m_xAccumulatedInfoMap.empty())
 	{
 		return;
 	}
-	_refResults.resize(m_xAccumulatedInfoMap.size());
+	_refResults.reserve(m_xAccumulatedInfoMap.size());
 
 	AccumulatedInfoMap::const_iterator it = m_xAccumulatedInfoMap.begin();
 	int nInsertIdx = 0;
+	int nSum = 0;
 	for (it;
 		it != m_xAccumulatedInfoMap.end();
 		++it)
 	{
-		_refResults[nInsertIdx++] = it->second;
+		if (tn - it->second.nLastActiveTime > m_nExpireTime)
+		{
+			// expired
+			continue;
+		}
+		_refResults.push_back(it->second);
+		nSum += it->second.nAccumulatedValue;
 	}
 	make_heap(_refResults.begin(), _refResults.end(), SortAccumulatedInfoGreater);
+	if (NULL != _pSum)
+	{
+		*_pSum = nSum;
+	}
 }
