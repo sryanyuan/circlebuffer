@@ -14,8 +14,7 @@ MonsGenEngine::~MonsGenEngine()
 
 int MonsGenEngine::Insert(const MonsGenRecord* _pRecord)
 {
-	if (0 == _pRecord->nMonsID ||
-		0 == _pRecord->nOffset)
+	if (0 == _pRecord->nMonsID)
 	{
 		// invalid record
 		return 0;
