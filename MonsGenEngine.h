@@ -48,6 +48,8 @@ public:
 
 private:
 	int GenWithRecord(int _nExistsCount, const MonsGenRecord* _pRecord);
+	int GetMonsGenCountMapValue(const MonsGenCountMap& _refMap, int _nKey);
+	void IncMonsGenCountMapValue(MonsGenCountMap& _refMap, int _nKey, int _nInc);
 
 private:
 	MonsGenRecordList m_xMonsGenRecords;
