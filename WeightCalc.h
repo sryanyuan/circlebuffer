@@ -27,6 +27,8 @@ public:
 	void Reset();
 
 	int Get() const;
+	const WeightCalcItemVector& GetWeightCalcItems()		{return m_xItems;}
+	bool Calculable()										{return m_nTotalWeight != 0;}
 
 private:
 	int m_nTotalWeight;
