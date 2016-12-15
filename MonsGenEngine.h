@@ -3,10 +3,16 @@
 //////////////////////////////////////////////////////////////////////////
 #include <list>
 #include <map>
+#include <vector>
+#include <time.h>
 #include "fastdelegate.h"
 #include "FastDelegateBind.h"
 //////////////////////////////////////////////////////////////////////////
-typedef fastdelegate::FastDelegate3<int, int, int, int> GenMonsCallback;
+#define DEFAULT_MONSGENRECORDVECTOR_SIZE	32
+//////////////////////////////////////////////////////////////////////////
+// param: monsID, monsType, posX, posY
+// return: monsObjectID
+typedef fastdelegate::FastDelegate4<int, int, int, int, int> GenMonsCallback;
 //////////////////////////////////////////////////////////////////////////
 struct MonsGenRecord
 {
@@ -15,21 +21,40 @@ struct MonsGenRecord
 	int nPosX;
 	int nPosY;
 	int nOffset;
+	time_t nInterval;
+	int nGenType;
 
 	// private fields
 	int nRecordID;
+	time_t nLastGenTime;
 
 	MonsGenRecord()
 	{
-		nRecordID = 0;
-		nMonsID = 0;
-		nCount = 0;
-		nPosX = nPosY = nOffset = 0;
+		memset(this, 0, sizeof(MonsGenRecord));
 	}
 };
+typedef std::vector<MonsGenRecord*> MonsGenRecordVector;
 typedef std::list<MonsGenRecord*> MonsGenRecordList;
 typedef std::map<int, int> MonsGenCountMap;
 
+// simple wrapper for MonsGenCountMap
+class MonsCountRecorder
+{
+public:
+	MonsCountRecorder();
+	~MonsCountRecorder();
+
+public:
+	void Reset();
+	void Set(int _nKey, int _nValue);
+	void Inc(int _nKey, int _nValue);
+	int Get(int _nKey) const;
+
+public:
+	MonsGenCountMap m_xCountMap;
+};
+
+// mons gen engine
 class MonsGenEngine
 {
 public:
@@ -39,24 +64,24 @@ public:
 public:
 	int Insert(const MonsGenRecord* _pRecord);
 	void Clear();
+	// delete just set the element to NULL because we rarely remove gen record
 	int DeleteByMonsID(int _nMonsID);
 	int DeleteByRecordID(int _nRecordID);
 
-	int DoGen(const MonsGenCountMap& _refCurrentMonsCount);
+	int DoGen(const MonsCountRecorder& _refCurrentMonsCount);
 
 	void SetGenMonsCallback(GenMonsCallback _cb)			{m_cbGenMons = _cb;}
 
 private:
 	int GenWithRecord(int _nExistsCount, const MonsGenRecord* _pRecord);
-	int GetMonsGenCountMapValue(const MonsGenCountMap& _refMap, int _nKey);
-	void IncMonsGenCountMapValue(MonsGenCountMap& _refMap, int _nKey, int _nInc);
 
 private:
-	MonsGenRecordList m_xMonsGenRecords;
-	MonsGenCountMap m_xMonsGenTotalMap;
+	// removed gen record will be NULL, so we should ignore all NULL value
+	// for remove efficient
+	MonsGenRecordVector m_xMonsGenRecords;
+	// record the total gen mons count
+	MonsCountRecorder m_xMonsGenTotalCounter;
 	GenMonsCallback m_cbGenMons;
-	// for gen balance
-	int m_nGenCount;
 };
 //////////////////////////////////////////////////////////////////////////
 #endif

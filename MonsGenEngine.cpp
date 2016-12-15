@@ -1,10 +1,11 @@
+#include <algorithm>
 #include "MonsGenEngine.h"
 //////////////////////////////////////////////////////////////////////////
 static int s_nMonsGenRecordIDSeed = 0;
 //////////////////////////////////////////////////////////////////////////
 MonsGenEngine::MonsGenEngine()
 {
-	m_nGenCount = 0;
+	m_xMonsGenRecords.reserve(DEFAULT_MONSGENRECORDVECTOR_SIZE);
 }
 
 MonsGenEngine::~MonsGenEngine()
@@ -21,43 +22,41 @@ int MonsGenEngine::Insert(const MonsGenRecord* _pRecord)
 	}
 	MonsGenRecord* pRecord = new MonsGenRecord;
 	memcpy(pRecord, _pRecord, sizeof(MonsGenRecord));
+	pRecord->nLastGenTime = 0;
 	pRecord->nRecordID = ++s_nMonsGenRecordIDSeed;
 	m_xMonsGenRecords.push_back(pRecord);
 	// update total mons count
-	MonsGenCountMap::iterator fndIter = m_xMonsGenTotalMap.find(pRecord->nMonsID);
-	if (fndIter != m_xMonsGenTotalMap.end())
-	{
-		// update previous value
-		fndIter->second += pRecord->nCount;
-	}
-	else
-	{
-		// new record
-		m_xMonsGenTotalMap.insert(std::make_pair(pRecord->nMonsID, pRecord->nCount));
-	}
+	m_xMonsGenTotalCounter.Inc(pRecord->nMonsID, pRecord->nCount);
 	return pRecord->nRecordID;
 }
 
 int MonsGenEngine::DeleteByMonsID(int _nMonsID)
 {
-	MonsGenRecordList::iterator it = m_xMonsGenRecords.begin();
+	MonsGenRecordVector::iterator it = m_xMonsGenRecords.begin();
 	int nRemoveCount = 0;
 
 	for (it;
 		it != m_xMonsGenRecords.end();
-		)
+		++it)
 	{
 		MonsGenRecord* pRecord = *it;
+		if (NULL == pRecord)
+		{
+			continue;
+		}
+
 		if (pRecord->nMonsID == _nMonsID)
 		{
+			// decrease total count
+			m_xMonsGenTotalCounter.Inc(pRecord->nMonsID, -pRecord->nCount);
+
+			// free res
 			delete pRecord;
 			pRecord = NULL;
-			it = m_xMonsGenRecords.erase(it);
 			++nRemoveCount;
-		}
-		else
-		{
-			++it;
+
+			// set element to NULL
+			*it = NULL;
 		}
 	}
 
@@ -66,23 +65,31 @@ int MonsGenEngine::DeleteByMonsID(int _nMonsID)
 
 int MonsGenEngine::DeleteByRecordID(int _nRecordID)
 {
-	MonsGenRecordList::iterator it = m_xMonsGenRecords.begin();
+	MonsGenRecordVector::iterator it = m_xMonsGenRecords.begin();
 	int nRemoveCount = 0;
 
 	for (it;
 		it != m_xMonsGenRecords.end();
-		)
+		++it)
 	{
 		MonsGenRecord* pRecord = *it;
+		if (NULL == pRecord)
+		{
+			continue;
+		}
+
 		if (pRecord->nRecordID == _nRecordID)
 		{
+			// decrease total count
+			m_xMonsGenTotalCounter.Inc(pRecord->nMonsID, -pRecord->nCount);
+
 			delete pRecord;
 			pRecord = NULL;
+
+			// set element to NULL
+			*it = NULL;
+
 			return 1;
-		}
-		else
-		{
-			++it;
 		}
 	}
 
@@ -91,76 +98,77 @@ int MonsGenEngine::DeleteByRecordID(int _nRecordID)
 
 void MonsGenEngine::Clear()
 {
-	MonsGenRecordList::iterator it = m_xMonsGenRecords.begin();
+	MonsGenRecordVector::iterator it = m_xMonsGenRecords.begin();
 	for (it;
 		it != m_xMonsGenRecords.end();
 		++it)
 	{
 		MonsGenRecord* pRecord = *it;
+		if (NULL == pRecord)
+		{
+			continue;
+		}
 		delete pRecord;
 		pRecord = NULL;
 	}
 	m_xMonsGenRecords.clear();
+	m_xMonsGenTotalCounter.Reset();
 }
 
-int MonsGenEngine::DoGen(const MonsGenCountMap& _refCurrentMonsCount)
+int MonsGenEngine::DoGen(const MonsCountRecorder& _refCurrentMonsCount)
 {
-	int nTotalGenCount = 0;
-	MonsGenCountMap xCurrentGenCountMap;
-	++m_nGenCount;
-
-	if (m_nGenCount % 2 == 0)
+	if (m_xMonsGenRecords.size() == 0)
 	{
-		// forward
-		MonsGenRecordList::const_iterator it = m_xMonsGenRecords.begin();
-		for (it;
-			it != m_xMonsGenRecords.end();
-			++it)
+		return 0;
+	}
+
+	time_t tn;
+	time(&tn);
+	int nTotalGenCount = 0;
+	MonsCountRecorder xCurrentGenCountMap;
+
+	// generate random index
+	std::vector<int> xRamdonIndexes(m_xMonsGenRecords.size(), 0);
+	for (size_t i = 0; i < m_xMonsGenRecords.size(); ++i)
+	{
+		xRamdonIndexes[i] = i;
+	}
+	random_shuffle(xRamdonIndexes.begin(), xRamdonIndexes.end());
+
+	for (size_t i = 0; i < xRamdonIndexes.size(); ++i)
+	{
+		int nRecordIndex = xRamdonIndexes[i];
+
+		MonsGenRecord* pRecord = m_xMonsGenRecords[nRecordIndex];
+		if (NULL == pRecord)
 		{
-			const MonsGenRecord* pRecord = *it;
+			continue;
+		}
 
-			// gen mons
-			int nMonsExistsCount = 0;
-			// find in already exists map
-			nMonsExistsCount += GetMonsGenCountMapValue(_refCurrentMonsCount, pRecord->nMonsID);
-			// find in gen map
-			nMonsExistsCount += GetMonsGenCountMapValue(xCurrentGenCountMap, pRecord->nMonsID);
-
-			// gen monster
-			int nFinalGenCount = GenWithRecord(nMonsExistsCount, pRecord);
-			if (0 != nFinalGenCount)
+		if (0 != pRecord->nInterval)
+		{
+			if (tn - pRecord->nLastGenTime < pRecord->nInterval)
 			{
-				// record the gen count
-				IncMonsGenCountMapValue(xCurrentGenCountMap, pRecord->nMonsID, nFinalGenCount);
-				nTotalGenCount += nFinalGenCount;
+				// wait
+				continue;
 			}
 		}
-	}
-	else
-	{
-		// backward
-		MonsGenRecordList::const_reverse_iterator it = m_xMonsGenRecords.rbegin();
-		for (it;
-			it != m_xMonsGenRecords.rend();
-			++it)
+		pRecord->nLastGenTime = tn;
+
+		// gen mons
+		int nMonsExistsCount = 0;
+		// find in already exists map
+		nMonsExistsCount += _refCurrentMonsCount.Get(pRecord->nMonsID);
+		// find in gen map
+		nMonsExistsCount += xCurrentGenCountMap.Get(pRecord->nMonsID);
+
+		// gen monster
+		int nFinalGenCount = GenWithRecord(nMonsExistsCount, pRecord);
+		if (0 != nFinalGenCount)
 		{
-			const MonsGenRecord* pRecord = *it;
-
-			// gen mons
-			int nMonsExistsCount = 0;
-			// find in already exists map
-			nMonsExistsCount += GetMonsGenCountMapValue(_refCurrentMonsCount, pRecord->nMonsID);
-			// find in gen map
-			nMonsExistsCount += GetMonsGenCountMapValue(xCurrentGenCountMap, pRecord->nMonsID);
-
-			// gen monster
-			int nFinalGenCount = GenWithRecord(nMonsExistsCount, pRecord);
-			if (0 != nFinalGenCount)
-			{
-				// record the gen count
-				IncMonsGenCountMapValue(xCurrentGenCountMap, pRecord->nMonsID, nFinalGenCount);
-				nTotalGenCount += nFinalGenCount;
-			}
+			// record the gen count
+			xCurrentGenCountMap.Inc(pRecord->nMonsID, nFinalGenCount);
+			nTotalGenCount += nFinalGenCount;
 		}
 	}
 
@@ -173,13 +181,8 @@ int MonsGenEngine::GenWithRecord(int _nExistsCount, const MonsGenRecord* _pRecor
 	int nCanGenMonsCount = 0;
 	int nMonsExistsCount = _nExistsCount;
 	int nTotalCanGenCount = 0;
-	int nTotalGenCount = 0;
 	// find total count
-	MonsGenCountMap::const_iterator totalIter = m_xMonsGenTotalMap.find(_pRecord->nMonsID);
-	if (totalIter != m_xMonsGenTotalMap.end())
-	{
-		nTotalCanGenCount = totalIter->second;
-	}
+	nTotalCanGenCount = m_xMonsGenTotalCounter.Get(_pRecord->nMonsID);
 
 	nCanGenMonsCount = nTotalCanGenCount - nMonsExistsCount;
 	if (nCanGenMonsCount <= 0)
@@ -201,7 +204,7 @@ int MonsGenEngine::GenWithRecord(int _nExistsCount, const MonsGenRecord* _pRecor
 
 		if (m_cbGenMons)
 		{
-			if (0 != m_cbGenMons(_pRecord->nMonsID, nGenPosX, nGenPosY))
+			if (0 != m_cbGenMons(_pRecord->nMonsID, _pRecord->nGenType, nGenPosX, nGenPosY))
 			{
 				++nFinalGenCount;
 			}
@@ -210,23 +213,67 @@ int MonsGenEngine::GenWithRecord(int _nExistsCount, const MonsGenRecord* _pRecor
 	return nFinalGenCount;
 }
 
-int MonsGenEngine::GetMonsGenCountMapValue(const MonsGenCountMap& _refMap, int _nKey)
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+// MonsExistCountRecorder
+MonsCountRecorder::MonsCountRecorder()
 {
-	MonsGenCountMap::const_iterator fndIter = _refMap.find(_nKey);
-	if (fndIter == _refMap.end())
-	{
-		return 0;
-	}
-	return fndIter->second;
+
 }
 
-void MonsGenEngine::IncMonsGenCountMapValue(MonsGenCountMap& _refMap, int _nKey, int _nInc)
+MonsCountRecorder::~MonsCountRecorder()
 {
-	MonsGenCountMap::iterator fndIter = _refMap.find(_nKey);
-	if (fndIter == _refMap.end())
+
+}
+
+void MonsCountRecorder::Reset()
+{
+	MonsGenCountMap::iterator it = m_xCountMap.begin();
+	for (it;
+		it != m_xCountMap.end();
+		++it)
 	{
-		_refMap.insert(std::make_pair(_nKey, _nInc));
-		return;
+		// just reset to zero
+		it->second = 0;
 	}
-	fndIter->second += _nInc;
+}
+
+void MonsCountRecorder::Set(int _nKey, int _nValue)
+{
+	MonsGenCountMap::iterator it = m_xCountMap.find(_nKey);
+	if (it != m_xCountMap.end())
+	{
+		it->second = _nValue;
+	}
+	else
+	{
+		m_xCountMap.insert(std::make_pair(_nKey, _nValue));
+	}
+}
+
+void MonsCountRecorder::Inc(int _nKey, int _nValue)
+{
+	MonsGenCountMap::iterator it = m_xCountMap.find(_nKey);
+	if (it != m_xCountMap.end())
+	{
+		it->second += _nValue;
+	}
+	else
+	{
+		m_xCountMap.insert(std::make_pair(_nKey, _nValue));
+	}
+}
+
+int MonsCountRecorder::Get(int _nKey) const
+{
+	MonsGenCountMap::const_iterator it = m_xCountMap.find(_nKey);
+	if (it != m_xCountMap.end())
+	{
+		return it->second;
+	}
+	return 0;
 }
