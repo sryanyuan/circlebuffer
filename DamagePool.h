@@ -3,7 +3,8 @@
 //////////////////////////////////////////////////////////////////////////
 #include <map>
 #include <vector>
-
+#include "FastDelegate.h"
+//////////////////////////////////////////////////////////////////////////
 // accumulated damage info
 struct AccumulatedInfo
 {
@@ -14,9 +15,11 @@ struct AccumulatedInfo
 typedef std::map<int, AccumulatedInfo> AccumulatedInfoMap;
 
 typedef std::vector<AccumulatedInfo> AccumulatedInfoResults;
+typedef fastdelegate::FastDelegate1<int, void*> AccumulatedUserdataCallback;
 
 // sorter
 bool SortAccumulatedInfoGreater(const AccumulatedInfo& _refLeft, const AccumulatedInfo& _refRight);
+bool SortAccumulatedInfoLess(const AccumulatedInfo& _refLeft, const AccumulatedInfo& _refRight);
 
 class DamagePool
 {

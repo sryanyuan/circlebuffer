@@ -10,6 +10,15 @@ bool SortAccumulatedInfoGreater(const AccumulatedInfo& _refLeft, const Accumulat
 	}
 	return false;
 }
+
+bool SortAccumulatedInfoLess(const AccumulatedInfo& _refLeft, const AccumulatedInfo& _refRight)
+{
+	if (_refLeft.nAccumulatedValue > _refRight.nAccumulatedValue)
+	{
+		return true;
+	}
+	return false;
+}
 //////////////////////////////////////////////////////////////////////////
 DamagePool::DamagePool()
 {
@@ -58,7 +67,7 @@ void DamagePool::GetSortedAccumulatedInfo(AccumulatedInfoResults& _refResults, i
 {
 	time_t tn;
 	time(&tn);
-	// using max heap , the max element will be the first one
+	// greater damage will be in front
 	if (m_xAccumulatedInfoMap.empty())
 	{
 		return;
@@ -80,7 +89,8 @@ void DamagePool::GetSortedAccumulatedInfo(AccumulatedInfoResults& _refResults, i
 		_refResults.push_back(it->second);
 		nSum += it->second.nAccumulatedValue;
 	}
-	make_heap(_refResults.begin(), _refResults.end(), SortAccumulatedInfoGreater);
+	sort(_refResults.begin(), _refResults.end(), SortAccumulatedInfoLess);
+
 	if (NULL != _pSum)
 	{
 		*_pSum = nSum;
