@@ -6,3 +6,5 @@
 @set PATH=%VCInstallDir%bin;%WindowsSdkDir_71A%bin;%WindowsSDK_ExecutablePath_x86%;%VSInstallDir%Common7\Tools\bin;$(VSInstallDir)Common7\tools;%VSInstallDir%Common7\ide;%ProgramFiles%\HTML Help Workshop;%MSBuildToolsPath32%;%VSInstallDir%;%SystemRoot%\SysWow64;%FxCopDir%;%PATH%;
 @set INCLUDE=%VCInstallDir%include;%VCInstallDir%atlmfc\include;%WindowsSdkDir_71A%include;%FrameworkSDKDir_71A%include
 @set LIB=%VCInstallDir%lib;%VCInstallDir%atlmfc\lib;%WindowsSdkDir_71A%lib
+
+@rem cl need /D_USING_V140_SDK71_
