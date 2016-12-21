@@ -63,6 +63,7 @@ buildvm -m vmdef -o jit\vmdef.lua %ALL_LIB%
 buildvm -m folddef -o lj_folddef.h lj_opt_fold.c
 @if errorlevel 1 goto :BAD
 
+@set LJCOMPILE=cl /nologo /c /Od /W3 /D_CRT_SECURE_NO_DEPRECATE
 @set LJCOMPILE=%LJCOMPILE% /Zi
 @set LJLINK=%LJLINK% /debug
 @set LJDLLNAME=lua51vc12_d.dll
