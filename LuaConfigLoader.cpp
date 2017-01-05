@@ -1,4 +1,5 @@
 #include "LuaConfigLoader.h"
+#include "LuaIterator.h"
 extern "C"
 {
 	#include "lua.h"
@@ -13,7 +14,8 @@ LuaStackGuard::LuaStackGuard(lua_State* L)
 
 LuaStackGuard::~LuaStackGuard()
 {
-	assert(m_nInitStackTop == lua_gettop(m_L));
+	int nCurrStack = lua_gettop(m_L);
+	assert(m_nInitStackTop == nCurrStack);
 }
 //////////////////////////////////////////////////////////////////////////
 static void stackDump(lua_State *L)  
@@ -57,8 +59,8 @@ static void stackDump(lua_State *L)
 	}  
 	printf("\n");  
 }
-//////////////////////////////////////////////////////////////////////////
-bool LuaConfigLoader::LoadItemConfig(lua_State* L, const char* _pszName, LuaItemConfigMap& _refItemMap)
+
+bool LuaConfigLoader::LoadItemAttrib(lua_State* L, const char* _pszName, LuaItemAttribMap& _refItemMap)
 {
 	LuaStackGuard stackChecker(L);
 
@@ -70,29 +72,27 @@ bool LuaConfigLoader::LoadItemConfig(lua_State* L, const char* _pszName, LuaItem
 		return false;
 	}
 
-	int tableIndex = lua_gettop(L);
-	// push the first key
-	lua_pushnil(L);
-	while (0 != lua_next(L, tableIndex))
+	LuaIterator it(L);
+	if (!it.Begin())
 	{
-		// stack : table key value
-		if (!lua_isnumber(L, -2))
+		return false;
+	}
+
+	while (it.Next())
+	{
+		if (LUA_TNUMBER != it.GetKeyType())
 		{
-			// ignore the key
-			lua_pop(L, 1);
 			continue;
 		}
-		LuaItemConfig config;
+		if (LUA_TTABLE != it.GetValueType())
+		{
+			continue;
+		}
+
+		LuaItemAttrib config;
 		memset(&config, 0, sizeof(config));
 		// get the id (value)
-		config.nID = int(lua_tonumber(L, -2));
-		
-		if (!lua_istable(L, -1))
-		{
-			// ignore the value
-			lua_pop(L, 1);
-			continue;
-		}
+		config.nID = it.GetKeyInt();
 
 		// now we get the config table , read all need fields
 		// stack : bottom | table key value | top
@@ -107,13 +107,156 @@ bool LuaConfigLoader::LoadItemConfig(lua_State* L, const char* _pszName, LuaItem
 		}
 		// OK, stack : table key value Grade
 		config.nGrade = int(lua_tonumber(L, -1));
-
-		// Done, pop all fields
-		lua_pop(L, 2); // stack : table key
+		// pop the grade value
+		lua_pop(L, 1);
 
 		_refItemMap.insert(std::make_pair(config.nID, config));
 	}
-	// last key will pop the key, stack : table
+
+	// pop the table
+	lua_pop(L, 1);
+
+	return true;
+}
+
+bool LuaConfigLoader::LoadMapInfo(lua_State* L, const char* _pszName, LuaMapInfoVector& _refMapVector)
+{
+	LuaStackGuard stackChecker(L);
+
+	lua_getglobal(L, _pszName);
+	if (!lua_istable(L, -1))
+	{
+		// LUA_TNIL
+		lua_pop(L, 1);
+		return false;
+	}
+
+	int len = lua_objlen(L, -1);
+	if (len <= 0)
+	{
+		return true;
+	}
+	_refMapVector.resize(len);
+
+	for (int i = 1; i <= len; ++i)
+	{
+		lua_pushinteger(L, i);
+		lua_gettable(L, -2);
+
+		if (!lua_istable(L, -1))
+		{
+			// stack : table nil
+			lua_pop(L, 2);
+			return false;
+		}
+
+		LuaMapInfo info;
+		memset(&info, 0, sizeof(info));
+		info.nResID = i - 1;
+
+		// stack : table table
+		lua_pushstring(L, "MapType"); // table table string
+		lua_gettable(L, -2);
+
+		if (!lua_isnumber(L, -1))
+		{
+			// table table nil
+			lua_pop(L, 3);
+			return false;
+		}
+
+		// stack : table table number
+		info.nMapType = lua_tointeger(L, -1);
+		lua_pop(L, 1);
+
+		lua_pushstring(L, "MapResFile"); // table table string
+		lua_gettable(L, -2);
+
+		if (!lua_isstring(L, -1))
+		{
+			// table table nil
+			lua_pop(L, 3);
+			return false;
+		}
+
+		// stack : table table string
+		const char* pszMapResFile = lua_tostring(L, -1);
+		if (strlen(pszMapResFile) >= sizeof(info.szMapResFile))
+		{
+			lua_pop(L, 3);
+			return false;
+		}
+		strcpy_s(info.szMapResFile, pszMapResFile);
+		lua_pop(L, 1);
+
+		lua_pushstring(L, "MapChName"); // table table string
+		lua_gettable(L, -2);
+
+		if (!lua_isstring(L, -1))
+		{
+			// table table nil
+			lua_pop(L, 3);
+			return false;
+		}
+
+		// stack : table table string
+		const char* pszMapChName = lua_tostring(L, -1);
+		if (strlen(pszMapChName) > sizeof(info.szMapChName))
+		{
+			lua_pop(L, 3);
+			return false;
+		}
+		strcpy_s(info.szMapChName, pszMapChName);
+		lua_pop(L, 1);
+
+		// pop the second table
+		lua_pop(L, 1);
+
+		_refMapVector[i - 1] = info;
+	}
+
+	// pop the table
+	lua_pop(L, 1);
+
+	return true;
+}
+
+bool LuaConfigLoader::LoadFixedMaps(lua_State* L, const char* _pszName, std::vector<std::string>& _refFixedMapIDs)
+{
+	LuaStackGuard stackChecker(L);
+
+	lua_getglobal(L, _pszName);
+	if (!lua_istable(L, -1))
+	{
+		// LUA_TNIL
+		lua_pop(L, 1);
+		return false;
+	}
+
+	int len = lua_objlen(L, -1);
+	if (len <= 0)
+	{
+		return true;
+	}
+	_refFixedMapIDs.resize(len);
+
+	for (int i = 1; i <= len; ++i)
+	{
+		lua_pushinteger(L, i);
+		lua_gettable(L, -2);
+
+		if (!lua_isstring(L, -1))
+		{
+			// stack : table nil
+			lua_pop(L, 2);
+			return false;
+		}
+
+		_refFixedMapIDs[i - 1] = lua_tostring(L, -1);
+		lua_pop(L, 1);
+	}
+
+	// pop the table
 	lua_pop(L, 1);
 
 	return true;
