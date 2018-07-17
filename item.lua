@@ -1,51 +1,10446 @@
--- items constant attribute
-itemsConstantAttribute = {
-	-- 1:
-	[1] =
-	{
-		Grade = 0
+-- This file is auto generate by initolua tools , DO NOT EDIT
+config_constItemAttrib = {
+-- const attrib of Item iD [0] name [魔法书]
+	[0] = {
+		ID = 0,
+		Name = "魔法书" ,
+		Type = 1,
+		TypeString = "书",
+		Weight = 1,
+		Desc = ""
 	},
-	-- 2:
-	[2] =
-	{
-		Grade = 1
+-- const attrib of Item iD [1] name [鹿肉]
+	[1] = {
+		ID = 1,
+		Name = "鹿肉" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 1,
+		Price = 80,
+		Desc = ""
 	},
-	-- 4:
-	[4] =
-	{
+-- const attrib of Item iD [2] name [鹿血]
+	[2] = {
+		ID = 2,
+		Name = "鹿血" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [3] name [??]
+	[3] = {
+		ID = 3,
+		Name = "??" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 1,
+		Tex = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [4] name [??]
+	[4] = {
+		ID = 4,
+		Name = "??" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 1,
+		Tex = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [5] name [??]
+	[5] = {
+		ID = 5,
+		Name = "??" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 1,
+		Tex = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [6] name [鹿茸]
+	[6] = {
+		ID = 6,
+		Name = "鹿茸" ,
+		Type = 8,
+		TypeString = "药品",
+		Weight = 1,
+		Tex = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [7] name [??]
+	[7] = {
+		ID = 7,
+		Name = "??" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 1,
+		Desc = ""
+	},
+-- const attrib of Item iD [8] name [??]
+	[8] = {
+		ID = 8,
+		Name = "??" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 1,
+		Desc = ""
+	},
+-- const attrib of Item iD [9] name [金创药(小)]
+	[9] = {
+		ID = 9,
+		Name = "金创药(小)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 1,
+		HP = 40,
+		Tex = 398,
+		Price = 50,
+		Desc = ""
+	},
+-- const attrib of Item iD [10] name [金创药(中)]
+	[10] = {
+		ID = 10,
+		Name = "金创药(中)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 1,
+		HP = 60,
+		Tex = 10,
+		Price = 100,
+		Desc = ""
+	},
+-- const attrib of Item iD [11] name [魔法药(小)]
+	[11] = {
+		ID = 11,
+		Name = "魔法药(小)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 1,
+		MP = 45,
+		Tex = 394,
+		Price = 50,
+		Desc = ""
+	},
+-- const attrib of Item iD [12] name [魔法药(中)]
+	[12] = {
+		ID = 12,
+		Name = "魔法药(中)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 1,
+		MP = 90,
+		Tex = 12,
+		Desc = ""
+	},
+-- const attrib of Item iD [13] name [鸡肉]
+	[13] = {
+		ID = 13,
+		Name = "鸡肉" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 13,
+		Price = 50,
+		Desc = ""
+	},
+-- const attrib of Item iD [14] name [血魔之血]
+	[14] = {
+		ID = 14,
+		Name = "血魔之血" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 14,
+		Desc = ""
+	},
+-- const attrib of Item iD [15] name [测试物品]
+	[15] = {
+		ID = 15,
+		Name = "测试物品" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Curse = 3,
+		Hide = 4,
+		Accuracy = 5,
+		AtkSpeed = 6,
+		AtkPalsy = 7,
+		AtkPois = 8,
+		MoveSpeed = 9,
+		Weight = 10,
+		ReqType = 11,
+		ReqValue = 12,
+		Sex = 13,
+		MaxDC = 14,
+		DC = 15,
+		MaxAC = 16,
+		AC = 17,
+		MaxMAC = 18,
+		MAC = 19,
+		MaxSC = 20,
+		SC = 21,
+		MaxMC = 22,
+		MC = 23,
+		MaxHP = 24,
+		HP = 25,
+		MaxMP = 26,
+		MP = 27,
+		MaxEXPR = 28,
+		EXPR = 29,
+		Level = 30,
+		Tex = 31,
+		Price = 32,
+		Grade = 33,
+		Desc = "测试desc"
+	},
+-- const attrib of Item iD [16] name [太阳水]
+	[16] = {
+		ID = 16,
+		Name = "太阳水" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Hide = 4,
+		Weight = 1,
+		HP = 60,
+		MP = 60,
+		Tex = 16,
+		Price = 880,
+		Desc = ""
+	},
+-- const attrib of Item iD [28] name [强效金创药]
+	[28] = {
+		ID = 28,
+		Name = "强效金创药" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 3,
+		HP = 180,
+		Tex = 28,
+		Price = 420,
+		Desc = ""
+	},
+-- const attrib of Item iD [29] name [强效魔法药]
+	[29] = {
+		ID = 29,
+		Name = "强效魔法药" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 3,
+		MP = 225,
+		Tex = 29,
+		Price = 480,
+		Desc = ""
+	},
+-- const attrib of Item iD [30] name [木剑]
+	[30] = {
+		ID = 30,
+		Name = "木剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 7,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxDC = 5,
+		DC = 2,
+		Tex = 30,
+		Price = 50,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [31] name [青铜剑]
+	[31] = {
+		ID = 31,
+		Name = "青铜剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 9,
+		ReqType = 1,
+		ReqValue = 3,
+		MaxDC = 7,
+		DC = 3,
+		Tex = 31,
+		Price = 200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [32] name [青铜斧]
+	[32] = {
+		ID = 32,
+		Name = "青铜斧" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 13,
+		MaxDC = 15,
+		Tex = 32,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [33] name [短剑]
+	[33] = {
+		ID = 33,
+		Name = "短剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 9,
+		ReqType = 1,
+		ReqValue = 9,
+		MaxDC = 11,
+		DC = 3,
+		Tex = 33,
+		Price = 700,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [34] name [凌风]
+	[34] = {
+		ID = 34,
+		Name = "凌风" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 18,
+		MaxDC = 12,
+		DC = 6,
+		Tex = 34,
+		Price = 1800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [35] name [匕首]
+	[35] = {
+		ID = 35,
+		Name = "匕首" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 5,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxDC = 5,
+		DC = 3,
+		Tex = 35,
+		Price = 200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [36] name [铁剑]
+	[36] = {
+		ID = 36,
+		Name = "铁剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 10,
+		MaxDC = 9,
+		DC = 5,
+		Tex = 36,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [37] name [斩马刀]
+	[37] = {
+		ID = 37,
+		Name = "斩马刀" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 27,
+		ReqType = 1,
+		ReqValue = 20,
+		MaxDC = 15,
+		DC = 5,
+		Tex = 37,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [38] name [银蛇]
+	[38] = {
+		ID = 38,
+		Name = "银蛇" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 1,
+		Weight = 26,
+		ReqType = 1,
+		ReqValue = 26,
+		MaxDC = 14,
+		DC = 7,
+		MaxSC = 3,
+		SC = 1,
+		Tex = 38,
+		Price = 6000,
 		Grade = 3,
-		Upgrade = 5
+		Desc = ""
 	},
-}
+-- const attrib of Item iD [39] name [海魂]
+	[39] = {
+		ID = 39,
+		Name = "海魂" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 12,
+		ReqType = 1,
+		ReqValue = 15,
+		MaxDC = 10,
+		DC = 3,
+		MaxMC = 2,
+		MC = 1,
+		Tex = 39,
+		Price = 1500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [40] name [修罗]
+	[40] = {
+		ID = 40,
+		Name = "修罗" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 40,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxDC = 20,
+		Tex = 40,
+		Price = 2500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [41] name [炼狱]
+	[41] = {
+		ID = 41,
+		Name = "炼狱" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 60,
+		ReqType = 1,
+		ReqValue = 25,
+		MaxDC = 25,
+		Tex = 41,
+		Price = 6000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [42] name [魔杖]
+	[42] = {
+		ID = 42,
+		Name = "魔杖" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 12,
+		ReqType = 1,
+		ReqValue = 26,
+		MaxDC = 12,
+		DC = 5,
+		MaxMC = 5,
+		MC = 2,
+		Tex = 42,
+		Price = 6000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [43] name [乌木剑]
+	[43] = {
+		ID = 43,
+		Name = "乌木剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 8,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxDC = 8,
+		DC = 4,
+		MaxMC = 1,
+		Tex = 43,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [44] name [八荒]
+	[44] = {
+		ID = 44,
+		Name = "八荒" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 25,
+		ReqType = 1,
+		ReqValue = 15,
+		MaxDC = 12,
+		DC = 4,
+		Tex = 44,
+		Price = 1500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [45] name [凝霜]
+	[45] = {
+		ID = 45,
+		Name = "凝霜" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 25,
+		MaxDC = 13,
+		DC = 10,
+		Tex = 45,
+		Price = 3000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [46] name [半月]
+	[46] = {
+		ID = 46,
+		Name = "半月" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 16,
+		ReqType = 1,
+		ReqValue = 15,
+		MaxDC = 10,
+		DC = 5,
+		MaxSC = 1,
+		SC = 1,
+		MaxMC = 1,
+		Tex = 46,
+		Price = 1500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [47] name [降魔]
+	[47] = {
+		ID = 47,
+		Name = "降魔" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 1,
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 20,
+		MaxDC = 11,
+		DC = 6,
+		MaxSC = 2,
+		SC = 1,
+		Tex = 47,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [48] name [井中月]
+	[48] = {
+		ID = 48,
+		Name = "井中月" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 58,
+		ReqType = 1,
+		ReqValue = 28,
+		MaxDC = 22,
+		DC = 7,
+		Tex = 48,
+		Price = 8000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [49] name [偃月]
+	[49] = {
+		ID = 49,
+		Name = "偃月" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 13,
+		ReqType = 1,
+		ReqValue = 20,
+		MaxDC = 10,
+		DC = 4,
+		MaxMC = 3,
+		MC = 1,
+		Tex = 49,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [50] name [鹤嘴锄]
+	[50] = {
+		ID = 50,
+		Name = "鹤嘴锄" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxDC = 9,
+		Tex = 50,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [51] name [破魂]
+	[51] = {
+		ID = 51,
+		Name = "破魂" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 2,
+		Weight = 8,
+		ReqType = 1,
+		ReqValue = 15,
+		MaxDC = 10,
+		DC = 8,
+		Tex = 51,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [52] name [无极棍]
+	[52] = {
+		ID = 52,
+		Name = "无极棍" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 15,
+		ReqType = 4,
+		ReqValue = 25,
+		MaxDC = 16,
+		DC = 8,
+		MaxSC = 5,
+		SC = 3,
+		Tex = 52,
+		Price = 8000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [53] name [血饮]
+	[53] = {
+		ID = 53,
+		Name = "血饮" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 5,
+		Weight = 12,
+		ReqType = 3,
+		ReqValue = 27,
+		MaxDC = 14,
+		DC = 3,
+		MaxMC = 5,
+		MC = 3,
+		Tex = 53,
+		Price = 9000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [55] name [裁决之杖]
+	[55] = {
+		ID = 55,
+		Name = "裁决之杖" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 80,
+		ReqType = 1,
+		ReqValue = 30,
+		MaxDC = 30,
+		Tex = 55,
+		Price = 10000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [56] name [龙纹剑]
+	[56] = {
+		ID = 56,
+		Name = "龙纹剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 40,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxDC = 20,
+		DC = 8,
+		MaxSC = 6,
+		SC = 3,
+		Tex = 56,
+		Price = 10000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [57] name [屠龙刀]
+	[57] = {
+		ID = 57,
+		Name = "屠龙刀" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 99,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxDC = 35,
+		DC = 5,
+		Tex = 57,
+		Price = 35000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [58] name [嗜魂法杖]
+	[58] = {
+		ID = 58,
+		Name = "嗜魂法杖" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 26,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxDC = 13,
+		DC = 6,
+		MaxMC = 8,
+		MC = 2,
+		Tex = 58,
+		Price = 35000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [59] name [骨玉权杖]
+	[59] = {
+		ID = 59,
+		Name = "骨玉权杖" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxDC = 12,
+		DC = 6,
+		MaxMC = 6,
+		MC = 2,
+		Tex = 59,
+		Price = 10000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [60] name [布衣(男)]
+	[60] = {
+		ID = 60,
+		Name = "布衣(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 5,
+		ReqType = 1,
+		ReqValue = 1,
+		Sex = 1,
+		MaxAC = 2,
+		MaxMAC = 1,
+		Tex = 60,
+		Price = 50,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [61] name [轻型盔甲(男)]
+	[61] = {
+		ID = 61,
+		Name = "轻型盔甲(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 8,
+		ReqType = 1,
+		ReqValue = 11,
+		Sex = 1,
+		MaxAC = 3,
+		AC = 3,
+		MaxMAC = 2,
+		MAC = 1,
+		Tex = 61,
+		Price = 880,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [62] name [重盔甲(男)]
+	[62] = {
+		ID = 62,
+		Name = "重盔甲(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 23,
+		ReqType = 1,
+		ReqValue = 22,
+		Sex = 1,
+		MaxAC = 7,
+		AC = 4,
+		MaxMAC = 3,
+		MAC = 2,
+		Tex = 62,
+		Price = 2200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [63] name [魔法长袍(男)]
+	[63] = {
+		ID = 63,
+		Name = "魔法长袍(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 12,
+		ReqType = 1,
+		ReqValue = 22,
+		Sex = 1,
+		MaxAC = 5,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxMC = 2,
+		Tex = 63,
+		Price = 2200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [64] name [灵魂战衣(男)]
+	[64] = {
+		ID = 64,
+		Name = "灵魂战衣(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 15,
+		ReqType = 1,
+		ReqValue = 22,
+		Sex = 1,
+		MaxAC = 6,
+		AC = 3,
+		MaxMAC = 3,
+		MAC = 3,
+		MaxSC = 2,
+		Tex = 64,
+		Price = 2200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [66] name [赤血魔剑]
+	[66] = {
+		ID = 66,
+		Name = "赤血魔剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Lucky = 3,
+		Accuracy = 1,
+		Weight = 22,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxDC = 10,
+		DC = 20,
+		MaxSC = 2,
+		SC = 5,
+		MaxMC = 3,
+		MC = 5,
+		Tex = 66,
+		Desc = ""
+	},
+-- const attrib of Item iD [69] name [龙牙]
+	[69] = {
+		ID = 69,
+		Name = "龙牙" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 5,
+		Weight = 25,
+		ReqType = 3,
+		ReqValue = 28,
+		MaxDC = 18,
+		DC = 10,
+		MaxMC = 6,
+		MC = 3,
+		MaxHP = 28000,
+		Tex = 69,
+		Price = 20000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [70] name [怒斩]
+	[70] = {
+		ID = 70,
+		Name = "怒斩" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 3,
+		Weight = 85,
+		ReqType = 2,
+		ReqValue = 46,
+		MaxDC = 26,
+		DC = 12,
+		MaxHP = 35000,
+		Tex = 70,
+		Price = 20000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [71] name [逍遥扇]
+	[71] = {
+		ID = 71,
+		Name = "逍遥扇" ,
+		Type = 9,
+		TypeString = "武器",
+		Lucky = 1,
+		Weight = 45,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxDC = 13,
+		DC = 5,
+		MaxSC = 10,
+		SC = 4,
+		MaxHP = 30000,
+		Tex = 71,
+		Price = 20000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [72] name [开天]
+	[72] = {
+		ID = 72,
+		Name = "开天" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 73,
+		ReqType = 1,
+		ReqValue = 53,
+		MaxDC = 45,
+		DC = 6,
+		Tex = 72,
+		Price = 65000,
+		Grade = 7,
+		Desc = ""
+	},
+-- const attrib of Item iD [73] name [镇天]
+	[73] = {
+		ID = 73,
+		Name = "镇天" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 26,
+		ReqType = 1,
+		ReqValue = 53,
+		MaxDC = 25,
+		DC = 7,
+		MaxMC = 14,
+		MC = 7,
+		Tex = 73,
+		Price = 65000,
+		Grade = 7,
+		Desc = ""
+	},
+-- const attrib of Item iD [74] name [玄天]
+	[74] = {
+		ID = 74,
+		Name = "玄天" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 1,
+		Weight = 44,
+		ReqType = 1,
+		ReqValue = 53,
+		MaxDC = 31,
+		DC = 8,
+		MaxSC = 14,
+		SC = 6,
+		Tex = 74,
+		Price = 65000,
+		Grade = 7,
+		Desc = ""
+	},
+-- const attrib of Item iD [75] name [矿窑藏宝图]
+	[75] = {
+		ID = 75,
+		Name = "矿窑藏宝图" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 266,
+		Desc = ""
+	},
+-- const attrib of Item iD [76] name [中型盔甲(女)]
+	[76] = {
+		ID = 76,
+		Name = "中型盔甲(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 12,
+		ReqType = 1,
+		ReqValue = 16,
+		Sex = 2,
+		MaxAC = 5,
+		AC = 3,
+		MaxMAC = 2,
+		MAC = 1,
+		Tex = 81,
+		Price = 1880,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [77] name [中型盔甲(男)]
+	[77] = {
+		ID = 77,
+		Name = "中型盔甲(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 12,
+		ReqType = 1,
+		ReqValue = 16,
+		Sex = 1,
+		MaxAC = 5,
+		AC = 3,
+		MaxMAC = 2,
+		MAC = 1,
+		Tex = 61,
+		Price = 1880,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [78] name [古墓书籍]
+	[78] = {
+		ID = 78,
+		Name = "古墓书籍" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [79] name [战神盔甲(男)]
+	[79] = {
+		ID = 79,
+		Name = "战神盔甲(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 45,
+		ReqType = 2,
+		ReqValue = 46,
+		Sex = 1,
+		MaxAC = 9,
+		AC = 5,
+		MaxMAC = 5,
+		MAC = 3,
+		Tex = 62,
+		Price = 4400,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [80] name [布衣(女)]
+	[80] = {
+		ID = 80,
+		Name = "布衣(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 5,
+		ReqType = 1,
+		ReqValue = 1,
+		Sex = 2,
+		MaxAC = 2,
+		MaxMAC = 1,
+		Tex = 80,
+		Price = 50,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [81] name [轻型盔甲(女)]
+	[81] = {
+		ID = 81,
+		Name = "轻型盔甲(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 8,
+		ReqType = 1,
+		ReqValue = 11,
+		Sex = 2,
+		MaxAC = 3,
+		AC = 3,
+		MaxMAC = 2,
+		MAC = 1,
+		Tex = 81,
+		Price = 880,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [82] name [重盔甲(女)]
+	[82] = {
+		ID = 82,
+		Name = "重盔甲(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 23,
+		ReqType = 1,
+		ReqValue = 22,
+		Sex = 2,
+		MaxAC = 7,
+		AC = 4,
+		MaxMAC = 3,
+		MAC = 2,
+		Tex = 82,
+		Price = 2200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [83] name [魔法长袍(女)]
+	[83] = {
+		ID = 83,
+		Name = "魔法长袍(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 22,
+		Sex = 2,
+		MaxAC = 5,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxMC = 2,
+		Tex = 83,
+		Price = 2200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [84] name [灵魂战衣(女)]
+	[84] = {
+		ID = 84,
+		Name = "灵魂战衣(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 15,
+		ReqType = 1,
+		ReqValue = 22,
+		Sex = 2,
+		MaxAC = 6,
+		AC = 3,
+		MaxMAC = 3,
+		MAC = 3,
+		MaxSC = 2,
+		Tex = 84,
+		Price = 2200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [85] name [天魔战甲]
+	[85] = {
+		ID = 85,
+		Name = "天魔战甲" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 62,
+		ReqType = 1,
+		ReqValue = 40,
+		Sex = 1,
+		MaxDC = 2,
+		DC = 1,
+		MaxAC = 12,
+		AC = 5,
+		MaxMAC = 7,
+		MAC = 4,
+		Tex = 85,
+		Price = 8800,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [86] name [法神披风]
+	[86] = {
+		ID = 86,
+		Name = "法神披风" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 21,
+		ReqType = 1,
+		ReqValue = 40,
+		Sex = 1,
+		MaxAC = 9,
+		AC = 4,
+		MaxMAC = 6,
+		MAC = 4,
+		MaxMC = 5,
+		MC = 2,
+		Tex = 86,
+		Price = 8800,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [87] name [天尊道袍]
+	[87] = {
+		ID = 87,
+		Name = "天尊道袍" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 37,
+		ReqType = 1,
+		ReqValue = 40,
+		Sex = 1,
+		MaxAC = 9,
+		AC = 4,
+		MaxMAC = 6,
+		MAC = 4,
+		MaxSC = 5,
+		SC = 2,
+		Tex = 87,
+		Price = 8800,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [88] name [圣战宝甲]
+	[88] = {
+		ID = 88,
+		Name = "圣战宝甲" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 62,
+		ReqType = 1,
+		ReqValue = 40,
+		Sex = 2,
+		MaxDC = 2,
+		DC = 1,
+		MaxAC = 12,
+		AC = 5,
+		MaxMAC = 7,
+		MAC = 4,
+		Tex = 88,
+		Price = 8800,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [89] name [霓裳羽衣]
+	[89] = {
+		ID = 89,
+		Name = "霓裳羽衣" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 21,
+		ReqType = 1,
+		ReqValue = 40,
+		Sex = 2,
+		MaxAC = 9,
+		AC = 5,
+		MaxMAC = 6,
+		MAC = 4,
+		MaxMC = 5,
+		MC = 2,
+		Tex = 89,
+		Price = 8800,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [90] name [天师长袍]
+	[90] = {
+		ID = 90,
+		Name = "天师长袍" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 37,
+		ReqType = 1,
+		ReqValue = 40,
+		Sex = 2,
+		MaxAC = 9,
+		AC = 4,
+		MaxMAC = 6,
+		MAC = 4,
+		MaxSC = 5,
+		SC = 2,
+		Tex = 90,
+		Price = 8800,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [91] name [战神盔甲(女)]
+	[91] = {
+		ID = 91,
+		Name = "战神盔甲(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 45,
+		ReqType = 2,
+		ReqValue = 46,
+		Sex = 2,
+		MaxAC = 9,
+		AC = 5,
+		MaxMAC = 5,
+		MAC = 3,
+		Tex = 82,
+		Price = 4400,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [92] name [恶魔长袍(男)]
+	[92] = {
+		ID = 92,
+		Name = "恶魔长袍(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 19,
+		ReqType = 3,
+		ReqValue = 28,
+		Sex = 1,
+		MaxAC = 7,
+		AC = 4,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxMC = 4,
+		MC = 1,
+		Tex = 63,
+		Price = 4400,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [93] name [恶魔长袍(女)]
+	[93] = {
+		ID = 93,
+		Name = "恶魔长袍(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 19,
+		ReqType = 3,
+		ReqValue = 28,
+		Sex = 2,
+		MaxAC = 7,
+		AC = 4,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxMC = 4,
+		MC = 1,
+		Tex = 83,
+		Price = 4400,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [94] name [幽灵战衣(男)]
+	[94] = {
+		ID = 94,
+		Name = "幽灵战衣(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 26,
+		ReqType = 4,
+		ReqValue = 27,
+		Sex = 1,
+		MaxAC = 7,
+		AC = 4,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxSC = 4,
+		SC = 1,
+		Tex = 64,
+		Price = 4400,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [95] name [幽灵战衣(女)]
+	[95] = {
+		ID = 95,
+		Name = "幽灵战衣(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Weight = 26,
+		ReqType = 4,
+		ReqValue = 27,
+		Sex = 2,
+		MaxAC = 7,
+		AC = 4,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxSC = 4,
+		SC = 1,
+		Tex = 84,
+		Price = 4400,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [96] name [罗刹]
+	[96] = {
+		ID = 96,
+		Name = "罗刹" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 30,
+		ReqType = 1,
+		ReqValue = 22,
+		DC = 15,
+		MaxHP = 27000,
+		Tex = 40,
+		Price = 2500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [97] name [霸者之刃]
+	[97] = {
+		ID = 97,
+		Name = "霸者之刃" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 2,
+		AtkPalsy = 13,
+		Weight = 35,
+		ReqType = 1,
+		ReqValue = 38,
+		MaxDC = 32,
+		DC = 6,
+		MaxSC = 8,
+		SC = 3,
+		MaxMC = 7,
+		MC = 2,
+		MaxHP = 33000,
+		Tex = 65,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [100] name [魔法头盔]
+	[100] = {
+		ID = 100,
+		Name = "魔法头盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 5,
+		ReqType = 1,
+		ReqValue = 7,
+		MaxAC = 1,
+		MaxMAC = 1,
+		Tex = 100,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [101] name [法神头盔]
+	[101] = {
+		ID = 101,
+		Name = "法神头盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 2,
+		Weight = 2,
+		ReqType = 3,
+		ReqValue = 28,
+		MaxAC = 4,
+		AC = 4,
+		MaxMAC = 2,
+		MAC = 1,
+		MaxMC = 1,
+		Tex = 101,
+		Price = 6600,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [102] name [天尊头盔]
+	[102] = {
+		ID = 102,
+		Name = "天尊头盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 3,
+		Weight = 3,
+		ReqType = 4,
+		ReqValue = 25,
+		MaxAC = 4,
+		AC = 4,
+		MaxMAC = 2,
+		MAC = 1,
+		MaxSC = 1,
+		Tex = 102,
+		Price = 6600,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [103] name [骷髅头盔]
+	[103] = {
+		ID = 103,
+		Name = "骷髅头盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 5,
+		ReqType = 2,
+		ReqValue = 30,
+		MaxAC = 3,
+		AC = 2,
+		Tex = 103,
+		Price = 3300,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [104] name [圣战头盔]
+	[104] = {
+		ID = 104,
+		Name = "圣战头盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 1,
+		Weight = 20,
+		ReqType = 2,
+		ReqValue = 40,
+		MaxDC = 1,
+		MaxAC = 5,
+		AC = 4,
+		MaxMAC = 3,
+		MAC = 2,
+		Tex = 104,
+		Price = 6600,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [106] name [道士头盔]
+	[106] = {
+		ID = 106,
+		Name = "道士头盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 24,
+		MaxAC = 2,
+		AC = 1,
+		MaxMAC = 3,
+		MAC = 2,
+		Tex = 106,
+		Price = 2400,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [109] name [记忆头盔]
+	[109] = {
+		ID = 109,
+		Name = "记忆头盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 26,
+		MaxAC = 3,
+		AC = 3,
+		Tex = 109,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [110] name [祈祷头盔]
+	[110] = {
+		ID = 110,
+		Name = "祈祷头盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 2,
+		MaxAC = 5,
+		AC = 2,
+		MaxMAC = 3,
+		MAC = 2,
+		Tex = 110,
+		Desc = ""
+	},
+-- const attrib of Item iD [112] name [金币]
+	[112] = {
+		ID = 112,
+		Name = "金币" ,
+		Type = 0,
+		TypeString = "无",
+		Tex = 112,
+		Desc = ""
+	},
+-- const attrib of Item iD [113] name [金币]
+	[113] = {
+		ID = 113,
+		Name = "金币" ,
+		Type = 0,
+		TypeString = "无",
+		Tex = 113,
+		Desc = ""
+	},
+-- const attrib of Item iD [114] name [金币]
+	[114] = {
+		ID = 114,
+		Name = "金币" ,
+		Type = 0,
+		TypeString = "无",
+		Tex = 114,
+		Desc = ""
+	},
+-- const attrib of Item iD [115] name [金币]
+	[115] = {
+		ID = 115,
+		Name = "金币" ,
+		Type = 0,
+		TypeString = "无",
+		Tex = 115,
+		Desc = ""
+	},
+-- const attrib of Item iD [116] name [金币]
+	[116] = {
+		ID = 116,
+		Name = "金币" ,
+		Type = 0,
+		TypeString = "无",
+		Tex = 116,
+		Desc = ""
+	},
+-- const attrib of Item iD [117] name [金条]
+	[117] = {
+		ID = 117,
+		Name = "金条" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 5,
+		Weight = 10,
+		Tex = 117,
+		Price = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [123] name [落霞传送卷]
+	[123] = {
+		ID = 123,
+		Name = "落霞传送卷" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 6,
+		Curse = 1,
+		Weight = 1,
+		Tex = 273,
+		Price = 2500,
+		Desc = ""
+	},
+-- const attrib of Item iD [124] name [封魔传送卷]
+	[124] = {
+		ID = 124,
+		Name = "封魔传送卷" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 6,
+		Curse = 1,
+		Hide = 8,
+		Weight = 1,
+		Tex = 273,
+		Price = 2500,
+		Desc = ""
+	},
+-- const attrib of Item iD [125] name [静寂雪原西传送卷]
+	[125] = {
+		ID = 125,
+		Name = "静寂雪原西传送卷" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 6,
+		Curse = 1,
+		Hide = 32,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 273,
+		Price = 7500,
+		Desc = ""
+	},
+-- const attrib of Item iD [126] name [静寂雪原东传送卷]
+	[126] = {
+		ID = 126,
+		Name = "静寂雪原东传送卷" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 6,
+		Curse = 1,
+		Hide = 33,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 273,
+		Price = 7500,
+		Desc = ""
+	},
+-- const attrib of Item iD [127] name [静之冰窟传送卷]
+	[127] = {
+		ID = 127,
+		Name = "静之冰窟传送卷" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 6,
+		Curse = 1,
+		Hide = 31,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 273,
+		Price = 7500,
+		Desc = ""
+	},
+-- const attrib of Item iD [129] name [古老的火把]
+	[129] = {
+		ID = 129,
+		Name = "古老的火把" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 2,
+		Tex = 131,
+		Price = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [132] name [上古开天]
+	[132] = {
+		ID = 132,
+		Name = "上古开天" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 73,
+		ReqType = 1,
+		ReqValue = 58,
+		MaxDC = 50,
+		DC = 6,
+		Tex = 72,
+		Price = 65000,
+		Desc = ""
+	},
+-- const attrib of Item iD [133] name [上古镇天]
+	[133] = {
+		ID = 133,
+		Name = "上古镇天" ,
+		Type = 9,
+		TypeString = "武器",
+		Weight = 26,
+		ReqType = 1,
+		ReqValue = 58,
+		MaxDC = 25,
+		DC = 7,
+		MaxMC = 18,
+		MC = 7,
+		Tex = 73,
+		Price = 65000,
+		Desc = ""
+	},
+-- const attrib of Item iD [134] name [上古玄天]
+	[134] = {
+		ID = 134,
+		Name = "上古玄天" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 1,
+		Weight = 44,
+		ReqType = 1,
+		ReqValue = 58,
+		MaxDC = 31,
+		DC = 8,
+		MaxSC = 18,
+		SC = 6,
+		Tex = 74,
+		Price = 65000,
+		Desc = ""
+	},
+-- const attrib of Item iD [140] name [牛角戒指]
+	[140] = {
+		ID = 140,
+		Name = "牛角戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxDC = 1,
+		Tex = 140,
+		Price = 500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [141] name [生铁戒指]
+	[141] = {
+		ID = 141,
+		Name = "生铁戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		MaxAC = 255,
+		AC = 255,
+		Tex = 141,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [142] name [蓝色水晶戒指]
+	[142] = {
+		ID = 142,
+		Name = "蓝色水晶戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 16,
+		DC = 1,
+		MaxMAC = 2,
+		Tex = 142,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [143] name [玻璃戒指]
+	[143] = {
+		ID = 143,
+		Name = "玻璃戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxSC = 1,
+		Tex = 143,
+		Price = 500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [144] name [六角戒指]
+	[144] = {
+		ID = 144,
+		Name = "六角戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxMC = 1,
+		Tex = 144,
+		Price = 500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [145] name [古铜戒指]
+	[145] = {
+		ID = 145,
+		Name = "古铜戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxDC = 1,
+		MaxMAC = 1,
+		Tex = 145,
+		Price = 700,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [147] name [圣战戒指]
+	[147] = {
+		ID = 147,
+		Name = "圣战戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 1,
+		Weight = 2,
+		ReqType = 2,
+		ReqValue = 46,
+		MaxDC = 7,
+		Tex = 147,
+		Price = 9000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [148] name [金戒指]
+	[148] = {
+		ID = 148,
+		Name = "金戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxDC = 1,
+		DC = 1,
+		MaxMAC = 3,
+		MaxSC = 1,
+		SC = 1,
+		MaxMC = 1,
+		MC = 1,
+		Tex = 148,
+		Price = 3300,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [152] name [降妖除魔戒指]
+	[152] = {
+		ID = 152,
+		Name = "降妖除魔戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 25,
+		MaxDC = 2,
+		DC = 1,
+		MaxMAC = 4,
+		MaxSC = 2,
+		SC = 1,
+		MaxMC = 2,
+		MC = 1,
+		Tex = 152,
+		Price = 4400,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [155] name [道德戒指]
+	[155] = {
+		ID = 155,
+		Name = "道德戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxSC = 2,
+		SC = 1,
+		Tex = 155,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [157] name [天尊戒指]
+	[157] = {
+		ID = 157,
+		Name = "天尊戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 3,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 25,
+		MaxMAC = 1,
+		MaxSC = 7,
+		SC = 2,
+		Tex = 157,
+		Price = 9000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [158] name [法神戒指]
+	[158] = {
+		ID = 158,
+		Name = "法神戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 2,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 28,
+		MaxMAC = 1,
+		MaxMC = 6,
+		MC = 1,
+		Tex = 158,
+		Price = 9000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [159] name [魅力戒指]
+	[159] = {
+		ID = 159,
+		Name = "魅力戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxMC = 2,
+		MC = 1,
+		Tex = 159,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [161] name [珍珠戒指]
+	[161] = {
+		ID = 161,
+		Name = "珍珠戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 18,
+		MaxSC = 2,
+		Tex = 161,
+		Price = 1200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [162] name [狂风戒指]
+	[162] = {
+		ID = 162,
+		Name = "狂风戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkSpeed = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxDC = 1,
+		Tex = 162,
+		Price = 8000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [163] name [黑色水晶戒指]
+	[163] = {
+		ID = 163,
+		Name = "黑色水晶戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 18,
+		MaxDC = 2,
+		Tex = 163,
+		Price = 1200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [164] name [珊瑚戒指]
+	[164] = {
+		ID = 164,
+		Name = "珊瑚戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 25,
+		MaxDC = 4,
+		Tex = 164,
+		Price = 3000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [165] name [蛇眼戒指]
+	[165] = {
+		ID = 165,
+		Name = "蛇眼戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 18,
+		MaxMC = 2,
+		Tex = 165,
+		Price = 1200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [166] name [红宝石戒指]
+	[166] = {
+		ID = 166,
+		Name = "红宝石戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 18,
+		MaxMC = 4,
+		Tex = 166,
+		Price = 4000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [168] name [麻痹戒指]
+	[168] = {
+		ID = 168,
+		Name = "麻痹戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 16,
+		MaxDC = 1,
+		MaxAC = 3,
+		MaxMAC = 3,
+		Tex = 168,
+		Price = 8000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [169] name [龙之戒指]
+	[169] = {
+		ID = 169,
+		Name = "龙之戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 37,
+		MaxDC = 5,
+		Tex = 169,
+		Price = 4000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [171] name [装甲戒指]
+	[171] = {
+		ID = 171,
+		Name = "装甲戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		MaxAC = 255,
+		AC = 255,
+		MaxMAC = 255,
+		MAC = 255,
+		Tex = 171,
+		Desc = ""
+	},
+-- const attrib of Item iD [172] name [传送戒指]
+	[172] = {
+		ID = 172,
+		Name = "传送戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 16,
+		MaxAC = 4,
+		MaxMAC = 4,
+		MaxHP = 5000,
+		Tex = 172,
+		Price = 10000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [173] name [铂金戒指]
+	[173] = {
+		ID = 173,
+		Name = "铂金戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 17,
+		MaxSC = 4,
+		Tex = 173,
+		Price = 4000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [175] name [复活戒指]
+	[175] = {
+		ID = 175,
+		Name = "复活戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 58,
+		MaxDC = 7,
+		MaxAC = 1,
+		MaxMAC = 1,
+		MaxSC = 7,
+		MaxMC = 7,
+		MaxHP = 5000,
+		Tex = 175,
+		Price = 10000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [176] name [护身戒指]
+	[176] = {
+		ID = 176,
+		Name = "护身戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 16,
+		MaxAC = 1,
+		MaxMAC = 1,
+		MaxSC = 1,
+		MaxMC = 1,
+		MaxHP = 5000,
+		Tex = 176,
+		Price = 10000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [177] name [骷髅戒指]
+	[177] = {
+		ID = 177,
+		Name = "骷髅戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 30,
+		MaxDC = 3,
+		Tex = 177,
+		Price = 2500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [178] name [记忆戒指]
+	[178] = {
+		ID = 178,
+		Name = "记忆戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 26,
+		MaxSC = 3,
+		SC = 1,
+		MaxHP = 7000,
+		Tex = 178,
+		Price = 6000,
+		Desc = ""
+	},
+-- const attrib of Item iD [180] name [钢手镯]
+	[180] = {
+		ID = 180,
+		Name = "钢手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 7,
+		MaxAC = 1,
+		MaxMAC = 1,
+		Tex = 180,
+		Price = 500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [182] name [泰坦戒指]
+	[182] = {
+		ID = 182,
+		Name = "泰坦戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 2,
+		ReqType = 4,
+		ReqValue = 24,
+		MaxSC = 6,
+		SC = 2,
+		Tex = 182,
+		Price = 8000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [183] name [紫碧螺]
+	[183] = {
+		ID = 183,
+		Name = "紫碧螺" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 2,
+		ReqType = 3,
+		ReqValue = 24,
+		MaxMC = 5,
+		Tex = 183,
+		Price = 8000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [184] name [祈福项链]
+	[184] = {
+		ID = 184,
+		Name = "祈福项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 3,
+		AtkPalsy = 17,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 58,
+		Tex = 218,
+		Price = 24000,
+		Desc = ""
+	},
+-- const attrib of Item iD [186] name [幽灵手套]
+	[186] = {
+		ID = 186,
+		Name = "幽灵手套" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxAC = 3,
+		Tex = 186,
+		Price = 3000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [187] name [阎罗手套]
+	[187] = {
+		ID = 187,
+		Name = "阎罗手套" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 28,
+		MaxAC = 4,
+		Tex = 187,
+		Price = 4000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [188] name [死神手套]
+	[188] = {
+		ID = 188,
+		Name = "死神手套" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 23,
+		MaxDC = 2,
+		DC = 1,
+		Tex = 188,
+		Price = 3500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [190] name [皮质手套]
+	[190] = {
+		ID = 190,
+		Name = "皮质手套" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxAC = 1,
+		Tex = 190,
+		Price = 500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [191] name [坚固手套]
+	[191] = {
+		ID = 191,
+		Name = "坚固手套" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 18,
+		MaxAC = 2,
+		Tex = 191,
+		Price = 1400,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [192] name [小手镯]
+	[192] = {
+		ID = 192,
+		Name = "小手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 1,
+		MaxMAC = 1,
+		Tex = 192,
+		Price = 500,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [193] name [??]
+	[193] = {
+		ID = 193,
+		Name = "??" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		Desc = ""
+	},
+-- const attrib of Item iD [194] name [??]
+	[194] = {
+		ID = 194,
+		Name = "??" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		Desc = ""
+	},
+-- const attrib of Item iD [195] name [天尊手镯]
+	[195] = {
+		ID = 195,
+		Name = "天尊手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 3,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 25,
+		MaxAC = 2,
+		AC = 1,
+		MaxSC = 4,
+		SC = 1,
+		Tex = 195,
+		Price = 9000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [196] name [圣战手镯]
+	[196] = {
+		ID = 196,
+		Name = "圣战手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 1,
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 40,
+		MaxDC = 3,
+		DC = 2,
+		MaxAC = 1,
+		Tex = 196,
+		Price = 9000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [197] name [法神手镯]
+	[197] = {
+		ID = 197,
+		Name = "法神手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 2,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 28,
+		MaxAC = 1,
+		MaxMC = 4,
+		Tex = 197,
+		Price = 9000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [198] name [道士手镯]
+	[198] = {
+		ID = 198,
+		Name = "道士手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 18,
+		MaxSC = 1,
+		Tex = 198,
+		Price = 1000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [199] name [准确手链]
+	[199] = {
+		ID = 199,
+		Name = "准确手链" ,
+		Type = 4,
+		TypeString = "手镯",
+		Accuracy = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 18,
+		Tex = 199,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [200] name [躲避手链]
+	[200] = {
+		ID = 200,
+		Name = "躲避手链" ,
+		Type = 4,
+		TypeString = "手镯",
+		Hide = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 18,
+		Tex = 200,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [202] name [银手镯]
+	[202] = {
+		ID = 202,
+		Name = "银手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Hide = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 1,
+		Tex = 202,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [203] name [大手镯]
+	[203] = {
+		ID = 203,
+		Name = "大手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 7,
+		MaxAC = 1,
+		AC = 1,
+		Tex = 203,
+		Price = 1400,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [206] name [静寂之手(战)]
+	[206] = {
+		ID = 206,
+		Name = "静寂之手(战)" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 7,
+		DC = 7,
+		MaxHP = 8000,
+		Tex = 206,
+		Desc = ""
+	},
+-- const attrib of Item iD [207] name [金手镯]
+	[207] = {
+		ID = 207,
+		Name = "金手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxDC = 1,
+		MaxMAC = 3,
+		MAC = 2,
+		Tex = 207,
+		Price = 3000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [208] name [三眼手镯]
+	[208] = {
+		ID = 208,
+		Name = "三眼手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 22,
+		MaxAC = 1,
+		AC = 1,
+		MaxSC = 3,
+		SC = 1,
+		Tex = 208,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [209] name [骑士手镯]
+	[209] = {
+		ID = 209,
+		Name = "骑士手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 37,
+		MaxDC = 2,
+		DC = 2,
+		Tex = 209,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [210] name [思贝儿手镯]
+	[210] = {
+		ID = 210,
+		Name = "思贝儿手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 24,
+		MaxMC = 2,
+		Tex = 210,
+		Price = 4000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [211] name [黑檀手镯]
+	[211] = {
+		ID = 211,
+		Name = "黑檀手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 18,
+		MaxMC = 1,
+		Tex = 211,
+		Price = 1200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [212] name [记忆手镯]
+	[212] = {
+		ID = 212,
+		Name = "记忆手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 26,
+		MaxMC = 2,
+		MC = 1,
+		MaxHP = 6000,
+		Tex = 212,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [214] name [龙之手镯]
+	[214] = {
+		ID = 214,
+		Name = "龙之手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 2,
+		ReqType = 3,
+		ReqValue = 28,
+		MaxMC = 3,
+		Tex = 214,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [216] name [静寂之手(法)]
+	[216] = {
+		ID = 216,
+		Name = "静寂之手(法)" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxMC = 7,
+		MC = 7,
+		MaxHP = 6000,
+		Tex = 206,
+		Desc = ""
+	},
+-- const attrib of Item iD [217] name [静寂之手(道)]
+	[217] = {
+		ID = 217,
+		Name = "静寂之手(道)" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxSC = 7,
+		SC = 7,
+		MaxHP = 7000,
+		Tex = 206,
+		Desc = ""
+	},
+-- const attrib of Item iD [218] name [天珠项链]
+	[218] = {
+		ID = 218,
+		Name = "天珠项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 22,
+		MaxSC = 5,
+		SC = 1,
+		Tex = 218,
+		Price = 4000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [219] name [幽灵项链]
+	[219] = {
+		ID = 219,
+		Name = "幽灵项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 28,
+		MaxDC = 5,
+		Tex = 219,
+		Price = 4000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [220] name [黑檀项链]
+	[220] = {
+		ID = 220,
+		Name = "黑檀项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 12,
+		MaxMC = 1,
+		Tex = 220,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [221] name [黄色水晶项链]
+	[221] = {
+		ID = 221,
+		Name = "黄色水晶项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 12,
+		MaxSC = 1,
+		Tex = 221,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [222] name [金项链]
+	[222] = {
+		ID = 222,
+		Name = "金项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Hide = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 2,
+		MaxDC = 1,
+		Tex = 222,
+		Price = 600,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [225] name [黑色水晶项链]
+	[225] = {
+		ID = 225,
+		Name = "黑色水晶项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 12,
+		DC = 1,
+		Tex = 225,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [226] name [法神项链]
+	[226] = {
+		ID = 226,
+		Name = "法神项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 2,
+		AtkPalsy = 2,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 28,
+		MaxMC = 8,
+		MC = 1,
+		Tex = 226,
+		Price = 9000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [228] name [狂风项链]
+	[228] = {
+		ID = 228,
+		Name = "狂风项链" ,
+		Type = 3,
+		TypeString = "项链",
+		AtkSpeed = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxDC = 1,
+		Tex = 228,
+		Price = 8000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [229] name [圣战项链]
+	[229] = {
+		ID = 229,
+		Name = "圣战项链" ,
+		Type = 3,
+		TypeString = "项链",
+		AtkPalsy = 1,
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 40,
+		MaxDC = 6,
+		DC = 3,
+		Tex = 229,
+		Price = 9000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [230] name [白色虎齿项链]
+	[230] = {
+		ID = 230,
+		Name = "白色虎齿项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Hide = 1,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 11,
+		MaxSC = 1,
+		SC = 1,
+		Tex = 230,
+		Price = 1600,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [231] name [白金项链]
+	[231] = {
+		ID = 231,
+		Name = "白金项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 11,
+		MaxMC = 2,
+		Tex = 231,
+		Price = 1200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [233] name [灯笼项链]
+	[233] = {
+		ID = 233,
+		Name = "灯笼项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Hide = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 18,
+		DC = 1,
+		MaxHP = 7000,
+		Tex = 233,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [234] name [天尊项链]
+	[234] = {
+		ID = 234,
+		Name = "天尊项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 2,
+		AtkPalsy = 3,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 27,
+		MaxSC = 7,
+		SC = 2,
+		Tex = 234,
+		Price = 9000,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [235] name [魔鬼项链]
+	[235] = {
+		ID = 235,
+		Name = "魔鬼项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 17,
+		DC = 2,
+		Tex = 235,
+		Price = 1200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [236] name [琥珀项链]
+	[236] = {
+		ID = 236,
+		Name = "琥珀项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 17,
+		MC = 2,
+		Tex = 236,
+		Price = 1200,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [237] name [传统项链]
+	[237] = {
+		ID = 237,
+		Name = "传统项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 1,
+		Tex = 237,
+		Price = 800,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [239] name [灵魂项链]
+	[239] = {
+		ID = 239,
+		Name = "灵魂项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 23,
+		MaxSC = 6,
+		SC = 1,
+		Tex = 239,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [240] name [绿色项链]
+	[240] = {
+		ID = 240,
+		Name = "绿色项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 39,
+		MaxDC = 5,
+		DC = 2,
+		Tex = 240,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [241] name [技巧项链]
+	[241] = {
+		ID = 241,
+		Name = "技巧项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 1,
+		Tex = 241,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [242] name [竹笛]
+	[242] = {
+		ID = 242,
+		Name = "竹笛" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxSC = 3,
+		SC = 1,
+		Tex = 242,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [243] name [凤凰明珠]
+	[243] = {
+		ID = 243,
+		Name = "凤凰明珠" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 17,
+		MaxSC = 2,
+		SC = 1,
+		Tex = 243,
+		Price = 1400,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [244] name [恶魔铃铛]
+	[244] = {
+		ID = 244,
+		Name = "恶魔铃铛" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 2,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 27,
+		MaxMC = 7,
+		Tex = 244,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [245] name [放大镜]
+	[245] = {
+		ID = 245,
+		Name = "放大镜" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxMC = 3,
+		MC = 1,
+		Tex = 245,
+		Price = 3000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [246] name [蓝色翡翠项链]
+	[246] = {
+		ID = 246,
+		Name = "蓝色翡翠项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxDC = 2,
+		DC = 2,
+		Tex = 246,
+		Price = 4000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [247] name [记忆项链]
+	[247] = {
+		ID = 247,
+		Name = "记忆项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 26,
+		MaxDC = 4,
+		DC = 2,
+		Tex = 247,
+		Price = 5000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [254] name [蝎子的尾巴]
+	[254] = {
+		ID = 254,
+		Name = "蝎子的尾巴" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 254,
+		Price = 150,
+		Desc = ""
+	},
+-- const attrib of Item iD [257] name [药粉]
+	[257] = {
+		ID = 257,
+		Name = "药粉" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 257,
+		Desc = ""
+	},
+-- const attrib of Item iD [260] name [万年雪霜]
+	[260] = {
+		ID = 260,
+		Name = "万年雪霜" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Hide = 8,
+		Weight = 1,
+		HP = 150,
+		MP = 180,
+		Tex = 260,
+		Price = 2500,
+		Desc = ""
+	},
+-- const attrib of Item iD [262] name [迷你奖券]
+	[262] = {
+		ID = 262,
+		Name = "迷你奖券" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 6,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 262,
+		Desc = ""
+	},
+-- const attrib of Item iD [263] name [初级奖券]
+	[263] = {
+		ID = 263,
+		Name = "初级奖券" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 2,
+		Curse = 6,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 263,
+		Desc = ""
+	},
+-- const attrib of Item iD [264] name [中级奖券]
+	[264] = {
+		ID = 264,
+		Name = "中级奖券" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 3,
+		Curse = 6,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 264,
+		Desc = ""
+	},
+-- const attrib of Item iD [265] name [高级奖券]
+	[265] = {
+		ID = 265,
+		Name = "高级奖券" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 4,
+		Curse = 6,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 265,
+		Desc = ""
+	},
+-- const attrib of Item iD [270] name [热心吧友护符]
+	[270] = {
+		ID = 270,
+		Name = "热心吧友护符" ,
+		Type = 17,
+		TypeString = "符咒",
+		AtkPalsy = 31,
+		Weight = 1,
+		Tex = 270,
+		Desc = ""
+	},
+-- const attrib of Item iD [271] name [地狱头像]
+	[271] = {
+		ID = 271,
+		Name = "地狱头像" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 1,
+		Tex = 271,
+		Price = 1000,
+		Desc = "邪恶的头像，据传可在庄园老兵处解除封印从而召唤异界的怪物军团"
+	},
+-- const attrib of Item iD [272] name [秘境凭证]
+	[272] = {
+		ID = 272,
+		Name = "秘境凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 9,
+		Weight = 1,
+		Tex = 272,
+		Price = 2,
+		Desc = "可凭此凭证在庄园老兵处前往秘境"
+	},
+-- const attrib of Item iD [275] name [活动凭证]
+	[275] = {
+		ID = 275,
+		Name = "活动凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 9,
+		Weight = 1,
+		Tex = 275,
+		Price = 15000,
+		Desc = "通过消耗凭证可以在各活动礼官处参加活动"
+	},
+-- const attrib of Item iD [276] name [双倍爆率卷轴]
+	[276] = {
+		ID = 276,
+		Name = "双倍爆率卷轴" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 7,
+		Curse = 1,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 276,
+		Price = 10000,
+		Desc = ""
+	},
+-- const attrib of Item iD [277] name [神殿卷轴]
+	[277] = {
+		ID = 277,
+		Name = "神殿卷轴" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 272,
+		Desc = ""
+	},
+-- const attrib of Item iD [278] name [移动仓库卷]
+	[278] = {
+		ID = 278,
+		Name = "移动仓库卷" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 3,
+		Curse = 1,
+		Weight = 1,
+		Tex = 276,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [279] name [经验卷轴5W]
+	[279] = {
+		ID = 279,
+		Name = "经验卷轴5W" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 4,
+		Curse = 1,
+		Weight = 1,
+		Tex = 274,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [280] name [金矿]
+	[280] = {
+		ID = 280,
+		Name = "金矿" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 1,
+		Hide = 4,
+		Weight = 5,
+		MaxDC = 349,
+		Tex = 280,
+		Price = 15000,
+		Desc = "可提炼为矿锭"
+	},
+-- const attrib of Item iD [281] name [铁矿]
+	[281] = {
+		ID = 281,
+		Name = "铁矿" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 1,
+		Hide = 2,
+		Weight = 5,
+		MaxDC = 350,
+		Tex = 281,
+		Price = 2500,
+		Desc = "可提炼为矿锭"
+	},
+-- const attrib of Item iD [283] name [紫金矿]
+	[283] = {
+		ID = 283,
+		Name = "紫金矿" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 1,
+		Hide = 6,
+		Weight = 5,
+		MaxDC = 354,
+		Tex = 283,
+		Price = 15000,
+		Desc = "可提炼为矿锭"
+	},
+-- const attrib of Item iD [284] name [黑铁矿]
+	[284] = {
+		ID = 284,
+		Name = "黑铁矿" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 1,
+		Hide = 5,
+		Weight = 5,
+		MaxDC = 351,
+		Tex = 284,
+		Price = 10000,
+		Desc = "可提炼为矿锭"
+	},
+-- const attrib of Item iD [285] name [银矿]
+	[285] = {
+		ID = 285,
+		Name = "银矿" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 1,
+		Hide = 3,
+		Weight = 5,
+		MaxDC = 352,
+		Tex = 285,
+		Price = 4000,
+		Desc = "可提炼为矿锭"
+	},
+-- const attrib of Item iD [286] name [铜矿]
+	[286] = {
+		ID = 286,
+		Name = "铜矿" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 1,
+		Hide = 1,
+		Weight = 5,
+		MaxDC = 353,
+		Tex = 286,
+		Price = 2000,
+		Desc = "可提炼为矿锭"
+	},
+-- const attrib of Item iD [287] name [经验卷轴10W]
+	[287] = {
+		ID = 287,
+		Name = "经验卷轴10W" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 5,
+		Curse = 1,
+		Weight = 1,
+		Tex = 274,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [290] name [魔力手镯]
+	[290] = {
+		ID = 290,
+		Name = "魔力手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 18,
+		MaxDC = 1,
+		Tex = 290,
+		Price = 1400,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [291] name [基本剑术]
+	[291] = {
+		ID = 291,
+		Name = "基本剑术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 7,
+		Price = 800,
+		Desc = ""
+	},
+-- const attrib of Item iD [292] name [小火球]
+	[292] = {
+		ID = 292,
+		Name = "小火球" ,
+		Type = 1,
+		TypeString = "书",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 7,
+		Price = 800,
+		Desc = ""
+	},
+-- const attrib of Item iD [293] name [治愈术]
+	[293] = {
+		ID = 293,
+		Name = "治愈术" ,
+		Type = 1,
+		TypeString = "书",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 7,
+		Price = 800,
+		Desc = ""
+	},
+-- const attrib of Item iD [294] name [攻杀剑法]
+	[294] = {
+		ID = 294,
+		Name = "攻杀剑法" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 19,
+		Price = 1600,
+		Desc = ""
+	},
+-- const attrib of Item iD [295] name [刺杀剑法]
+	[295] = {
+		ID = 295,
+		Name = "刺杀剑法" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 25,
+		Price = 2200,
+		Desc = ""
+	},
+-- const attrib of Item iD [299] name [半月弯刀]
+	[299] = {
+		ID = 299,
+		Name = "半月弯刀" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 28,
+		Price = 2800,
+		Desc = ""
+	},
+-- const attrib of Item iD [300] name [烈火剑法]
+	[300] = {
+		ID = 300,
+		Name = "烈火剑法" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 35,
+		Price = 3600,
+		Desc = ""
+	},
+-- const attrib of Item iD [301] name [大火球]
+	[301] = {
+		ID = 301,
+		Name = "大火球" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 19,
+		Price = 1600,
+		Desc = ""
+	},
+-- const attrib of Item iD [302] name [爆裂火焰]
+	[302] = {
+		ID = 302,
+		Name = "爆裂火焰" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		Price = 2200,
+		Desc = ""
+	},
+-- const attrib of Item iD [303] name [冰咆哮]
+	[303] = {
+		ID = 303,
+		Name = "冰咆哮" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 35,
+		Price = 3600,
+		Desc = ""
+	},
+-- const attrib of Item iD [304] name [地狱雷光]
+	[304] = {
+		ID = 304,
+		Name = "地狱雷光" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 30,
+		Desc = ""
+	},
+-- const attrib of Item iD [305] name [雷电术]
+	[305] = {
+		ID = 305,
+		Name = "雷电术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 17,
+		Price = 2200,
+		Desc = ""
+	},
+-- const attrib of Item iD [306] name [火墙]
+	[306] = {
+		ID = 306,
+		Name = "火墙" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 24,
+		Price = 2800,
+		Desc = ""
+	},
+-- const attrib of Item iD [307] name [魔法盾]
+	[307] = {
+		ID = 307,
+		Name = "魔法盾" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 33,
+		Price = 2800,
+		Desc = ""
+	},
+-- const attrib of Item iD [308] name [灵魂火符]
+	[308] = {
+		ID = 308,
+		Name = "灵魂火符" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 18,
+		Price = 1600,
+		Desc = ""
+	},
+-- const attrib of Item iD [309] name [神圣战甲术]
+	[309] = {
+		ID = 309,
+		Name = "神圣战甲术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		Price = 2200,
+		Desc = ""
+	},
+-- const attrib of Item iD [310] name [隐身术]
+	[310] = {
+		ID = 310,
+		Name = "隐身术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 20,
+		Price = 1600,
+		Desc = ""
+	},
+-- const attrib of Item iD [311] name [精神力战法]
+	[311] = {
+		ID = 311,
+		Name = "精神力战法" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 9,
+		Price = 800,
+		Desc = ""
+	},
+-- const attrib of Item iD [312] name [强效太阳水]
+	[312] = {
+		ID = 312,
+		Name = "强效太阳水" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Hide = 4,
+		Weight = 2,
+		HP = 100,
+		MP = 120,
+		Tex = 312,
+		Price = 1250,
+		Desc = ""
+	},
+-- const attrib of Item iD [313] name [超级金创药]
+	[313] = {
+		ID = 313,
+		Name = "超级金创药" ,
+		Type = 12,
+		TypeString = "捆装物品",
+		Weight = 20,
+		MaxDC = 28,
+		Tex = 313,
+		Price = 2620,
+		Desc = ""
+	},
+-- const attrib of Item iD [314] name [超级魔法药]
+	[314] = {
+		ID = 314,
+		Name = "超级魔法药" ,
+		Type = 12,
+		TypeString = "捆装物品",
+		Weight = 20,
+		MaxDC = 29,
+		Tex = 314,
+		Price = 2980,
+		Desc = ""
+	},
+-- const attrib of Item iD [315] name [召唤术]
+	[315] = {
+		ID = 315,
+		Name = "召唤术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 35,
+		Price = 3600,
+		Desc = ""
+	},
+-- const attrib of Item iD [316] name [施毒术]
+	[316] = {
+		ID = 316,
+		Name = "施毒术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 14,
+		Price = 1200,
+		Desc = ""
+	},
+-- const attrib of Item iD [317] name [召唤骷髅]
+	[317] = {
+		ID = 317,
+		Name = "召唤骷髅" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 19,
+		Price = 1800,
+		Desc = ""
+	},
+-- const attrib of Item iD [318] name [诱惑之光]
+	[318] = {
+		ID = 318,
+		Name = "诱惑之光" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 13,
+		Price = 1200,
+		Desc = ""
+	},
+-- const attrib of Item iD [319] name [稳如泰山]
+	[319] = {
+		ID = 319,
+		Name = "稳如泰山" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 33,
+		Price = 2400,
+		Desc = ""
+	},
+-- const attrib of Item iD [320] name [生命项链]
+	[320] = {
+		ID = 320,
+		Name = "生命项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 1,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 25,
+		MaxMC = 5,
+		MC = 1,
+		Tex = 320,
+		Price = 5000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [321] name [狂战士]
+	[321] = {
+		ID = 321,
+		Name = "狂战士" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 30,
+		Price = 2400,
+		Desc = ""
+	},
+-- const attrib of Item iD [322] name [狮子吼]
+	[322] = {
+		ID = 322,
+		Name = "狮子吼" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [323] name [进阶召唤]
+	[323] = {
+		ID = 323,
+		Name = "进阶召唤" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [324] name [寒冰掌]
+	[324] = {
+		ID = 324,
+		Name = "寒冰掌" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [325] name [炙炎剑法]
+	[325] = {
+		ID = 325,
+		Name = "炙炎剑法" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 42,
+		Price = 6000,
+		Desc = ""
+	},
+-- const attrib of Item iD [326] name [神兽天御]
+	[326] = {
+		ID = 326,
+		Name = "神兽天御" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 42,
+		Price = 6000,
+		Desc = ""
+	},
+-- const attrib of Item iD [327] name [灭天火]
+	[327] = {
+		ID = 327,
+		Name = "灭天火" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 42,
+		Price = 6000,
+		Desc = ""
+	},
+-- const attrib of Item iD [328] name [心灵手镯]
+	[328] = {
+		ID = 328,
+		Name = "心灵手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 2,
+		ReqType = 4,
+		ReqValue = 24,
+		MaxSC = 2,
+		SC = 1,
+		Tex = 328,
+		Price = 5000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [329] name [火流星]
+	[329] = {
+		ID = 329,
+		Name = "火流星" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 44,
+		Price = 10000,
+		Desc = ""
+	},
+-- const attrib of Item iD [330] name [开天斩]
+	[330] = {
+		ID = 330,
+		Name = "开天斩" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 44,
+		Price = 10000,
+		Desc = ""
+	},
+-- const attrib of Item iD [331] name [先天气功]
+	[331] = {
+		ID = 331,
+		Name = "先天气功" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 44,
+		Price = 10000,
+		Desc = ""
+	},
+-- const attrib of Item iD [332] name [冰焰术]
+	[332] = {
+		ID = 332,
+		Name = "冰焰术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 50,
+		Price = 12000,
+		Desc = ""
+	},
+-- const attrib of Item iD [333] name [血龙剑法]
+	[333] = {
+		ID = 333,
+		Name = "血龙剑法" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 50,
+		Price = 12000,
+		Desc = ""
+	},
+-- const attrib of Item iD [334] name [召唤白虎]
+	[334] = {
+		ID = 334,
+		Name = "召唤白虎" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 50,
+		Price = 12500,
+		Desc = ""
+	},
+-- const attrib of Item iD [335] name [强化刺杀剑法]
+	[335] = {
+		ID = 335,
+		Name = "强化刺杀剑法" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 50,
+		Price = 10000,
+		Desc = ""
+	},
+-- const attrib of Item iD [336] name [力量戒指]
+	[336] = {
+		ID = 336,
+		Name = "力量戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 2,
+		ReqType = 2,
+		ReqValue = 39,
+		MaxDC = 6,
+		Tex = 336,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [337] name [强化雷电术]
+	[337] = {
+		ID = 337,
+		Name = "强化雷电术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 50,
+		Price = 10000,
+		Desc = ""
+	},
+-- const attrib of Item iD [338] name [强化施毒术]
+	[338] = {
+		ID = 338,
+		Name = "强化施毒术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 50,
+		Price = 10000,
+		Desc = ""
+	},
+-- const attrib of Item iD [339] name [群体治愈术]
+	[339] = {
+		ID = 339,
+		Name = "群体治愈术" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 33,
+		Price = 2400,
+		Desc = ""
+	},
+-- const attrib of Item iD [340] name [强化召唤白虎]
+	[340] = {
+		ID = 340,
+		Name = "强化召唤白虎" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 57,
+		Price = 18000,
+		Desc = ""
+	},
+-- const attrib of Item iD [341] name [索命毒雾]
+	[341] = {
+		ID = 341,
+		Name = "索命毒雾" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 52,
+		Price = 22000,
+		Desc = ""
+	},
+-- const attrib of Item iD [342] name [强化灵魂火符]
+	[342] = {
+		ID = 342,
+		Name = "强化灵魂火符" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 53,
+		Price = 10000,
+		Desc = ""
+	},
+-- const attrib of Item iD [343] name [金刚不坏]
+	[343] = {
+		ID = 343,
+		Name = "金刚不坏" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 1,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		Price = 24000,
+		Desc = ""
+	},
+-- const attrib of Item iD [344] name [黑铁头盔]
+	[344] = {
+		ID = 344,
+		Name = "黑铁头盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 10,
+		ReqType = 2,
+		ReqValue = 46,
+		MaxAC = 5,
+		AC = 4,
+		MaxMAC = 3,
+		MAC = 2,
+		Tex = 344,
+		Price = 5000,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [345] name [护体神盾]
+	[345] = {
+		ID = 345,
+		Name = "护体神盾" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [346] name [召唤月灵]
+	[346] = {
+		ID = 346,
+		Name = "召唤月灵" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 62,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [347] name [火龙气焰]
+	[347] = {
+		ID = 347,
+		Name = "火龙气焰" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 2,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 62,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [348] name [先天罡气]
+	[348] = {
+		ID = 348,
+		Name = "先天罡气" ,
+		Type = 1,
+		TypeString = "书",
+		Lucky = 3,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 62,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [349] name [金锭]
+	[349] = {
+		ID = 349,
+		Name = "金锭" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 2,
+		Weight = 5,
+		Tex = 280,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [350] name [铁锭]
+	[350] = {
+		ID = 350,
+		Name = "铁锭" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 2,
+		Weight = 5,
+		Tex = 281,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [351] name [黑铁锭]
+	[351] = {
+		ID = 351,
+		Name = "黑铁锭" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 2,
+		Weight = 5,
+		Tex = 284,
+		Price = 20000,
+		Desc = ""
+	},
+-- const attrib of Item iD [352] name [银锭]
+	[352] = {
+		ID = 352,
+		Name = "银锭" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 2,
+		Weight = 5,
+		Tex = 285,
+		Price = 8000,
+		Desc = ""
+	},
+-- const attrib of Item iD [353] name [铜锭]
+	[353] = {
+		ID = 353,
+		Name = "铜锭" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 2,
+		Weight = 5,
+		Tex = 286,
+		Price = 4000,
+		Desc = ""
+	},
+-- const attrib of Item iD [354] name [紫金锭]
+	[354] = {
+		ID = 354,
+		Name = "紫金锭" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 2,
+		Weight = 5,
+		Tex = 283,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [355] name [松木料]
+	[355] = {
+		ID = 355,
+		Name = "松木料" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 3,
+		Hide = 1,
+		Weight = 2,
+		MaxDC = 356,
+		Tex = 368,
+		Price = 2000,
+		Desc = "可加工为木板"
+	},
+-- const attrib of Item iD [356] name [松木板]
+	[356] = {
+		ID = 356,
+		Name = "松木板" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 4,
+		Weight = 2,
+		Tex = 368,
+		Price = 4000,
+		Desc = ""
+	},
+-- const attrib of Item iD [357] name [枣木料]
+	[357] = {
+		ID = 357,
+		Name = "枣木料" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 3,
+		Hide = 2,
+		Weight = 2,
+		MaxDC = 358,
+		Tex = 368,
+		Price = 2500,
+		Desc = "可加工为木板"
+	},
+-- const attrib of Item iD [358] name [枣木板]
+	[358] = {
+		ID = 358,
+		Name = "枣木板" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 4,
+		Weight = 2,
+		Tex = 368,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [359] name [柏木料]
+	[359] = {
+		ID = 359,
+		Name = "柏木料" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 3,
+		Hide = 3,
+		Weight = 2,
+		MaxDC = 360,
+		Tex = 368,
+		Price = 3000,
+		Desc = "可加工为木板"
+	},
+-- const attrib of Item iD [360] name [柏木板]
+	[360] = {
+		ID = 360,
+		Name = "柏木板" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 4,
+		Weight = 2,
+		Tex = 368,
+		Price = 6000,
+		Desc = ""
+	},
+-- const attrib of Item iD [361] name [枫木料]
+	[361] = {
+		ID = 361,
+		Name = "枫木料" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 3,
+		Hide = 4,
+		Weight = 2,
+		MaxDC = 362,
+		Tex = 368,
+		Price = 4000,
+		Desc = "可加工为木板"
+	},
+-- const attrib of Item iD [362] name [枫木板]
+	[362] = {
+		ID = 362,
+		Name = "枫木板" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 4,
+		Weight = 2,
+		Tex = 368,
+		Price = 8000,
+		Desc = ""
+	},
+-- const attrib of Item iD [363] name [乌木料]
+	[363] = {
+		ID = 363,
+		Name = "乌木料" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 3,
+		Hide = 5,
+		Weight = 2,
+		MaxDC = 364,
+		Tex = 368,
+		Price = 5000,
+		Desc = "可加工为木板"
+	},
+-- const attrib of Item iD [364] name [乌木板]
+	[364] = {
+		ID = 364,
+		Name = "乌木板" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 4,
+		Weight = 2,
+		Tex = 368,
+		Price = 10000,
+		Desc = ""
+	},
+-- const attrib of Item iD [365] name [紫檀木料]
+	[365] = {
+		ID = 365,
+		Name = "紫檀木料" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 3,
+		Hide = 6,
+		Weight = 2,
+		MaxDC = 366,
+		Tex = 368,
+		Price = 7500,
+		Desc = "可加工为木板"
+	},
+-- const attrib of Item iD [366] name [紫檀木板]
+	[366] = {
+		ID = 366,
+		Name = "紫檀木板" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 4,
+		Weight = 2,
+		Tex = 368,
+		Price = 15000,
+		Desc = ""
+	},
+-- const attrib of Item iD [368] name [上等木料]
+	[368] = {
+		ID = 368,
+		Name = "上等木料" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 368,
+		Desc = ""
+	},
+-- const attrib of Item iD [389] name [枣木勋章]
+	[389] = {
+		ID = 389,
+		Name = "枣木勋章" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 33,
+		MaxDC = 2,
+		DC = 1,
+		MaxAC = 2,
+		AC = 1,
+		MaxMAC = 2,
+		MAC = 1,
+		MaxSC = 2,
+		SC = 1,
+		MaxMC = 2,
+		MC = 1,
+		MaxHP = 6000,
+		MP = 512,
+		Tex = 393,
+		Price = 2500,
+		Desc = ""
+	},
+-- const attrib of Item iD [393] name [荣誉勋章1号]
+	[393] = {
+		ID = 393,
+		Name = "荣誉勋章1号" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 1,
+		MaxAC = 1,
+		Tex = 393,
+		Desc = ""
+	},
+-- const attrib of Item iD [394] name [魔法药(小量)]
+	[394] = {
+		ID = 394,
+		Name = "魔法药(小量)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 1,
+		MP = 45,
+		Tex = 394,
+		Price = 80,
+		Desc = ""
+	},
+-- const attrib of Item iD [395] name [魔法药(小)包]
+	[395] = {
+		ID = 395,
+		Name = "魔法药(小)包" ,
+		Type = 12,
+		TypeString = "捆装物品",
+		Weight = 8,
+		MaxDC = 394,
+		Tex = 395,
+		Price = 500,
+		Desc = ""
+	},
+-- const attrib of Item iD [396] name [魔法药(中量)]
+	[396] = {
+		ID = 396,
+		Name = "魔法药(中量)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 2,
+		MP = 90,
+		Tex = 396,
+		Price = 180,
+		Desc = ""
+	},
+-- const attrib of Item iD [397] name [魔法药(中)包]
+	[397] = {
+		ID = 397,
+		Name = "魔法药(中)包" ,
+		Type = 12,
+		TypeString = "捆装物品",
+		Weight = 14,
+		MaxDC = 396,
+		Tex = 397,
+		Price = 1100,
+		Desc = ""
+	},
+-- const attrib of Item iD [398] name [金创药(小量)]
+	[398] = {
+		ID = 398,
+		Name = "金创药(小量)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 1,
+		HP = 40,
+		Tex = 398,
+		Price = 80,
+		Desc = ""
+	},
+-- const attrib of Item iD [399] name [金创药(小)包]
+	[399] = {
+		ID = 399,
+		Name = "金创药(小)包" ,
+		Type = 12,
+		TypeString = "捆装物品",
+		Weight = 8,
+		MaxDC = 398,
+		Tex = 399,
+		Price = 500,
+		Desc = ""
+	},
+-- const attrib of Item iD [400] name [金创药(中量)]
+	[400] = {
+		ID = 400,
+		Name = "金创药(中量)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 2,
+		HP = 80,
+		Tex = 400,
+		Price = 180,
+		Desc = ""
+	},
+-- const attrib of Item iD [401] name [金创药(中)包]
+	[401] = {
+		ID = 401,
+		Name = "金创药(中)包" ,
+		Type = 12,
+		TypeString = "捆装物品",
+		Weight = 8,
+		MaxDC = 400,
+		Tex = 401,
+		Price = 1100,
+		Desc = ""
+	},
+-- const attrib of Item iD [402] name [回城卷]
+	[402] = {
+		ID = 402,
+		Name = "回城卷" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 2,
+		Curse = 1,
+		Weight = 1,
+		Tex = 402,
+		Price = 440,
+		Desc = ""
+	},
+-- const attrib of Item iD [403] name [回城卷(捆)]
+	[403] = {
+		ID = 403,
+		Name = "回城卷(捆)" ,
+		Type = 12,
+		TypeString = "捆装物品",
+		Weight = 6,
+		MaxDC = 402,
+		Tex = 403,
+		Price = 2800,
+		Desc = ""
+	},
+-- const attrib of Item iD [404] name [随机传送卷]
+	[404] = {
+		ID = 404,
+		Name = "随机传送卷" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 1,
+		Weight = 1,
+		Tex = 404,
+		Price = 110,
+		Desc = ""
+	},
+-- const attrib of Item iD [405] name [随机传送卷(捆)]
+	[405] = {
+		ID = 405,
+		Name = "随机传送卷(捆)" ,
+		Type = 12,
+		TypeString = "捆装物品",
+		Weight = 6,
+		MaxDC = 404,
+		Tex = 405,
+		Price = 1000,
+		Desc = ""
+	},
+-- const attrib of Item iD [410] name [神秘的勋章]
+	[410] = {
+		ID = 410,
+		Name = "神秘的勋章" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 392,
+		Desc = ""
+	},
+-- const attrib of Item iD [411] name [荣誉勋章]
+	[411] = {
+		ID = 411,
+		Name = "荣誉勋章" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 33,
+		MaxDC = 2,
+		DC = 2,
+		MaxAC = 2,
+		AC = 2,
+		MaxMAC = 2,
+		MAC = 2,
+		MaxSC = 2,
+		SC = 2,
+		MaxMC = 2,
+		MC = 2,
+		Tex = 392,
+		Desc = ""
+	},
+-- const attrib of Item iD [412] name [沃玛之水]
+	[412] = {
+		ID = 412,
+		Name = "沃玛之水" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 420,
+		Desc = ""
+	},
+-- const attrib of Item iD [413] name [荣誉勋章11号]
+	[413] = {
+		ID = 413,
+		Name = "荣誉勋章11号" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 1,
+		MaxAC = 1,
+		Tex = 393,
+		Desc = ""
+	},
+-- const attrib of Item iD [414] name [荣誉勋章12号]
+	[414] = {
+		ID = 414,
+		Name = "荣誉勋章12号" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 1,
+		MaxMAC = 1,
+		Tex = 393,
+		Desc = ""
+	},
+-- const attrib of Item iD [415] name [荣誉勋章13号]
+	[415] = {
+		ID = 415,
+		Name = "荣誉勋章13号" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 1,
+		MaxDC = 1,
+		Tex = 393,
+		Desc = ""
+	},
+-- const attrib of Item iD [416] name [荣誉勋章14号]
+	[416] = {
+		ID = 416,
+		Name = "荣誉勋章14号" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 1,
+		MaxMC = 1,
+		Tex = 393,
+		Desc = ""
+	},
+-- const attrib of Item iD [417] name [荣誉勋章15号]
+	[417] = {
+		ID = 417,
+		Name = "荣誉勋章15号" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 1,
+		MaxSC = 1,
+		Tex = 393,
+		Desc = ""
+	},
+-- const attrib of Item iD [419] name [恶魔封印水(寒)]
+	[419] = {
+		ID = 419,
+		Name = "恶魔封印水(寒)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 4,
+		Weight = 1,
+		MaxDC = 106,
+		Tex = 420,
+		Desc = ""
+	},
+-- const attrib of Item iD [420] name [恶魔封印水(骨)]
+	[420] = {
+		ID = 420,
+		Name = "恶魔封印水(骨)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 4,
+		Weight = 1,
+		MaxDC = 93,
+		EXPR = 1,
+		Tex = 420,
+		Desc = ""
+	},
+-- const attrib of Item iD [428] name [魔血项链]
+	[428] = {
+		ID = 428,
+		Name = "魔血项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 33,
+		MaxDC = 2,
+		DC = 2,
+		MaxMC = 3,
+		MC = 1,
+		MaxHP = 4000,
+		Tex = 428,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [429] name [魔血手镯]
+	[429] = {
+		ID = 429,
+		Name = "魔血手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 33,
+		MaxSC = 1,
+		MaxHP = 4000,
+		Tex = 429,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [430] name [魔血戒指]
+	[430] = {
+		ID = 430,
+		Name = "魔血戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 33,
+		MaxDC = 3,
+		DC = 1,
+		MaxHP = 4000,
+		Tex = 430,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [432] name [虹魔项链]
+	[432] = {
+		ID = 432,
+		Name = "虹魔项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 33,
+		MaxMC = 4,
+		MaxHP = 4,
+		Tex = 432,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [433] name [虹魔戒指]
+	[433] = {
+		ID = 433,
+		Name = "虹魔戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 33,
+		MaxDC = 4,
+		MaxHP = 4000,
+		Tex = 433,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [434] name [虹魔手镯]
+	[434] = {
+		ID = 434,
+		Name = "虹魔手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 33,
+		MaxSC = 2,
+		MaxHP = 4000,
+		Tex = 434,
+		Grade = 3,
+		Desc = ""
+	},
+-- const attrib of Item iD [447] name [潜能石②]
+	[447] = {
+		ID = 447,
+		Name = "潜能石②" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 10,
+		Hide = 2,
+		Weight = 5,
+		EXPR = 1,
+		Tex = 447,
+		Desc = "可以激发手工装备潜能的稀有石头"
+	},
+-- const attrib of Item iD [449] name [潜能石③]
+	[449] = {
+		ID = 449,
+		Name = "潜能石③" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 10,
+		Hide = 3,
+		Weight = 5,
+		EXPR = 1,
+		Tex = 447,
+		Desc = "可以激发手工装备潜能的稀有石头"
+	},
+-- const attrib of Item iD [453] name [潜能石④]
+	[453] = {
+		ID = 453,
+		Name = "潜能石④" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 10,
+		Hide = 4,
+		Weight = 5,
+		EXPR = 1,
+		Tex = 447,
+		Desc = "可以激发手工装备潜能的稀有石头"
+	},
+-- const attrib of Item iD [454] name [潜能石⑤]
+	[454] = {
+		ID = 454,
+		Name = "潜能石⑤" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 10,
+		Hide = 5,
+		Weight = 5,
+		EXPR = 1,
+		Tex = 447,
+		Desc = "可以激发手工装备潜能的稀有石头"
+	},
+-- const attrib of Item iD [455] name [潜能石⑥]
+	[455] = {
+		ID = 455,
+		Name = "潜能石⑥" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 10,
+		Hide = 6,
+		Weight = 5,
+		EXPR = 1,
+		Tex = 447,
+		Desc = "可以激发手工装备潜能的稀有石头"
+	},
+-- const attrib of Item iD [517] name [三眼手镯]
+	[517] = {
+		ID = 517,
+		Name = "三眼手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Weight = 1,
+		Tex = 517,
+		Desc = ""
+	},
+-- const attrib of Item iD [521] name [传说戒指]
+	[521] = {
+		ID = 521,
+		Name = "传说戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		Accuracy = 10,
+		MoveSpeed = 10,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxDC = 225,
+		DC = 20,
+		MaxAC = 225,
+		AC = 225,
+		MaxMAC = 225,
+		MAC = 225,
+		MaxSC = 225,
+		SC = 20,
+		MaxMC = 225,
+		MC = 20,
+		Tex = 521,
+		Desc = ""
+	},
+-- const attrib of Item iD [548] name [雷泽戒指(神力)]
+	[548] = {
+		ID = 548,
+		Name = "雷泽戒指(神力)" ,
+		Type = 5,
+		TypeString = "戒指",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 44,
+		MaxDC = 8,
+		Tex = 548,
+		Desc = ""
+	},
+-- const attrib of Item iD [550] name [兽皮腰带]
+	[550] = {
+		ID = 550,
+		Name = "兽皮腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 15,
+		MaxAC = 1,
+		MaxHP = 6000,
+		Tex = 550,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [551] name [铁腰带]
+	[551] = {
+		ID = 551,
+		Name = "铁腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxAC = 2,
+		MaxHP = 6000,
+		Tex = 551,
+		Price = 3000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [552] name [青铜腰带]
+	[552] = {
+		ID = 552,
+		Name = "青铜腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 30,
+		MaxAC = 2,
+		AC = 1,
+		MaxMAC = 1,
+		MaxHP = 8000,
+		Tex = 552,
+		Price = 4000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [553] name [钢铁腰带]
+	[553] = {
+		ID = 553,
+		Name = "钢铁腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxAC = 3,
+		MaxMAC = 1,
+		MaxHP = 10000,
+		Tex = 553,
+		Price = 5000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [560] name [布鞋]
+	[560] = {
+		ID = 560,
+		Name = "布鞋" ,
+		Type = 14,
+		TypeString = "鞋子",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 15,
+		MaxAC = 1,
+		MaxHP = 6000,
+		Tex = 560,
+		Price = 2000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [561] name [鹿皮靴]
+	[561] = {
+		ID = 561,
+		Name = "鹿皮靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxAC = 2,
+		MaxHP = 6000,
+		Tex = 561,
+		Price = 3000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [562] name [紫绸靴]
+	[562] = {
+		ID = 562,
+		Name = "紫绸靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxAC = 3,
+		MaxHP = 8000,
+		Tex = 562,
+		Price = 4000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [563] name [避魂靴]
+	[563] = {
+		ID = 563,
+		Name = "避魂靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		MoveSpeed = 1,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 22,
+		MaxAC = 3,
+		AC = 1,
+		MaxHP = 10000,
+		Tex = 563,
+		Price = 5000,
+		Grade = 2,
+		Desc = ""
+	},
+-- const attrib of Item iD [573] name [道术宝石]
+	[573] = {
+		ID = 573,
+		Name = "道术宝石" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 45,
+		MaxSC = 2,
+		SC = 2,
+		MaxHP = 8000,
+		Tex = 573,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [574] name [神圣道术宝石]
+	[574] = {
+		ID = 574,
+		Name = "神圣道术宝石" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 52,
+		MaxSC = 6,
+		MaxHP = 9000,
+		Tex = 574,
+		Price = 7500,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [578] name [魔法宝石]
+	[578] = {
+		ID = 578,
+		Name = "魔法宝石" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 45,
+		MaxMC = 2,
+		MC = 2,
+		MaxHP = 8000,
+		Tex = 578,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [579] name [神圣魔法宝石]
+	[579] = {
+		ID = 579,
+		Name = "神圣魔法宝石" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 52,
+		MaxMC = 6,
+		MaxHP = 9000,
+		Tex = 579,
+		Price = 7500,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [583] name [攻击宝石]
+	[583] = {
+		ID = 583,
+		Name = "攻击宝石" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 45,
+		MaxDC = 2,
+		DC = 2,
+		MaxHP = 8000,
+		Tex = 583,
+		Price = 5000,
+		Grade = 4,
+		Desc = ""
+	},
+-- const attrib of Item iD [584] name [神圣攻击宝石]
+	[584] = {
+		ID = 584,
+		Name = "神圣攻击宝石" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 52,
+		MaxDC = 6,
+		MaxHP = 9000,
+		Tex = 584,
+		Price = 7500,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [585] name [月氏王石碎片]
+	[585] = {
+		ID = 585,
+		Name = "月氏王石碎片" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 27,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 52,
+		DC = 3,
+		MaxAC = 4,
+		AC = 4,
+		MaxMAC = 4,
+		MAC = 4,
+		SC = 3,
+		MC = 3,
+		MaxHP = 9000,
+		Tex = 585,
+		Price = 18000,
+		Desc = ""
+	},
+-- const attrib of Item iD [590] name [光芒道袍(男)]
+	[590] = {
+		ID = 590,
+		Name = "光芒道袍(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 1,
+		AtkPalsy = 6,
+		Weight = 35,
+		ReqType = 1,
+		ReqValue = 42,
+		Sex = 1,
+		MaxAC = 12,
+		AC = 5,
+		MaxMAC = 8,
+		MAC = 4,
+		MaxSC = 5,
+		SC = 3,
+		MaxHP = 50000,
+		Tex = 590,
+		Price = 33000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [591] name [光芒道袍(女)]
+	[591] = {
+		ID = 591,
+		Name = "光芒道袍(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 1,
+		AtkPalsy = 6,
+		Weight = 35,
+		ReqType = 1,
+		ReqValue = 42,
+		Sex = 2,
+		MaxAC = 12,
+		AC = 5,
+		MaxMAC = 8,
+		MAC = 4,
+		MaxSC = 5,
+		SC = 3,
+		MaxHP = 50000,
+		Tex = 591,
+		Price = 33000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [595] name [天龙圣衣(男)]
+	[595] = {
+		ID = 595,
+		Name = "天龙圣衣(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 2,
+		AtkPalsy = 32,
+		Weight = 60,
+		ReqType = 1,
+		ReqValue = 65,
+		Sex = 1,
+		MaxDC = 10,
+		DC = 5,
+		MaxAC = 25,
+		AC = 18,
+		MaxMAC = 20,
+		MAC = 15,
+		MaxHP = 50000,
+		Tex = 595,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [596] name [凤天魔甲]
+	[596] = {
+		ID = 596,
+		Name = "凤天魔甲" ,
+		Type = 2,
+		TypeString = "衣服",
+		AtkPalsy = 13,
+		Weight = 23,
+		ReqType = 1,
+		ReqValue = 45,
+		Sex = 1,
+		MaxDC = 2,
+		DC = 2,
+		MaxAC = 12,
+		AC = 8,
+		MaxMAC = 8,
+		MAC = 8,
+		MaxSC = 5,
+		SC = 3,
+		MaxMC = 5,
+		MC = 3,
+		MaxHP = 50000,
+		Tex = 596,
+		Price = 35000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [600] name [天龙圣衣(女)]
+	[600] = {
+		ID = 600,
+		Name = "天龙圣衣(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 2,
+		AtkPalsy = 32,
+		Weight = 60,
+		ReqType = 1,
+		ReqValue = 65,
+		Sex = 2,
+		MaxDC = 10,
+		DC = 5,
+		MaxAC = 25,
+		AC = 18,
+		MaxMAC = 20,
+		MAC = 15,
+		MaxHP = 50000,
+		Tex = 600,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [601] name [天龙道袍(男)]
+	[601] = {
+		ID = 601,
+		Name = "天龙道袍(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 2,
+		AtkPalsy = 33,
+		Weight = 35,
+		ReqType = 1,
+		ReqValue = 65,
+		Sex = 1,
+		MaxAC = 25,
+		AC = 18,
+		MaxMAC = 20,
+		MAC = 15,
+		MaxSC = 12,
+		SC = 5,
+		MaxHP = 50000,
+		Tex = 595,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [602] name [天龙道袍(女)]
+	[602] = {
+		ID = 602,
+		Name = "天龙道袍(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 2,
+		AtkPalsy = 33,
+		Weight = 35,
+		ReqType = 1,
+		ReqValue = 65,
+		Sex = 2,
+		MaxAC = 25,
+		AC = 18,
+		MaxMAC = 20,
+		MAC = 15,
+		MaxSC = 12,
+		SC = 5,
+		MaxHP = 50000,
+		Tex = 600,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [606] name [凰天魔衣]
+	[606] = {
+		ID = 606,
+		Name = "凰天魔衣" ,
+		Type = 2,
+		TypeString = "衣服",
+		AtkPalsy = 13,
+		Weight = 23,
+		ReqType = 1,
+		ReqValue = 45,
+		Sex = 2,
+		MaxDC = 2,
+		DC = 2,
+		MaxAC = 12,
+		AC = 8,
+		MaxMAC = 8,
+		MAC = 8,
+		MaxSC = 5,
+		SC = 3,
+		MaxMC = 5,
+		MC = 3,
+		MaxHP = 50000,
+		Tex = 606,
+		Price = 35000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [607] name [天龙魔衣(男)]
+	[607] = {
+		ID = 607,
+		Name = "天龙魔衣(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 2,
+		AtkPalsy = 34,
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 65,
+		Sex = 1,
+		MaxAC = 25,
+		AC = 18,
+		MaxMAC = 20,
+		MAC = 15,
+		MaxMC = 12,
+		MC = 5,
+		MaxHP = 50000,
+		Tex = 595,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [608] name [天龙魔衣(女)]
+	[608] = {
+		ID = 608,
+		Name = "天龙魔衣(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 2,
+		AtkPalsy = 34,
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 65,
+		Sex = 2,
+		MaxAC = 25,
+		AC = 18,
+		MaxMAC = 20,
+		MAC = 15,
+		MaxMC = 12,
+		MC = 5,
+		MaxHP = 50000,
+		Tex = 600,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [625] name [神器碎片]
+	[625] = {
+		ID = 625,
+		Name = "神器碎片" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 620,
+		Desc = ""
+	},
+-- const attrib of Item iD [626] name [神器碎片]
+	[626] = {
+		ID = 626,
+		Name = "神器碎片" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 621,
+		Desc = ""
+	},
+-- const attrib of Item iD [627] name [神器碎片]
+	[627] = {
+		ID = 627,
+		Name = "神器碎片" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 622,
+		Desc = ""
+	},
+-- const attrib of Item iD [628] name [神器碎片]
+	[628] = {
+		ID = 628,
+		Name = "神器碎片" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 623,
+		Desc = ""
+	},
+-- const attrib of Item iD [629] name [神器碎片]
+	[629] = {
+		ID = 629,
+		Name = "神器碎片" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 624,
+		Desc = ""
+	},
+-- const attrib of Item iD [650] name [五行守护石(金)①]
+	[650] = {
+		ID = 650,
+		Name = "五行守护石(金)①" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 8,
+		DC = 2,
+		MaxHP = 9000,
+		Tex = 650,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [651] name [五行守护石(金)②]
+	[651] = {
+		ID = 651,
+		Name = "五行守护石(金)②" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 8,
+		DC = 4,
+		MaxHP = 9000,
+		Tex = 651,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [652] name [五行守护石(金)③]
+	[652] = {
+		ID = 652,
+		Name = "五行守护石(金)③" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 8,
+		DC = 6,
+		MaxHP = 9000,
+		Tex = 652,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [653] name [五行守护石(金)④]
+	[653] = {
+		ID = 653,
+		Name = "五行守护石(金)④" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 8,
+		DC = 8,
+		MaxHP = 9000,
+		Tex = 653,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [654] name [五行守护石(金)⑤]
+	[654] = {
+		ID = 654,
+		Name = "五行守护石(金)⑤" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 8,
+		DC = 10,
+		MaxHP = 9000,
+		Tex = 654,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [655] name [五行守护石(木)①]
+	[655] = {
+		ID = 655,
+		Name = "五行守护石(木)①" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxMC = 8,
+		MC = 2,
+		MaxHP = 9000,
+		Tex = 655,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [656] name [五行守护石(木)②]
+	[656] = {
+		ID = 656,
+		Name = "五行守护石(木)②" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxMC = 8,
+		MC = 4,
+		MaxHP = 9000,
+		Tex = 656,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [657] name [五行守护石(木)③]
+	[657] = {
+		ID = 657,
+		Name = "五行守护石(木)③" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxMC = 8,
+		MC = 6,
+		MaxHP = 9000,
+		Tex = 657,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [658] name [五行守护石(木)④]
+	[658] = {
+		ID = 658,
+		Name = "五行守护石(木)④" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxMC = 8,
+		MC = 8,
+		MaxHP = 9000,
+		Tex = 658,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [659] name [五行守护石(木)⑤]
+	[659] = {
+		ID = 659,
+		Name = "五行守护石(木)⑤" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxMC = 8,
+		MC = 10,
+		MaxHP = 9000,
+		Tex = 658,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [660] name [五行守护石(土)①]
+	[660] = {
+		ID = 660,
+		Name = "五行守护石(土)①" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxSC = 8,
+		SC = 2,
+		MaxHP = 9000,
+		Tex = 660,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [661] name [五行守护石(土)②]
+	[661] = {
+		ID = 661,
+		Name = "五行守护石(土)②" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxSC = 8,
+		SC = 4,
+		MaxHP = 9000,
+		Tex = 661,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [662] name [五行守护石(土)③]
+	[662] = {
+		ID = 662,
+		Name = "五行守护石(土)③" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxSC = 8,
+		SC = 6,
+		MaxHP = 9000,
+		Tex = 662,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [663] name [五行守护石(土)④]
+	[663] = {
+		ID = 663,
+		Name = "五行守护石(土)④" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxSC = 8,
+		SC = 8,
+		MaxHP = 9000,
+		Tex = 663,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [664] name [五行守护石(土)⑤]
+	[664] = {
+		ID = 664,
+		Name = "五行守护石(土)⑤" ,
+		Type = 16,
+		TypeString = "宝石",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxSC = 8,
+		SC = 10,
+		MaxHP = 9000,
+		Tex = 664,
+		Price = 25000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [665] name [普通武器凭证]
+	[665] = {
+		ID = 665,
+		Name = "普通武器凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 24,
+		Weight = 1,
+		Tex = 1581,
+		Price = 6,
+		Desc = "普通武器卡，右键使用后可以随机更换一件武器外观"
+	},
+-- const attrib of Item iD [666] name [武器重置凭证]
+	[666] = {
+		ID = 666,
+		Name = "武器重置凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 25,
+		Weight = 1,
+		Tex = 1581,
+		Price = 3,
+		Desc = "右键使用后可以恢复到初始武器状态"
+	},
+-- const attrib of Item iD [670] name [战神戒指]
+	[670] = {
+		ID = 670,
+		Name = "战神戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 10,
+		Weight = 2,
+		ReqType = 2,
+		ReqValue = 54,
+		MaxDC = 9,
+		MaxMAC = 1,
+		MaxHP = 8000,
+		Tex = 670,
+		Price = 15000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [672] name [圣魔戒指]
+	[672] = {
+		ID = 672,
+		Name = "圣魔戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 11,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 32,
+		MaxMAC = 1,
+		MaxMC = 8,
+		MC = 2,
+		MaxHP = 6000,
+		Tex = 672,
+		Price = 15000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [674] name [真魂戒指]
+	[674] = {
+		ID = 674,
+		Name = "真魂戒指" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 12,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 30,
+		MaxMAC = 1,
+		MaxSC = 9,
+		SC = 2,
+		MaxHP = 7000,
+		Tex = 674,
+		Price = 15000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [676] name [战神手镯]
+	[676] = {
+		ID = 676,
+		Name = "战神手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 10,
+		Weight = 2,
+		ReqType = 2,
+		ReqValue = 54,
+		MaxDC = 5,
+		DC = 1,
+		MaxAC = 1,
+		MaxHP = 8000,
+		Tex = 676,
+		Price = 15000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [678] name [圣魔手镯]
+	[678] = {
+		ID = 678,
+		Name = "圣魔手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 11,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 32,
+		MaxAC = 2,
+		MaxMAC = 2,
+		MaxMC = 5,
+		MC = 1,
+		MaxHP = 6000,
+		Tex = 678,
+		Price = 15000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [680] name [真魂手镯]
+	[680] = {
+		ID = 680,
+		Name = "真魂手镯" ,
+		Type = 4,
+		TypeString = "手镯",
+		Hide = 2,
+		AtkPalsy = 12,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 30,
+		MaxAC = 3,
+		AC = 1,
+		MaxSC = 5,
+		SC = 1,
+		MaxHP = 7000,
+		Tex = 680,
+		Price = 15000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [682] name [战神项链]
+	[682] = {
+		ID = 682,
+		Name = "战神项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Lucky = 2,
+		AtkPalsy = 10,
+		Weight = 3,
+		ReqType = 2,
+		ReqValue = 54,
+		MaxDC = 8,
+		DC = 3,
+		MaxHP = 8000,
+		Tex = 682,
+		Price = 15000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [683] name [圣魔项链]
+	[683] = {
+		ID = 683,
+		Name = "圣魔项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 3,
+		AtkPalsy = 11,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 32,
+		MaxMC = 9,
+		MaxHP = 6000,
+		Tex = 683,
+		Price = 15000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [684] name [真魂项链]
+	[684] = {
+		ID = 684,
+		Name = "真魂项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Hide = 2,
+		AtkPalsy = 12,
+		Weight = 2,
+		ReqType = 4,
+		ReqValue = 30,
+		MaxSC = 8,
+		SC = 1,
+		MaxHP = 7000,
+		Tex = 684,
+		Price = 15000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [685] name [战意精华石①]
+	[685] = {
+		ID = 685,
+		Name = "战意精华石①" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 1,
+		Accuracy = 1,
+		Weight = 1,
+		Tex = 700,
+		Desc = ""
+	},
+-- const attrib of Item iD [686] name [战意精华石②]
+	[686] = {
+		ID = 686,
+		Name = "战意精华石②" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 1,
+		Accuracy = 2,
+		Weight = 1,
+		Tex = 700,
+		Desc = ""
+	},
+-- const attrib of Item iD [687] name [战意精华石③]
+	[687] = {
+		ID = 687,
+		Name = "战意精华石③" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 1,
+		Accuracy = 3,
+		Weight = 1,
+		Tex = 700,
+		Desc = ""
+	},
+-- const attrib of Item iD [688] name [战意精华石④]
+	[688] = {
+		ID = 688,
+		Name = "战意精华石④" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 1,
+		Accuracy = 4,
+		Weight = 1,
+		Tex = 700,
+		Desc = ""
+	},
+-- const attrib of Item iD [689] name [战意精华石⑤]
+	[689] = {
+		ID = 689,
+		Name = "战意精华石⑤" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 1,
+		Accuracy = 5,
+		Weight = 1,
+		Tex = 700,
+		Desc = ""
+	},
+-- const attrib of Item iD [690] name [黑色羽毛]
+	[690] = {
+		ID = 690,
+		Name = "黑色羽毛" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 690,
+		Desc = ""
+	},
+-- const attrib of Item iD [691] name [战意精华石⑥]
+	[691] = {
+		ID = 691,
+		Name = "战意精华石⑥" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 1,
+		Accuracy = 6,
+		Weight = 1,
+		Tex = 700,
+		Desc = ""
+	},
+-- const attrib of Item iD [692] name [聚魔精华石①]
+	[692] = {
+		ID = 692,
+		Name = "聚魔精华石①" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 2,
+		Accuracy = 1,
+		Weight = 1,
+		Tex = 701,
+		Desc = ""
+	},
+-- const attrib of Item iD [693] name [聚魔精华石②]
+	[693] = {
+		ID = 693,
+		Name = "聚魔精华石②" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 2,
+		Accuracy = 2,
+		Weight = 1,
+		Tex = 701,
+		Desc = ""
+	},
+-- const attrib of Item iD [694] name [聚魔精华石③]
+	[694] = {
+		ID = 694,
+		Name = "聚魔精华石③" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 2,
+		Accuracy = 3,
+		Weight = 1,
+		Tex = 701,
+		Desc = ""
+	},
+-- const attrib of Item iD [695] name [聚魔精华石④]
+	[695] = {
+		ID = 695,
+		Name = "聚魔精华石④" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 2,
+		Accuracy = 4,
+		Weight = 1,
+		Tex = 701,
+		Desc = ""
+	},
+-- const attrib of Item iD [696] name [聚魔精华石⑤]
+	[696] = {
+		ID = 696,
+		Name = "聚魔精华石⑤" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 2,
+		Accuracy = 5,
+		Weight = 1,
+		Tex = 701,
+		Desc = ""
+	},
+-- const attrib of Item iD [697] name [聚魔精华石⑥]
+	[697] = {
+		ID = 697,
+		Name = "聚魔精华石⑥" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 2,
+		Accuracy = 6,
+		Weight = 1,
+		Tex = 701,
+		Desc = ""
+	},
+-- const attrib of Item iD [698] name [八卦精华石①]
+	[698] = {
+		ID = 698,
+		Name = "八卦精华石①" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 3,
+		Accuracy = 1,
+		Weight = 1,
+		Tex = 702,
+		Desc = ""
+	},
+-- const attrib of Item iD [699] name [八卦精华石②]
+	[699] = {
+		ID = 699,
+		Name = "八卦精华石②" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 3,
+		Accuracy = 2,
+		Weight = 1,
+		Tex = 702,
+		Desc = ""
+	},
+-- const attrib of Item iD [700] name [八卦精华石③]
+	[700] = {
+		ID = 700,
+		Name = "八卦精华石③" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 3,
+		Accuracy = 3,
+		Weight = 1,
+		Tex = 702,
+		Desc = ""
+	},
+-- const attrib of Item iD [701] name [八卦精华石④]
+	[701] = {
+		ID = 701,
+		Name = "八卦精华石④" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 3,
+		Accuracy = 4,
+		Weight = 1,
+		Tex = 702,
+		Desc = ""
+	},
+-- const attrib of Item iD [702] name [八卦精华石⑤]
+	[702] = {
+		ID = 702,
+		Name = "八卦精华石⑤" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 3,
+		Accuracy = 5,
+		Weight = 1,
+		Tex = 702,
+		Desc = ""
+	},
+-- const attrib of Item iD [703] name [八卦精华石⑥]
+	[703] = {
+		ID = 703,
+		Name = "八卦精华石⑥" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 3,
+		Hide = 3,
+		Accuracy = 6,
+		Weight = 1,
+		Tex = 702,
+		Desc = ""
+	},
+-- const attrib of Item iD [704] name [月氏石碎片(道)]
+	[704] = {
+		ID = 704,
+		Name = "月氏石碎片(道)" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 18,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		MaxAC = 2,
+		AC = 1,
+		MaxMAC = 2,
+		MAC = 1,
+		MaxHP = 8000,
+		Tex = 703,
+		Price = 8000,
+		Desc = ""
+	},
+-- const attrib of Item iD [705] name [月氏石结晶(道)]
+	[705] = {
+		ID = 705,
+		Name = "月氏石结晶(道)" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 19,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		MaxAC = 3,
+		AC = 2,
+		MaxMAC = 3,
+		MAC = 2,
+		MaxHP = 8000,
+		Tex = 704,
+		Price = 12000,
+		Desc = ""
+	},
+-- const attrib of Item iD [706] name [月氏石(道)]
+	[706] = {
+		ID = 706,
+		Name = "月氏石(道)" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 20,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxHP = 8000,
+		Tex = 705,
+		Price = 12000,
+		Desc = ""
+	},
+-- const attrib of Item iD [707] name [月氏石碎片(战)]
+	[707] = {
+		ID = 707,
+		Name = "月氏石碎片(战)" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 21,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		MaxAC = 2,
+		AC = 1,
+		MaxMAC = 2,
+		MAC = 1,
+		MaxHP = 8000,
+		Tex = 703,
+		Price = 8000,
+		Desc = ""
+	},
+-- const attrib of Item iD [708] name [月氏石结晶(战)]
+	[708] = {
+		ID = 708,
+		Name = "月氏石结晶(战)" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 22,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		MaxAC = 3,
+		AC = 2,
+		MaxMAC = 3,
+		MAC = 2,
+		MaxHP = 8000,
+		Tex = 704,
+		Price = 12000,
+		Desc = ""
+	},
+-- const attrib of Item iD [709] name [月氏石(战)]
+	[709] = {
+		ID = 709,
+		Name = "月氏石(战)" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 23,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxHP = 16000,
+		Tex = 705,
+		Price = 12000,
+		Desc = ""
+	},
+-- const attrib of Item iD [716] name [月氏石碎片(法)]
+	[716] = {
+		ID = 716,
+		Name = "月氏石碎片(法)" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 24,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		MaxAC = 2,
+		AC = 1,
+		MaxMAC = 2,
+		MAC = 1,
+		MaxHP = 8000,
+		Tex = 703,
+		Price = 8000,
+		Desc = ""
+	},
+-- const attrib of Item iD [717] name [月氏石结晶(法)]
+	[717] = {
+		ID = 717,
+		Name = "月氏石结晶(法)" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 25,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		MaxAC = 3,
+		AC = 2,
+		MaxMAC = 3,
+		MAC = 2,
+		MaxHP = 8000,
+		Tex = 704,
+		Price = 12000,
+		Desc = ""
+	},
+-- const attrib of Item iD [718] name [月氏石(法)]
+	[718] = {
+		ID = 718,
+		Name = "月氏石(法)" ,
+		Type = 16,
+		TypeString = "宝石",
+		AtkPalsy = 26,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 40,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxHP = 16000,
+		Tex = 705,
+		Price = 12000,
+		Desc = ""
+	},
+-- const attrib of Item iD [727] name [亡魂棺(战)]
+	[727] = {
+		ID = 727,
+		Name = "亡魂棺(战)" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 2,
+		ReqType = 2,
+		ReqValue = 190,
+		MaxDC = 8,
+		DC = 5,
+		MaxAC = 3,
+		MaxMAC = 3,
+		MaxHP = 8000,
+		MP = 1536,
+		Tex = 859,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [728] name [亡魂棺(法)]
+	[728] = {
+		ID = 728,
+		Name = "亡魂棺(法)" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 2,
+		ReqType = 3,
+		ReqValue = 150,
+		MaxAC = 3,
+		MaxMAC = 3,
+		MaxMC = 8,
+		MC = 5,
+		MaxHP = 8000,
+		MP = 1536,
+		Tex = 859,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [729] name [亡魂棺(道)]
+	[729] = {
+		ID = 729,
+		Name = "亡魂棺(道)" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 2,
+		ReqType = 4,
+		ReqValue = 150,
+		MaxAC = 3,
+		MaxMAC = 3,
+		MaxSC = 8,
+		SC = 6,
+		MaxHP = 8000,
+		MP = 1536,
+		Tex = 859,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [736] name [仪式宝石]
+	[736] = {
+		ID = 736,
+		Name = "仪式宝石" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 736,
+		Desc = ""
+	},
+-- const attrib of Item iD [737] name [亡魂棺(战)之书]
+	[737] = {
+		ID = 737,
+		Name = "亡魂棺(战)之书" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 9,
+		Weight = 1,
+		Tex = 1144,
+		Price = 40000,
+		Desc = ""
+	},
+-- const attrib of Item iD [738] name [亡魂棺(法)之书]
+	[738] = {
+		ID = 738,
+		Name = "亡魂棺(法)之书" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 9,
+		Weight = 1,
+		Tex = 1144,
+		Price = 40000,
+		Desc = ""
+	},
+-- const attrib of Item iD [739] name [亡魂棺(道)之书]
+	[739] = {
+		ID = 739,
+		Name = "亡魂棺(道)之书" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 9,
+		Weight = 1,
+		Tex = 1144,
+		Price = 40000,
+		Desc = ""
+	},
+-- const attrib of Item iD [743] name [圣龙盔]
+	[743] = {
+		ID = 743,
+		Name = "圣龙盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxDC = 2,
+		MaxAC = 6,
+		AC = 5,
+		MaxMAC = 2,
+		MAC = 2,
+		MaxHP = 10000,
+		Tex = 743,
+		Price = 8800,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [744] name [魔龙盔]
+	[744] = {
+		ID = 744,
+		Name = "魔龙盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxAC = 6,
+		AC = 5,
+		MaxMAC = 2,
+		MAC = 2,
+		MaxMC = 2,
+		MaxHP = 10000,
+		Tex = 743,
+		Price = 8800,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [745] name [天龙盔]
+	[745] = {
+		ID = 745,
+		Name = "天龙盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 35,
+		MaxAC = 6,
+		AC = 5,
+		MaxMAC = 2,
+		MAC = 2,
+		MaxSC = 2,
+		MaxHP = 10000,
+		Tex = 743,
+		Price = 8800,
+		Grade = 5,
+		Desc = ""
+	},
+-- const attrib of Item iD [746] name [服装重置凭证]
+	[746] = {
+		ID = 746,
+		Name = "服装重置凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 23,
+		Weight = 1,
+		Tex = 1581,
+		Price = 2,
+		Desc = "右键使用后可以恢复到初始服装状态"
+	},
+-- const attrib of Item iD [747] name [普通服装凭证]
+	[747] = {
+		ID = 747,
+		Name = "普通服装凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 22,
+		Weight = 1,
+		Tex = 1581,
+		Price = 5,
+		Desc = "普通服装卡，右键使用后可以随机更换一套服装外观"
+	},
+-- const attrib of Item iD [748] name [混沌石]
+	[748] = {
+		ID = 748,
+		Name = "混沌石" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 5,
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 785,
+		Price = 25000,
+		Desc = "可以将一件装备的某些鉴定属性一定几率转移到相同无鉴定属性装备上的神奇石头"
+	},
+-- const attrib of Item iD [749] name [混元石]
+	[749] = {
+		ID = 749,
+		Name = "混元石" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 3,
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 784,
+		Price = 25000,
+		Desc = "可以将相同装备在潘多拉魔盒中以一定几率合成为魔法装备的神奇石头"
+	},
+-- const attrib of Item iD [750] name [烈焰魔靴]
+	[750] = {
+		ID = 750,
+		Name = "烈焰魔靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 5,
+		MoveSpeed = 2,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxAC = 3,
+		MC = 1,
+		MaxHP = 5000,
+		Tex = 750,
+		Price = 9000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [751] name [光芒道靴]
+	[751] = {
+		ID = 751,
+		Name = "光芒道靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 6,
+		MoveSpeed = 2,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxAC = 3,
+		AC = 1,
+		SC = 1,
+		MaxHP = 6000,
+		Tex = 751,
+		Price = 9000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [752] name [雷霆战靴]
+	[752] = {
+		ID = 752,
+		Name = "雷霆战靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 4,
+		MoveSpeed = 2,
+		Weight = 2,
+		ReqType = 2,
+		ReqValue = 45,
+		DC = 1,
+		MaxAC = 3,
+		MaxHP = 7000,
+		Tex = 752,
+		Price = 9000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [753] name [强化烈焰魔靴]
+	[753] = {
+		ID = 753,
+		Name = "强化烈焰魔靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 8,
+		MoveSpeed = 2,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxAC = 3,
+		MaxMC = 1,
+		MC = 1,
+		MaxHP = 5000,
+		Tex = 753,
+		Price = 10000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [754] name [强化光芒道靴]
+	[754] = {
+		ID = 754,
+		Name = "强化光芒道靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 9,
+		MoveSpeed = 2,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxAC = 3,
+		AC = 1,
+		MaxSC = 1,
+		SC = 1,
+		MaxHP = 6000,
+		Tex = 754,
+		Price = 10000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [755] name [强化雷霆战靴]
+	[755] = {
+		ID = 755,
+		Name = "强化雷霆战靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 7,
+		MoveSpeed = 2,
+		Weight = 2,
+		ReqType = 2,
+		ReqValue = 45,
+		MaxDC = 1,
+		DC = 1,
+		MaxAC = 3,
+		MaxHP = 7000,
+		Tex = 755,
+		Price = 10000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [756] name [强化烈焰腰带]
+	[756] = {
+		ID = 756,
+		Name = "强化烈焰腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 8,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxAC = 2,
+		AC = 2,
+		MaxMAC = 1,
+		MaxMC = 1,
+		MC = 1,
+		MaxHP = 5000,
+		Tex = 756,
+		Price = 10000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [757] name [强化光芒腰带]
+	[757] = {
+		ID = 757,
+		Name = "强化光芒腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 9,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxAC = 2,
+		AC = 2,
+		MaxMAC = 1,
+		MaxSC = 1,
+		SC = 1,
+		MaxHP = 6000,
+		Tex = 757,
+		Price = 10000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [758] name [强化雷霆腰带]
+	[758] = {
+		ID = 758,
+		Name = "强化雷霆腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 7,
+		Weight = 2,
+		ReqType = 2,
+		ReqValue = 45,
+		MaxDC = 1,
+		DC = 1,
+		MaxAC = 3,
+		AC = 2,
+		MaxMAC = 1,
+		MaxHP = 7000,
+		Tex = 758,
+		Price = 10000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [759] name [烈焰腰带]
+	[759] = {
+		ID = 759,
+		Name = "烈焰腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 5,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxAC = 2,
+		AC = 2,
+		MaxMAC = 1,
+		MC = 1,
+		MaxHP = 5000,
+		Tex = 759,
+		Price = 9000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [760] name [光芒腰带]
+	[760] = {
+		ID = 760,
+		Name = "光芒腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 6,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxAC = 2,
+		AC = 2,
+		MaxMAC = 1,
+		SC = 1,
+		MaxHP = 6000,
+		Tex = 760,
+		Price = 9000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [761] name [雷霆腰带]
+	[761] = {
+		ID = 761,
+		Name = "雷霆腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 4,
+		Weight = 2,
+		ReqType = 2,
+		ReqValue = 45,
+		DC = 1,
+		MaxAC = 3,
+		AC = 2,
+		MaxMAC = 1,
+		MaxHP = 7000,
+		Tex = 761,
+		Price = 9000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [762] name [烈焰护腕]
+	[762] = {
+		ID = 762,
+		Name = "烈焰护腕" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 5,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxAC = 2,
+		MaxMC = 4,
+		MC = 2,
+		MaxHP = 5000,
+		Tex = 762,
+		Price = 12000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [763] name [强化烈焰护腕]
+	[763] = {
+		ID = 763,
+		Name = "强化烈焰护腕" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 8,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxAC = 2,
+		MaxMC = 5,
+		MC = 2,
+		MaxHP = 5000,
+		Tex = 763,
+		Price = 13000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [764] name [光芒护腕]
+	[764] = {
+		ID = 764,
+		Name = "光芒护腕" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 6,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxAC = 3,
+		AC = 1,
+		MaxSC = 4,
+		SC = 2,
+		MaxHP = 6000,
+		Tex = 764,
+		Price = 12000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [765] name [强化光芒护腕]
+	[765] = {
+		ID = 765,
+		Name = "强化光芒护腕" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 9,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxAC = 3,
+		AC = 1,
+		MaxSC = 5,
+		SC = 2,
+		MaxHP = 6000,
+		Tex = 765,
+		Price = 13000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [766] name [雷霆护腕]
+	[766] = {
+		ID = 766,
+		Name = "雷霆护腕" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 4,
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 45,
+		MaxDC = 4,
+		DC = 1,
+		MaxAC = 2,
+		MaxMAC = 2,
+		MaxHP = 7000,
+		Tex = 766,
+		Price = 12000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [767] name [强化雷霆护腕]
+	[767] = {
+		ID = 767,
+		Name = "强化雷霆护腕" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 7,
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 45,
+		MaxDC = 5,
+		DC = 1,
+		MaxAC = 2,
+		MaxMAC = 2,
+		MaxHP = 7000,
+		Tex = 767,
+		Price = 13000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [768] name [强化光芒道戒]
+	[768] = {
+		ID = 768,
+		Name = "强化光芒道戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 9,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxAC = 2,
+		MaxSC = 9,
+		SC = 1,
+		MaxHP = 6000,
+		Tex = 768,
+		Price = 13000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [769] name [强化雷霆战戒]
+	[769] = {
+		ID = 769,
+		Name = "强化雷霆战戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 7,
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 45,
+		MaxDC = 9,
+		MaxHP = 7000,
+		Tex = 769,
+		Price = 13000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [770] name [强化烈焰魔戒]
+	[770] = {
+		ID = 770,
+		Name = "强化烈焰魔戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 8,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxAC = 1,
+		MaxMC = 8,
+		MC = 1,
+		MaxHP = 5000,
+		Tex = 770,
+		Price = 13000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [771] name [烈焰魔戒]
+	[771] = {
+		ID = 771,
+		Name = "烈焰魔戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 5,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxAC = 1,
+		MaxMC = 7,
+		MC = 1,
+		MaxHP = 5000,
+		Tex = 771,
+		Price = 12000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [772] name [光芒道戒]
+	[772] = {
+		ID = 772,
+		Name = "光芒道戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 6,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxAC = 2,
+		MaxSC = 8,
+		SC = 1,
+		MaxHP = 6000,
+		Tex = 772,
+		Price = 12000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [773] name [雷霆战戒]
+	[773] = {
+		ID = 773,
+		Name = "雷霆战戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 4,
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 45,
+		MaxDC = 8,
+		MaxHP = 7000,
+		Tex = 773,
+		Price = 12000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [775] name [烈焰项链]
+	[775] = {
+		ID = 775,
+		Name = "烈焰项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 3,
+		AtkPalsy = 5,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxMC = 9,
+		MC = 1,
+		MaxHP = 5000,
+		Tex = 775,
+		Price = 12000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [776] name [强化雷霆项链]
+	[776] = {
+		ID = 776,
+		Name = "强化雷霆项链" ,
+		Type = 3,
+		TypeString = "项链",
+		AtkPalsy = 7,
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 45,
+		MaxDC = 8,
+		DC = 3,
+		MaxHP = 7000,
+		Tex = 776,
+		Price = 13000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [777] name [强化光芒项链]
+	[777] = {
+		ID = 777,
+		Name = "强化光芒项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Hide = 2,
+		AtkPalsy = 9,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxSC = 8,
+		SC = 4,
+		MaxHP = 6000,
+		Tex = 777,
+		Price = 13000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [778] name [强化烈焰项链]
+	[778] = {
+		ID = 778,
+		Name = "强化烈焰项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 3,
+		AtkPalsy = 8,
+		Weight = 1,
+		ReqType = 3,
+		ReqValue = 30,
+		MaxMC = 9,
+		MC = 3,
+		MaxHP = 5000,
+		Tex = 778,
+		Price = 13000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [779] name [光芒项链]
+	[779] = {
+		ID = 779,
+		Name = "光芒项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Accuracy = 3,
+		AtkPalsy = 6,
+		Weight = 1,
+		ReqType = 4,
+		ReqValue = 28,
+		MaxSC = 8,
+		SC = 2,
+		MaxHP = 6000,
+		Tex = 779,
+		Price = 12000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [781] name [雷霆项链]
+	[781] = {
+		ID = 781,
+		Name = "雷霆项链" ,
+		Type = 3,
+		TypeString = "项链",
+		AtkPalsy = 4,
+		Weight = 1,
+		ReqType = 2,
+		ReqValue = 45,
+		MaxDC = 7,
+		DC = 3,
+		MaxHP = 7000,
+		Tex = 781,
+		Price = 12000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [783] name [乾坤石]
+	[783] = {
+		ID = 783,
+		Name = "乾坤石" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 2,
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 783,
+		Price = 25000,
+		Desc = "可以重新分配魔法装备属性的神秘石头"
+	},
+-- const attrib of Item iD [784] name [佛珠①]
+	[784] = {
+		ID = 784,
+		Name = "佛珠①" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 784,
+		Desc = ""
+	},
+-- const attrib of Item iD [785] name [佛珠②]
+	[785] = {
+		ID = 785,
+		Name = "佛珠②" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 785,
+		Desc = ""
+	},
+-- const attrib of Item iD [786] name [佛珠③]
+	[786] = {
+		ID = 786,
+		Name = "佛珠③" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 786,
+		Desc = ""
+	},
+-- const attrib of Item iD [787] name [佛珠④]
+	[787] = {
+		ID = 787,
+		Name = "佛珠④" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 787,
+		Desc = ""
+	},
+-- const attrib of Item iD [788] name [佛珠⑤]
+	[788] = {
+		ID = 788,
+		Name = "佛珠⑤" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 788,
+		Desc = ""
+	},
+-- const attrib of Item iD [789] name [佛珠⑥]
+	[789] = {
+		ID = 789,
+		Name = "佛珠⑥" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 789,
+		Desc = ""
+	},
+-- const attrib of Item iD [790] name [佛珠⑦]
+	[790] = {
+		ID = 790,
+		Name = "佛珠⑦" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		EXPR = 1,
+		Tex = 783,
+		Desc = ""
+	},
+-- const attrib of Item iD [813] name [特效金创药]
+	[813] = {
+		ID = 813,
+		Name = "特效金创药" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 3,
+		HP = 350,
+		Tex = 813,
+		Price = 880,
+		Desc = ""
+	},
+-- const attrib of Item iD [814] name [特效魔法药]
+	[814] = {
+		ID = 814,
+		Name = "特效魔法药" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Weight = 3,
+		MP = 450,
+		Tex = 814,
+		Price = 900,
+		Desc = ""
+	},
+-- const attrib of Item iD [817] name [天龙圣剑]
+	[817] = {
+		ID = 817,
+		Name = "天龙圣剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Lucky = 1,
+		Accuracy = 2,
+		AtkPalsy = 32,
+		Weight = 73,
+		ReqType = 1,
+		ReqValue = 70,
+		MaxDC = 60,
+		DC = 8,
+		MaxHP = 35000,
+		Tex = 828,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [818] name [天龙道剑]
+	[818] = {
+		ID = 818,
+		Name = "天龙道剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Lucky = 1,
+		Accuracy = 1,
+		AtkPalsy = 33,
+		Weight = 44,
+		ReqType = 1,
+		ReqValue = 70,
+		MaxDC = 35,
+		DC = 8,
+		MaxSC = 34,
+		SC = 9,
+		MaxHP = 25000,
+		Tex = 828,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [819] name [天龙魔剑]
+	[819] = {
+		ID = 819,
+		Name = "天龙魔剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Lucky = 1,
+		AtkPalsy = 34,
+		Weight = 26,
+		ReqType = 1,
+		ReqValue = 70,
+		MaxDC = 29,
+		DC = 7,
+		MaxMC = 28,
+		MC = 8,
+		MaxHP = 20000,
+		Tex = 828,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [821] name [天龙战靴]
+	[821] = {
+		ID = 821,
+		Name = "天龙战靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 32,
+		MoveSpeed = 4,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxDC = 9,
+		DC = 2,
+		MaxAC = 8,
+		AC = 6,
+		MaxMAC = 8,
+		MAC = 6,
+		MaxHP = 10000,
+		Tex = 821,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [823] name [天龙项链(战)]
+	[823] = {
+		ID = 823,
+		Name = "天龙项链(战)" ,
+		Type = 3,
+		TypeString = "项链",
+		Lucky = 3,
+		AtkPalsy = 32,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxDC = 10,
+		DC = 5,
+		MaxHP = 8000,
+		Tex = 823,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [824] name [天龙战戒]
+	[824] = {
+		ID = 824,
+		Name = "天龙战戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 32,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxDC = 18,
+		MaxAC = 2,
+		MaxHP = 8000,
+		Tex = 824,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [825] name [天龙腰带(战)]
+	[825] = {
+		ID = 825,
+		Name = "天龙腰带(战)" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 32,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxDC = 9,
+		DC = 2,
+		MaxAC = 8,
+		AC = 6,
+		MaxMAC = 8,
+		MAC = 6,
+		MaxHP = 10000,
+		Tex = 825,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [826] name [天龙护腕(战)]
+	[826] = {
+		ID = 826,
+		Name = "天龙护腕(战)" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 32,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxDC = 12,
+		MaxAC = 2,
+		MaxMAC = 2,
+		MaxHP = 8000,
+		Tex = 826,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [827] name [天龙战盔]
+	[827] = {
+		ID = 827,
+		Name = "天龙战盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 32,
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxDC = 9,
+		DC = 2,
+		MaxAC = 8,
+		AC = 6,
+		MaxMAC = 8,
+		MAC = 6,
+		MaxHP = 12000,
+		Tex = 827,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [828] name [天龙伏魔剑]
+	[828] = {
+		ID = 828,
+		Name = "天龙伏魔剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Lucky = 1,
+		Accuracy = 2,
+		Weight = 28,
+		ReqType = 1,
+		ReqValue = 68,
+		MaxDC = 53,
+		MaxSC = 21,
+		MaxMC = 21,
+		Tex = 828,
+		Desc = ""
+	},
+-- const attrib of Item iD [837] name [天龙项链(道)]
+	[837] = {
+		ID = 837,
+		Name = "天龙项链(道)" ,
+		Type = 3,
+		TypeString = "项链",
+		Lucky = 3,
+		AtkPalsy = 33,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxSC = 10,
+		SC = 5,
+		MaxHP = 7000,
+		Tex = 823,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [838] name [天龙道盔]
+	[838] = {
+		ID = 838,
+		Name = "天龙道盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 33,
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxAC = 8,
+		AC = 6,
+		MaxMAC = 8,
+		MAC = 6,
+		MaxSC = 9,
+		SC = 2,
+		MaxHP = 12000,
+		Tex = 827,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [839] name [天龙护腕(道)]
+	[839] = {
+		ID = 839,
+		Name = "天龙护腕(道)" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 33,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxAC = 2,
+		MaxMAC = 2,
+		MaxSC = 12,
+		MaxHP = 8000,
+		Tex = 826,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [853] name [南瓜种子]
+	[853] = {
+		ID = 853,
+		Name = "南瓜种子" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 9,
+		Weight = 1,
+		Tex = 853,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [854] name [剧毒蛛丝]
+	[854] = {
+		ID = 854,
+		Name = "剧毒蛛丝" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 854,
+		Desc = ""
+	},
+-- const attrib of Item iD [855] name [封魔密信]
+	[855] = {
+		ID = 855,
+		Name = "封魔密信" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 855,
+		Desc = ""
+	},
+-- const attrib of Item iD [858] name [潘多拉魔盒]
+	[858] = {
+		ID = 858,
+		Name = "潘多拉魔盒" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		EXPR = 2,
+		Tex = 858,
+		Desc = ""
+	},
+-- const attrib of Item iD [860] name [霸者勋章]
+	[860] = {
+		ID = 860,
+		Name = "霸者勋章" ,
+		Type = 6,
+		TypeString = "勋章",
+		AtkPalsy = 13,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 52,
+		MaxDC = 4,
+		DC = 2,
+		MaxAC = 4,
+		AC = 2,
+		MaxMAC = 4,
+		MAC = 2,
+		MaxSC = 4,
+		SC = 2,
+		MaxMC = 4,
+		MC = 2,
+		MaxHP = 8000,
+		Tex = 860,
+		Desc = ""
+	},
+-- const attrib of Item iD [861] name [枫木勋章]
+	[861] = {
+		ID = 861,
+		Name = "枫木勋章" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 3,
+		DC = 3,
+		MaxAC = 3,
+		AC = 3,
+		MaxMAC = 3,
+		MAC = 3,
+		MaxSC = 3,
+		SC = 3,
+		MaxMC = 3,
+		MC = 3,
+		MaxHP = 8000,
+		MP = 1024,
+		Tex = 861,
+		Price = 8500,
+		Desc = ""
+	},
+-- const attrib of Item iD [862] name [紫檀勋章]
+	[862] = {
+		ID = 862,
+		Name = "紫檀勋章" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 65,
+		MaxDC = 6,
+		DC = 4,
+		MaxAC = 6,
+		AC = 4,
+		MaxMAC = 6,
+		MAC = 4,
+		MaxSC = 6,
+		SC = 4,
+		MaxMC = 6,
+		MC = 4,
+		MaxHP = 8000,
+		MP = 1280,
+		Tex = 861,
+		Price = 12500,
+		Desc = ""
+	},
+-- const attrib of Item iD [863] name [恶魔密信]
+	[863] = {
+		ID = 863,
+		Name = "恶魔密信" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 855,
+		Desc = ""
+	},
+-- const attrib of Item iD [864] name [勇者勋章(战)]
+	[864] = {
+		ID = 864,
+		Name = "勇者勋章(战)" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 54,
+		MaxDC = 7,
+		DC = 1,
+		MaxHP = 8000,
+		Tex = 861,
+		Desc = ""
+	},
+-- const attrib of Item iD [865] name [勇者勋章(道)]
+	[865] = {
+		ID = 865,
+		Name = "勇者勋章(道)" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 54,
+		MaxSC = 7,
+		SC = 1,
+		MaxHP = 8000,
+		Tex = 861,
+		Desc = ""
+	},
+-- const attrib of Item iD [866] name [勇者勋章(法)]
+	[866] = {
+		ID = 866,
+		Name = "勇者勋章(法)" ,
+		Type = 6,
+		TypeString = "勋章",
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 54,
+		MaxMC = 7,
+		MC = 1,
+		MaxHP = 8000,
+		Tex = 861,
+		Desc = ""
+	},
+-- const attrib of Item iD [867] name [天龙道戒]
+	[867] = {
+		ID = 867,
+		Name = "天龙道戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 33,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxMAC = 2,
+		MaxSC = 18,
+		MaxHP = 7000,
+		Tex = 824,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [868] name [天龙腰带(道)]
+	[868] = {
+		ID = 868,
+		Name = "天龙腰带(道)" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 33,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxAC = 8,
+		AC = 6,
+		MaxMAC = 8,
+		MAC = 6,
+		MaxSC = 9,
+		SC = 2,
+		MaxHP = 10000,
+		Tex = 825,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [869] name [雷霆战甲(男)]
+	[869] = {
+		ID = 869,
+		Name = "雷霆战甲(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 8,
+		AtkPalsy = 4,
+		Weight = 60,
+		ReqType = 1,
+		ReqValue = 42,
+		Sex = 1,
+		MaxDC = 3,
+		DC = 1,
+		MaxAC = 12,
+		AC = 5,
+		MaxMAC = 8,
+		MAC = 4,
+		MaxHP = 60000,
+		Tex = 869,
+		Price = 33000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [870] name [雷霆战甲(女)]
+	[870] = {
+		ID = 870,
+		Name = "雷霆战甲(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 8,
+		AtkPalsy = 4,
+		Weight = 60,
+		ReqType = 1,
+		ReqValue = 42,
+		Sex = 2,
+		MaxDC = 3,
+		DC = 1,
+		MaxAC = 12,
+		AC = 5,
+		MaxMAC = 8,
+		MAC = 4,
+		MaxHP = 60000,
+		Tex = 870,
+		Price = 33000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [871] name [烈焰魔衣(男)]
+	[871] = {
+		ID = 871,
+		Name = "烈焰魔衣(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 3,
+		AtkPalsy = 5,
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 42,
+		Sex = 1,
+		MaxAC = 12,
+		AC = 5,
+		MaxMAC = 8,
+		MAC = 4,
+		MaxMC = 5,
+		MC = 3,
+		MaxHP = 40000,
+		Tex = 871,
+		Price = 33000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [872] name [烈焰魔衣(女)]
+	[872] = {
+		ID = 872,
+		Name = "烈焰魔衣(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		Accuracy = 3,
+		AtkPalsy = 5,
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 42,
+		Sex = 2,
+		MaxAC = 12,
+		AC = 5,
+		MaxMAC = 8,
+		MAC = 4,
+		MaxMC = 5,
+		MC = 3,
+		MaxHP = 40000,
+		Tex = 872,
+		Price = 33000,
+		Grade = 6,
+		Desc = ""
+	},
+-- const attrib of Item iD [873] name [天龙道靴]
+	[873] = {
+		ID = 873,
+		Name = "天龙道靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 33,
+		MoveSpeed = 4,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxAC = 8,
+		AC = 6,
+		MaxMAC = 8,
+		MAC = 6,
+		MaxSC = 9,
+		SC = 2,
+		MaxHP = 10000,
+		Tex = 821,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [874] name [天龙项链(法)]
+	[874] = {
+		ID = 874,
+		Name = "天龙项链(法)" ,
+		Type = 3,
+		TypeString = "项链",
+		Lucky = 3,
+		AtkPalsy = 34,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxMC = 10,
+		MC = 5,
+		MaxHP = 6000,
+		Tex = 823,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [875] name [天龙法冠]
+	[875] = {
+		ID = 875,
+		Name = "天龙法冠" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 34,
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxAC = 8,
+		AC = 6,
+		MaxMAC = 8,
+		MAC = 6,
+		MaxMC = 9,
+		MC = 2,
+		MaxHP = 12000,
+		Tex = 827,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [876] name [天龙护腕(法)]
+	[876] = {
+		ID = 876,
+		Name = "天龙护腕(法)" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 34,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxAC = 2,
+		MaxMAC = 2,
+		MaxMC = 12,
+		MaxHP = 8000,
+		Tex = 826,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [877] name [天龙魔戒]
+	[877] = {
+		ID = 877,
+		Name = "天龙魔戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 34,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxMAC = 2,
+		MaxMC = 18,
+		MaxHP = 6000,
+		Tex = 824,
+		Price = 45000,
+		Desc = ""
+	},
+-- const attrib of Item iD [878] name [天龙腰带(法)]
+	[878] = {
+		ID = 878,
+		Name = "天龙腰带(法)" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 34,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxAC = 8,
+		AC = 6,
+		MaxMAC = 8,
+		MAC = 6,
+		MaxMC = 9,
+		MC = 2,
+		MaxHP = 10000,
+		Tex = 825,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [879] name [天龙魔靴]
+	[879] = {
+		ID = 879,
+		Name = "天龙魔靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 34,
+		MoveSpeed = 4,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 60,
+		MaxAC = 8,
+		AC = 6,
+		MaxMAC = 8,
+		MAC = 6,
+		MaxMC = 9,
+		MC = 2,
+		MaxHP = 10000,
+		Tex = 821,
+		Price = 30000,
+		Desc = ""
+	},
+-- const attrib of Item iD [880] name [藏宝图205]
+	[880] = {
+		ID = 880,
+		Name = "藏宝图205" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 880,
+		Desc = ""
+	},
+-- const attrib of Item iD [881] name [藏宝图206]
+	[881] = {
+		ID = 881,
+		Name = "藏宝图206" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 881,
+		Desc = ""
+	},
+-- const attrib of Item iD [882] name [藏宝图207]
+	[882] = {
+		ID = 882,
+		Name = "藏宝图207" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 882,
+		Desc = ""
+	},
+-- const attrib of Item iD [883] name [藏宝图208]
+	[883] = {
+		ID = 883,
+		Name = "藏宝图208" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 883,
+		Desc = ""
+	},
+-- const attrib of Item iD [884] name [藏宝图213]
+	[884] = {
+		ID = 884,
+		Name = "藏宝图213" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 884,
+		Desc = ""
+	},
+-- const attrib of Item iD [885] name [藏宝图214]
+	[885] = {
+		ID = 885,
+		Name = "藏宝图214" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 885,
+		Desc = ""
+	},
+-- const attrib of Item iD [886] name [藏宝图215]
+	[886] = {
+		ID = 886,
+		Name = "藏宝图215" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 886,
+		Desc = ""
+	},
+-- const attrib of Item iD [887] name [藏宝图216]
+	[887] = {
+		ID = 887,
+		Name = "藏宝图216" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 887,
+		Desc = ""
+	},
+-- const attrib of Item iD [888] name [藏宝图201]
+	[888] = {
+		ID = 888,
+		Name = "藏宝图201" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 888,
+		Desc = ""
+	},
+-- const attrib of Item iD [889] name [藏宝图202]
+	[889] = {
+		ID = 889,
+		Name = "藏宝图202" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 889,
+		Desc = ""
+	},
+-- const attrib of Item iD [890] name [藏宝图203]
+	[890] = {
+		ID = 890,
+		Name = "藏宝图203" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 890,
+		Desc = ""
+	},
+-- const attrib of Item iD [891] name [藏宝图204]
+	[891] = {
+		ID = 891,
+		Name = "藏宝图204" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 891,
+		Desc = ""
+	},
+-- const attrib of Item iD [892] name [藏宝图321]
+	[892] = {
+		ID = 892,
+		Name = "藏宝图321" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 892,
+		Desc = ""
+	},
+-- const attrib of Item iD [893] name [藏宝图322]
+	[893] = {
+		ID = 893,
+		Name = "藏宝图322" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 893,
+		Desc = ""
+	},
+-- const attrib of Item iD [894] name [藏宝图323]
+	[894] = {
+		ID = 894,
+		Name = "藏宝图323" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 894,
+		Desc = ""
+	},
+-- const attrib of Item iD [895] name [藏宝图324]
+	[895] = {
+		ID = 895,
+		Name = "藏宝图324" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 895,
+		Desc = ""
+	},
+-- const attrib of Item iD [896] name [藏宝图305]
+	[896] = {
+		ID = 896,
+		Name = "藏宝图305" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 896,
+		Desc = ""
+	},
+-- const attrib of Item iD [897] name [藏宝图306]
+	[897] = {
+		ID = 897,
+		Name = "藏宝图306" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 897,
+		Desc = ""
+	},
+-- const attrib of Item iD [898] name [藏宝图307]
+	[898] = {
+		ID = 898,
+		Name = "藏宝图307" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 898,
+		Desc = ""
+	},
+-- const attrib of Item iD [899] name [藏宝图308]
+	[899] = {
+		ID = 899,
+		Name = "藏宝图308" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 899,
+		Desc = ""
+	},
+-- const attrib of Item iD [902] name [藏宝图325]
+	[902] = {
+		ID = 902,
+		Name = "藏宝图325" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 902,
+		Desc = ""
+	},
+-- const attrib of Item iD [903] name [藏宝图326]
+	[903] = {
+		ID = 903,
+		Name = "藏宝图326" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 903,
+		Desc = ""
+	},
+-- const attrib of Item iD [904] name [藏宝图311]
+	[904] = {
+		ID = 904,
+		Name = "藏宝图311" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 904,
+		Desc = ""
+	},
+-- const attrib of Item iD [905] name [藏宝图312]
+	[905] = {
+		ID = 905,
+		Name = "藏宝图312" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 905,
+		Desc = ""
+	},
+-- const attrib of Item iD [906] name [藏宝图313]
+	[906] = {
+		ID = 906,
+		Name = "藏宝图313" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 906,
+		Desc = ""
+	},
+-- const attrib of Item iD [907] name [藏宝图314]
+	[907] = {
+		ID = 907,
+		Name = "藏宝图314" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 907,
+		Desc = ""
+	},
+-- const attrib of Item iD [908] name [藏宝图209]
+	[908] = {
+		ID = 908,
+		Name = "藏宝图209" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 908,
+		Desc = ""
+	},
+-- const attrib of Item iD [909] name [藏宝图210]
+	[909] = {
+		ID = 909,
+		Name = "藏宝图210" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 909,
+		Desc = ""
+	},
+-- const attrib of Item iD [910] name [藏宝图211]
+	[910] = {
+		ID = 910,
+		Name = "藏宝图211" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 910,
+		Desc = ""
+	},
+-- const attrib of Item iD [911] name [藏宝图212]
+	[911] = {
+		ID = 911,
+		Name = "藏宝图212" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 911,
+		Desc = ""
+	},
+-- const attrib of Item iD [912] name [藏宝图217]
+	[912] = {
+		ID = 912,
+		Name = "藏宝图217" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 912,
+		Desc = ""
+	},
+-- const attrib of Item iD [913] name [藏宝图218]
+	[913] = {
+		ID = 913,
+		Name = "藏宝图218" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 913,
+		Desc = ""
+	},
+-- const attrib of Item iD [914] name [藏宝图219]
+	[914] = {
+		ID = 914,
+		Name = "藏宝图219" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 914,
+		Desc = ""
+	},
+-- const attrib of Item iD [915] name [藏宝图220]
+	[915] = {
+		ID = 915,
+		Name = "藏宝图220" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 915,
+		Desc = ""
+	},
+-- const attrib of Item iD [916] name [藏宝图005]
+	[916] = {
+		ID = 916,
+		Name = "藏宝图005" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 916,
+		Desc = ""
+	},
+-- const attrib of Item iD [917] name [藏宝图006]
+	[917] = {
+		ID = 917,
+		Name = "藏宝图006" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 917,
+		Desc = ""
+	},
+-- const attrib of Item iD [918] name [藏宝图007]
+	[918] = {
+		ID = 918,
+		Name = "藏宝图007" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 918,
+		Desc = ""
+	},
+-- const attrib of Item iD [919] name [藏宝图008]
+	[919] = {
+		ID = 919,
+		Name = "藏宝图008" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 919,
+		Desc = ""
+	},
+-- const attrib of Item iD [920] name [藏宝图001]
+	[920] = {
+		ID = 920,
+		Name = "藏宝图001" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 920,
+		Desc = ""
+	},
+-- const attrib of Item iD [921] name [藏宝图002]
+	[921] = {
+		ID = 921,
+		Name = "藏宝图002" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 921,
+		Desc = ""
+	},
+-- const attrib of Item iD [922] name [藏宝图003]
+	[922] = {
+		ID = 922,
+		Name = "藏宝图003" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 922,
+		Desc = ""
+	},
+-- const attrib of Item iD [923] name [藏宝图004]
+	[923] = {
+		ID = 923,
+		Name = "藏宝图004" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 923,
+		Desc = ""
+	},
+-- const attrib of Item iD [924] name [藏宝图301]
+	[924] = {
+		ID = 924,
+		Name = "藏宝图301" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 924,
+		Desc = ""
+	},
+-- const attrib of Item iD [925] name [藏宝图302]
+	[925] = {
+		ID = 925,
+		Name = "藏宝图302" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 925,
+		Desc = ""
+	},
+-- const attrib of Item iD [926] name [藏宝图303]
+	[926] = {
+		ID = 926,
+		Name = "藏宝图303" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 926,
+		Desc = ""
+	},
+-- const attrib of Item iD [927] name [藏宝图304]
+	[927] = {
+		ID = 927,
+		Name = "藏宝图304" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 927,
+		Desc = ""
+	},
+-- const attrib of Item iD [934] name [藏宝图309]
+	[934] = {
+		ID = 934,
+		Name = "藏宝图309" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 934,
+		Desc = ""
+	},
+-- const attrib of Item iD [935] name [藏宝图310]
+	[935] = {
+		ID = 935,
+		Name = "藏宝图310" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 935,
+		Desc = ""
+	},
+-- const attrib of Item iD [940] name [藏宝图009]
+	[940] = {
+		ID = 940,
+		Name = "藏宝图009" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 940,
+		Desc = ""
+	},
+-- const attrib of Item iD [941] name [藏宝图010]
+	[941] = {
+		ID = 941,
+		Name = "藏宝图010" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 941,
+		Desc = ""
+	},
+-- const attrib of Item iD [942] name [藏宝图011]
+	[942] = {
+		ID = 942,
+		Name = "藏宝图011" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 942,
+		Desc = ""
+	},
+-- const attrib of Item iD [943] name [藏宝图012]
+	[943] = {
+		ID = 943,
+		Name = "藏宝图012" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 943,
+		Desc = ""
+	},
+-- const attrib of Item iD [944] name [藏宝图013]
+	[944] = {
+		ID = 944,
+		Name = "藏宝图013" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 944,
+		Desc = ""
+	},
+-- const attrib of Item iD [945] name [藏宝图014]
+	[945] = {
+		ID = 945,
+		Name = "藏宝图014" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 945,
+		Desc = ""
+	},
+-- const attrib of Item iD [946] name [藏宝图015]
+	[946] = {
+		ID = 946,
+		Name = "藏宝图015" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 946,
+		Desc = ""
+	},
+-- const attrib of Item iD [947] name [藏宝图016]
+	[947] = {
+		ID = 947,
+		Name = "藏宝图016" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 947,
+		Desc = ""
+	},
+-- const attrib of Item iD [948] name [藏宝图017]
+	[948] = {
+		ID = 948,
+		Name = "藏宝图017" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 948,
+		Desc = ""
+	},
+-- const attrib of Item iD [949] name [藏宝图018]
+	[949] = {
+		ID = 949,
+		Name = "藏宝图018" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 949,
+		Desc = ""
+	},
+-- const attrib of Item iD [950] name [藏宝图019]
+	[950] = {
+		ID = 950,
+		Name = "藏宝图019" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 950,
+		Desc = ""
+	},
+-- const attrib of Item iD [951] name [藏宝图020]
+	[951] = {
+		ID = 951,
+		Name = "藏宝图020" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 951,
+		Desc = ""
+	},
+-- const attrib of Item iD [952] name [藏宝图105]
+	[952] = {
+		ID = 952,
+		Name = "藏宝图105" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 952,
+		Desc = ""
+	},
+-- const attrib of Item iD [953] name [藏宝图106]
+	[953] = {
+		ID = 953,
+		Name = "藏宝图106" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 953,
+		Desc = ""
+	},
+-- const attrib of Item iD [954] name [藏宝图107]
+	[954] = {
+		ID = 954,
+		Name = "藏宝图107" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 954,
+		Desc = ""
+	},
+-- const attrib of Item iD [955] name [藏宝图108]
+	[955] = {
+		ID = 955,
+		Name = "藏宝图108" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 955,
+		Desc = ""
+	},
+-- const attrib of Item iD [956] name [藏宝图101]
+	[956] = {
+		ID = 956,
+		Name = "藏宝图101" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 956,
+		Desc = ""
+	},
+-- const attrib of Item iD [957] name [藏宝图102]
+	[957] = {
+		ID = 957,
+		Name = "藏宝图102" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 957,
+		Desc = ""
+	},
+-- const attrib of Item iD [958] name [藏宝图103]
+	[958] = {
+		ID = 958,
+		Name = "藏宝图103" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 958,
+		Desc = ""
+	},
+-- const attrib of Item iD [959] name [藏宝图104]
+	[959] = {
+		ID = 959,
+		Name = "藏宝图104" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 959,
+		Desc = ""
+	},
+-- const attrib of Item iD [960] name [藏宝图113]
+	[960] = {
+		ID = 960,
+		Name = "藏宝图113" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 960,
+		Desc = ""
+	},
+-- const attrib of Item iD [961] name [藏宝图114]
+	[961] = {
+		ID = 961,
+		Name = "藏宝图114" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 961,
+		Desc = ""
+	},
+-- const attrib of Item iD [962] name [藏宝图115]
+	[962] = {
+		ID = 962,
+		Name = "藏宝图115" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 962,
+		Desc = ""
+	},
+-- const attrib of Item iD [963] name [藏宝图116]
+	[963] = {
+		ID = 963,
+		Name = "藏宝图116" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 963,
+		Desc = ""
+	},
+-- const attrib of Item iD [964] name [藏宝图315]
+	[964] = {
+		ID = 964,
+		Name = "藏宝图315" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 964,
+		Desc = ""
+	},
+-- const attrib of Item iD [965] name [藏宝图316]
+	[965] = {
+		ID = 965,
+		Name = "藏宝图316" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 965,
+		Desc = ""
+	},
+-- const attrib of Item iD [966] name [藏宝图317]
+	[966] = {
+		ID = 966,
+		Name = "藏宝图317" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 966,
+		Desc = ""
+	},
+-- const attrib of Item iD [967] name [藏宝图318]
+	[967] = {
+		ID = 967,
+		Name = "藏宝图318" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 967,
+		Desc = ""
+	},
+-- const attrib of Item iD [974] name [藏宝图319]
+	[974] = {
+		ID = 974,
+		Name = "藏宝图319" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 974,
+		Desc = ""
+	},
+-- const attrib of Item iD [975] name [藏宝图320]
+	[975] = {
+		ID = 975,
+		Name = "藏宝图320" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 975,
+		Desc = ""
+	},
+-- const attrib of Item iD [980] name [藏宝图109]
+	[980] = {
+		ID = 980,
+		Name = "藏宝图109" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 980,
+		Desc = ""
+	},
+-- const attrib of Item iD [981] name [藏宝图110]
+	[981] = {
+		ID = 981,
+		Name = "藏宝图110" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 981,
+		Desc = ""
+	},
+-- const attrib of Item iD [982] name [藏宝图111]
+	[982] = {
+		ID = 982,
+		Name = "藏宝图111" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 982,
+		Desc = ""
+	},
+-- const attrib of Item iD [983] name [藏宝图112]
+	[983] = {
+		ID = 983,
+		Name = "藏宝图112" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 983,
+		Desc = ""
+	},
+-- const attrib of Item iD [984] name [藏宝图117]
+	[984] = {
+		ID = 984,
+		Name = "藏宝图117" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 984,
+		Desc = ""
+	},
+-- const attrib of Item iD [985] name [藏宝图118]
+	[985] = {
+		ID = 985,
+		Name = "藏宝图118" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 985,
+		Desc = ""
+	},
+-- const attrib of Item iD [986] name [藏宝图119]
+	[986] = {
+		ID = 986,
+		Name = "藏宝图119" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 986,
+		Desc = ""
+	},
+-- const attrib of Item iD [987] name [藏宝图120]
+	[987] = {
+		ID = 987,
+		Name = "藏宝图120" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 987,
+		Desc = ""
+	},
+-- const attrib of Item iD [988] name [普通发型凭证]
+	[988] = {
+		ID = 988,
+		Name = "普通发型凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 8,
+		Weight = 1,
+		Tex = 1581,
+		Price = 4,
+		Desc = "普通发型卡，右键使用后可以随机更换一个发型"
+	},
+-- const attrib of Item iD [998] name [伏魔令(赤)]
+	[998] = {
+		ID = 998,
+		Name = "伏魔令(赤)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 1,
+		Curse = 7,
+		Weight = 1,
+		Tex = 998,
+		Desc = ""
+	},
+-- const attrib of Item iD [999] name [伏魔令(狐)]
+	[999] = {
+		ID = 999,
+		Name = "伏魔令(狐)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 4,
+		Curse = 7,
+		Weight = 1,
+		Tex = 998,
+		Desc = ""
+	},
+-- const attrib of Item iD [1007] name [强效太阳水(包)]
+	[1007] = {
+		ID = 1007,
+		Name = "强效太阳水(包)" ,
+		Type = 12,
+		TypeString = "捆装物品",
+		Weight = 14,
+		MaxDC = 312,
+		Tex = 1007,
+		Price = 7700,
+		Desc = ""
+	},
+-- const attrib of Item iD [1020] name [铜之护符]
+	[1020] = {
+		ID = 1020,
+		Name = "铜之护符" ,
+		Type = 17,
+		TypeString = "符咒",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 15,
+		MaxDC = 1,
+		MaxAC = 1,
+		MaxMAC = 1,
+		MaxSC = 1,
+		MaxMC = 1,
+		MP = 768,
+		Tex = 1020,
+		Price = 1000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1031] name [伏魔令(阎)]
+	[1031] = {
+		ID = 1031,
+		Name = "伏魔令(阎)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 2,
+		Curse = 7,
+		Weight = 1,
+		Tex = 998,
+		Desc = ""
+	},
+-- const attrib of Item iD [1045] name [伏魔令(破)]
+	[1045] = {
+		ID = 1045,
+		Name = "伏魔令(破)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 3,
+		Curse = 7,
+		Weight = 1,
+		Tex = 998,
+		Desc = ""
+	},
+-- const attrib of Item iD [1046] name [钢之护符]
+	[1046] = {
+		ID = 1046,
+		Name = "钢之护符" ,
+		Type = 17,
+		TypeString = "符咒",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 20,
+		MaxDC = 2,
+		MaxAC = 2,
+		MaxMAC = 2,
+		MaxSC = 2,
+		MaxMC = 2,
+		MP = 768,
+		Tex = 1020,
+		Price = 2000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1084] name [银之护符]
+	[1084] = {
+		ID = 1084,
+		Name = "银之护符" ,
+		Type = 17,
+		TypeString = "符咒",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 25,
+		MaxDC = 3,
+		MaxAC = 3,
+		MaxMAC = 3,
+		MaxSC = 3,
+		MaxMC = 3,
+		MP = 768,
+		Tex = 1020,
+		Price = 3000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1085] name [南瓜头]
+	[1085] = {
+		ID = 1085,
+		Name = "南瓜头" ,
+		Type = 7,
+		TypeString = "头盔",
+		Weight = 5,
+		ReqType = 1,
+		ReqValue = 52,
+		MaxDC = 4,
+		MaxAC = 5,
+		AC = 5,
+		MaxMAC = 5,
+		MAC = 5,
+		MaxSC = 4,
+		MaxMC = 4,
+		MaxHP = 12000,
+		MP = 1280,
+		Tex = 1085,
+		Price = 35000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1089] name [金之护符]
+	[1089] = {
+		ID = 1089,
+		Name = "金之护符" ,
+		Type = 17,
+		TypeString = "符咒",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 30,
+		MaxDC = 4,
+		MaxAC = 4,
+		MaxMAC = 4,
+		MaxSC = 4,
+		MaxMC = 4,
+		MP = 768,
+		Tex = 1020,
+		Price = 4000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1093] name [龙胆草]
+	[1093] = {
+		ID = 1093,
+		Name = "龙胆草" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 1093,
+		Desc = ""
+	},
+-- const attrib of Item iD [1102] name [实木宝箱]
+	[1102] = {
+		ID = 1102,
+		Name = "实木宝箱" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 5,
+		Tex = 1102,
+		Desc = "看似很值钱的箱子，可以通过钥匙打开"
+	},
+-- const attrib of Item iD [1103] name [青铜宝箱]
+	[1103] = {
+		ID = 1103,
+		Name = "青铜宝箱" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 15,
+		Tex = 1103,
+		Desc = "看似很值钱的箱子，可以通过钥匙打开"
+	},
+-- const attrib of Item iD [1104] name [白银宝箱]
+	[1104] = {
+		ID = 1104,
+		Name = "白银宝箱" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 15,
+		Tex = 1104,
+		Desc = "看似很值钱的箱子，可以通过钥匙打开"
+	},
+-- const attrib of Item iD [1105] name [黄金宝箱]
+	[1105] = {
+		ID = 1105,
+		Name = "黄金宝箱" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 15,
+		Tex = 1105,
+		Desc = "看似很值钱的箱子，可以通过钥匙打开"
+	},
+-- const attrib of Item iD [1108] name [上古神器]
+	[1108] = {
+		ID = 1108,
+		Name = "上古神器" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 1108,
+		Desc = ""
+	},
+-- const attrib of Item iD [1118] name [解绑卷轴]
+	[1118] = {
+		ID = 1118,
+		Name = "解绑卷轴" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 5,
+		Curse = 3,
+		Weight = 1,
+		Tex = 1123,
+		Desc = ""
+	},
+-- const attrib of Item iD [1123] name [鉴定卷轴]
+	[1123] = {
+		ID = 1123,
+		Name = "鉴定卷轴" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 4,
+		Curse = 3,
+		Weight = 1,
+		Tex = 1123,
+		Price = 50000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1147] name [幽冥坛藏宝图]
+	[1147] = {
+		ID = 1147,
+		Name = "幽冥坛藏宝图" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 2,
+		Hide = 17,
+		Accuracy = 1,
+		Weight = 1,
+		MaxDC = 43,
+		DC = 39,
+		MaxAC = 223,
+		AC = 105,
+		Tex = 1145,
+		Desc = ""
+	},
+-- const attrib of Item iD [1148] name [龙之魂器(战)]
+	[1148] = {
+		ID = 1148,
+		Name = "龙之魂器(战)" ,
+		Type = 17,
+		TypeString = "符咒",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 68,
+		MaxDC = 8,
+		DC = 6,
+		MaxAC = 8,
+		AC = 4,
+		MaxMAC = 8,
+		MAC = 4,
+		MP = 1536,
+		Tex = 1148,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1149] name [玲珑仙岛藏宝图]
+	[1149] = {
+		ID = 1149,
+		Name = "玲珑仙岛藏宝图" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 2,
+		Hide = 18,
+		Accuracy = 8,
+		Weight = 1,
+		MaxDC = 20,
+		DC = 20,
+		MaxAC = 200,
+		AC = 220,
+		Tex = 1145,
+		Desc = ""
+	},
+-- const attrib of Item iD [1159] name [巨人巷藏宝图]
+	[1159] = {
+		ID = 1159,
+		Name = "巨人巷藏宝图" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 2,
+		Hide = 19,
+		Accuracy = 8,
+		Weight = 1,
+		MaxDC = 8,
+		DC = 28,
+		MaxAC = 29,
+		AC = 112,
+		Tex = 1145,
+		Desc = ""
+	},
+-- const attrib of Item iD [1160] name [龙之魂器(法)]
+	[1160] = {
+		ID = 1160,
+		Name = "龙之魂器(法)" ,
+		Type = 17,
+		TypeString = "符咒",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 68,
+		MaxAC = 8,
+		AC = 4,
+		MaxMAC = 8,
+		MAC = 4,
+		MaxMC = 8,
+		MC = 6,
+		MP = 1536,
+		Tex = 1148,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1161] name [龙之魂器(道)]
+	[1161] = {
+		ID = 1161,
+		Name = "龙之魂器(道)" ,
+		Type = 17,
+		TypeString = "符咒",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 68,
+		MaxAC = 8,
+		AC = 4,
+		MaxMAC = 8,
+		MAC = 4,
+		MaxSC = 8,
+		SC = 6,
+		MP = 1536,
+		Tex = 1148,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1163] name [黑铁护符]
+	[1163] = {
+		ID = 1163,
+		Name = "黑铁护符" ,
+		Type = 17,
+		TypeString = "符咒",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 6,
+		DC = 2,
+		MaxAC = 6,
+		AC = 2,
+		MaxMAC = 6,
+		MAC = 2,
+		MaxSC = 6,
+		SC = 2,
+		MaxMC = 6,
+		MC = 2,
+		MP = 1024,
+		Tex = 1020,
+		Price = 5000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1164] name [紫金护符]
+	[1164] = {
+		ID = 1164,
+		Name = "紫金护符" ,
+		Type = 17,
+		TypeString = "符咒",
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 63,
+		MaxDC = 8,
+		DC = 4,
+		MaxAC = 8,
+		AC = 4,
+		MaxMAC = 8,
+		MAC = 4,
+		MaxSC = 8,
+		SC = 4,
+		MaxMC = 8,
+		MC = 4,
+		MP = 1280,
+		Tex = 1020,
+		Price = 8000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1179] name [普通翅膀凭证]
+	[1179] = {
+		ID = 1179,
+		Name = "普通翅膀凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 11,
+		Weight = 1,
+		Tex = 1581,
+		Price = 10,
+		Desc = "普通翅膀卡，右键使用后可以随机更换一个翅膀"
+	},
+-- const attrib of Item iD [1180] name [发型重置凭证]
+	[1180] = {
+		ID = 1180,
+		Name = "发型重置凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 13,
+		Weight = 1,
+		Tex = 1581,
+		Price = 2,
+		Desc = "可以恢复初始发型"
+	},
+-- const attrib of Item iD [1181] name [实木钥匙]
+	[1181] = {
+		ID = 1181,
+		Name = "实木钥匙" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 30,
+		Weight = 1,
+		Tex = 1181,
+		Price = 3,
+		Desc = "可以打开宝箱的钥匙"
+	},
+-- const attrib of Item iD [1182] name [青铜钥匙]
+	[1182] = {
+		ID = 1182,
+		Name = "青铜钥匙" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 30,
+		Weight = 1,
+		Tex = 1182,
+		Price = 6,
+		Desc = "可以打开宝箱的钥匙"
+	},
+-- const attrib of Item iD [1183] name [白银钥匙]
+	[1183] = {
+		ID = 1183,
+		Name = "白银钥匙" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 30,
+		Weight = 1,
+		Tex = 1183,
+		Price = 12,
+		Desc = "可以打开宝箱的钥匙"
+	},
+-- const attrib of Item iD [1184] name [黄金钥匙]
+	[1184] = {
+		ID = 1184,
+		Name = "黄金钥匙" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 30,
+		Weight = 1,
+		Tex = 1184,
+		Price = 20,
+		Desc = "可以打开宝箱的钥匙"
+	},
+-- const attrib of Item iD [1218] name [翅膀重置凭证]
+	[1218] = {
+		ID = 1218,
+		Name = "翅膀重置凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 14,
+		Weight = 1,
+		Tex = 1581,
+		Price = 4,
+		Desc = "可以恢复无翅膀状态"
+	},
+-- const attrib of Item iD [1219] name [聊天颜色凭证]
+	[1219] = {
+		ID = 1219,
+		Name = "聊天颜色凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 15,
+		Weight = 1,
+		Tex = 1581,
+		Price = 1,
+		Desc = "可以随机获得一种聊天颜色"
+	},
+-- const attrib of Item iD [1224] name [熔岩之心]
+	[1224] = {
+		ID = 1224,
+		Name = "熔岩之心" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		EXPR = 2,
+		Tex = 1224,
+		Desc = ""
+	},
+-- const attrib of Item iD [1229] name [八卦符咒]
+	[1229] = {
+		ID = 1229,
+		Name = "八卦符咒" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 4,
+		Weight = 1,
+		MaxDC = 114,
+		Tex = 1229,
+		Desc = ""
+	},
+-- const attrib of Item iD [1231] name [大补丸(小)]
+	[1231] = {
+		ID = 1231,
+		Name = "大补丸(小)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 2,
+		Hide = 3,
+		Weight = 1,
+		HP = 30,
+		MP = 30,
+		Tex = 820,
+		Price = 4000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1232] name [大补丸(中)]
+	[1232] = {
+		ID = 1232,
+		Name = "大补丸(中)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 2,
+		Hide = 3,
+		Weight = 1,
+		HP = 50,
+		MP = 50,
+		Tex = 820,
+		Price = 8000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1233] name [大补丸(大)]
+	[1233] = {
+		ID = 1233,
+		Name = "大补丸(大)" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 2,
+		Hide = 3,
+		Weight = 1,
+		HP = 80,
+		MP = 80,
+		Tex = 820,
+		Price = 16000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1234] name [月氏之灵]
+	[1234] = {
+		ID = 1234,
+		Name = "月氏之灵" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 1224,
+		Desc = ""
+	},
+-- const attrib of Item iD [1236] name [怨恶之灵]
+	[1236] = {
+		ID = 1236,
+		Name = "怨恶之灵" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 1224,
+		Desc = ""
+	},
+-- const attrib of Item iD [1237] name [阎魔之灵]
+	[1237] = {
+		ID = 1237,
+		Name = "阎魔之灵" ,
+		Type = 10,
+		TypeString = "杂物",
+		Weight = 1,
+		Tex = 1224,
+		Desc = ""
+	},
+-- const attrib of Item iD [1238] name [火龙之心]
+	[1238] = {
+		ID = 1238,
+		Name = "火龙之心" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 4,
+		Weight = 1,
+		MaxDC = 143,
+		EXPR = 1,
+		Tex = 1224,
+		Desc = ""
+	},
+-- const attrib of Item iD [1239] name [魔龙之心]
+	[1239] = {
+		ID = 1239,
+		Name = "魔龙之心" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		MaxDC = 143,
+		EXPR = 1,
+		Tex = 1224,
+		Desc = "蕴含着破天魔龙怨念的封印球，在血色魔窟的祭台上可能会有所反应"
+	},
+-- const attrib of Item iD [1240] name [逆火魔戒]
+	[1240] = {
+		ID = 1240,
+		Name = "逆火魔戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 15,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxMAC = 1,
+		MaxMC = 13,
+		MC = 2,
+		MaxHP = 6000,
+		Tex = 1240,
+		Price = 35000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1241] name [逆火护腕]
+	[1241] = {
+		ID = 1241,
+		Name = "逆火护腕" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 15,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxAC = 2,
+		MaxMAC = 2,
+		MaxMC = 6,
+		MC = 2,
+		MaxHP = 6000,
+		Tex = 1241,
+		Price = 20000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1242] name [逆火项链]
+	[1242] = {
+		ID = 1242,
+		Name = "逆火项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Hide = 3,
+		AtkPalsy = 15,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxMC = 10,
+		MC = 1,
+		MaxHP = 6000,
+		Tex = 1242,
+		Price = 20000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1243] name [逆火魔靴]
+	[1243] = {
+		ID = 1243,
+		Name = "逆火魔靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 15,
+		MoveSpeed = 3,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxMC = 4,
+		MC = 1,
+		MaxHP = 7000,
+		Tex = 1243,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1244] name [逆火腰带]
+	[1244] = {
+		ID = 1244,
+		Name = "逆火腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 15,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxMC = 4,
+		MC = 1,
+		MaxHP = 7000,
+		Tex = 1244,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1245] name [逆火魔盔]
+	[1245] = {
+		ID = 1245,
+		Name = "逆火魔盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 15,
+		Weight = 4,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxAC = 6,
+		AC = 4,
+		MaxMAC = 5,
+		MAC = 4,
+		MaxMC = 4,
+		MC = 1,
+		MaxHP = 8000,
+		Tex = 1245,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1246] name [名字装饰凭证]
+	[1246] = {
+		ID = 1246,
+		Name = "名字装饰凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 26,
+		Weight = 1,
+		Tex = 1581,
+		Price = 5,
+		Desc = "右键使用后可以随机使用一个名字装饰外框"
+	},
+-- const attrib of Item iD [1247] name [名字装饰重置凭证]
+	[1247] = {
+		ID = 1247,
+		Name = "名字装饰重置凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 27,
+		Weight = 1,
+		Tex = 1581,
+		Price = 4,
+		Desc = "可以恢复无名字装饰外框的状态"
+	},
+-- const attrib of Item iD [1248] name [聊天装饰凭证]
+	[1248] = {
+		ID = 1248,
+		Name = "聊天装饰凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 28,
+		Weight = 1,
+		Tex = 1581,
+		Price = 6,
+		Desc = "右键使用后可以随机使用一个聊天装饰外框"
+	},
+-- const attrib of Item iD [1249] name [聊天装饰重置凭证]
+	[1249] = {
+		ID = 1249,
+		Name = "聊天装饰重置凭证" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 29,
+		Weight = 1,
+		Tex = 1581,
+		Price = 4,
+		Desc = "可以恢复无聊天装饰外框的状态"
+	},
+-- const attrib of Item iD [1250] name [通云道戒]
+	[1250] = {
+		ID = 1250,
+		Name = "通云道戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 16,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxMAC = 1,
+		MaxSC = 14,
+		SC = 2,
+		MaxHP = 7000,
+		Tex = 1250,
+		Price = 35000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1251] name [通云护腕]
+	[1251] = {
+		ID = 1251,
+		Name = "通云护腕" ,
+		Type = 4,
+		TypeString = "手镯",
+		Hide = 2,
+		AtkPalsy = 16,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxSC = 6,
+		SC = 2,
+		MaxHP = 7000,
+		Tex = 1251,
+		Price = 20000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1252] name [通云项链]
+	[1252] = {
+		ID = 1252,
+		Name = "通云项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Hide = 1,
+		AtkPalsy = 16,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxSC = 9,
+		SC = 2,
+		MaxHP = 7000,
+		Tex = 1252,
+		Price = 20000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1253] name [通云道靴]
+	[1253] = {
+		ID = 1253,
+		Name = "通云道靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 16,
+		MoveSpeed = 3,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxSC = 4,
+		SC = 1,
+		MaxHP = 7000,
+		Tex = 1253,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1254] name [通云腰带]
+	[1254] = {
+		ID = 1254,
+		Name = "通云腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 16,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxSC = 4,
+		SC = 1,
+		MaxHP = 7000,
+		Tex = 1254,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1255] name [通云道盔]
+	[1255] = {
+		ID = 1255,
+		Name = "通云道盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 16,
+		Weight = 6,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxAC = 6,
+		AC = 4,
+		MaxMAC = 5,
+		MAC = 4,
+		MaxSC = 4,
+		SC = 1,
+		MaxHP = 9000,
+		Tex = 1255,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1260] name [狂雷战戒]
+	[1260] = {
+		ID = 1260,
+		Name = "狂雷战戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 14,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 14,
+		MaxMAC = 1,
+		MaxHP = 8000,
+		Tex = 1260,
+		Price = 35000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1261] name [狂雷护腕]
+	[1261] = {
+		ID = 1261,
+		Name = "狂雷护腕" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 14,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 6,
+		DC = 2,
+		MaxAC = 1,
+		MaxHP = 8000,
+		Tex = 1261,
+		Price = 20000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1262] name [狂雷项链]
+	[1262] = {
+		ID = 1262,
+		Name = "狂雷项链" ,
+		Type = 3,
+		TypeString = "项链",
+		Lucky = 1,
+		AtkPalsy = 14,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 10,
+		DC = 4,
+		MaxHP = 8000,
+		Tex = 1262,
+		Price = 20000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1263] name [狂雷战靴]
+	[1263] = {
+		ID = 1263,
+		Name = "狂雷战靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 14,
+		MoveSpeed = 3,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 4,
+		DC = 1,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxHP = 8000,
+		Tex = 1263,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1264] name [狂雷腰带]
+	[1264] = {
+		ID = 1264,
+		Name = "狂雷腰带" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 14,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 4,
+		DC = 1,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxHP = 8000,
+		Tex = 1264,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1265] name [狂雷战盔]
+	[1265] = {
+		ID = 1265,
+		Name = "狂雷战盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 14,
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 55,
+		MaxDC = 4,
+		DC = 1,
+		MaxAC = 6,
+		AC = 4,
+		MaxMAC = 5,
+		MAC = 4,
+		MaxHP = 12000,
+		Tex = 1265,
+		Price = 25000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1266] name [魔血剑之书]
+	[1266] = {
+		ID = 1266,
+		Name = "魔血剑之书" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 9,
+		Weight = 1,
+		Tex = 1144,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1267] name [神血枪之书]
+	[1267] = {
+		ID = 1267,
+		Name = "神血枪之书" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 9,
+		Weight = 1,
+		Tex = 1144,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1268] name [龙血剑之书]
+	[1268] = {
+		ID = 1268,
+		Name = "龙血剑之书" ,
+		Type = 10,
+		TypeString = "杂物",
+		Curse = 9,
+		Weight = 1,
+		Tex = 1144,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1364] name [王者战戒]
+	[1364] = {
+		ID = 1364,
+		Name = "王者战戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 28,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxDC = 15,
+		DC = 1,
+		MaxAC = 2,
+		MaxHP = 8000,
+		Tex = 1364,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1365] name [王者护腕(战)]
+	[1365] = {
+		ID = 1365,
+		Name = "王者护腕(战)" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 28,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxDC = 8,
+		DC = 1,
+		MaxAC = 2,
+		MaxHP = 8000,
+		Tex = 1365,
+		Price = 22000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1366] name [王者项链(战)]
+	[1366] = {
+		ID = 1366,
+		Name = "王者项链(战)" ,
+		Type = 3,
+		TypeString = "项链",
+		Lucky = 2,
+		AtkPalsy = 28,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxDC = 10,
+		DC = 2,
+		MaxHP = 8000,
+		Tex = 1366,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1367] name [王者战靴]
+	[1367] = {
+		ID = 1367,
+		Name = "王者战靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 28,
+		MoveSpeed = 3,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxDC = 6,
+		DC = 1,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxHP = 10000,
+		Tex = 1367,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1368] name [王者腰带(战)]
+	[1368] = {
+		ID = 1368,
+		Name = "王者腰带(战)" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 28,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxDC = 6,
+		DC = 1,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxHP = 10000,
+		Tex = 1368,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1369] name [王者战盔]
+	[1369] = {
+		ID = 1369,
+		Name = "王者战盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 28,
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxDC = 6,
+		DC = 1,
+		MaxAC = 6,
+		AC = 5,
+		MaxMAC = 5,
+		MAC = 4,
+		MaxHP = 12000,
+		Tex = 1369,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1376] name [王者魔靴]
+	[1376] = {
+		ID = 1376,
+		Name = "王者魔靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 30,
+		MoveSpeed = 3,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxMC = 6,
+		MC = 1,
+		MaxHP = 10000,
+		Tex = 1367,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1377] name [王者腰带(法)]
+	[1377] = {
+		ID = 1377,
+		Name = "王者腰带(法)" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 30,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxMC = 6,
+		MC = 1,
+		MaxHP = 10000,
+		Tex = 1368,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1378] name [王者道靴]
+	[1378] = {
+		ID = 1378,
+		Name = "王者道靴" ,
+		Type = 14,
+		TypeString = "鞋子",
+		AtkPalsy = 29,
+		MoveSpeed = 3,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxSC = 6,
+		SC = 1,
+		MaxHP = 10000,
+		Tex = 1367,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1379] name [王者腰带(道)]
+	[1379] = {
+		ID = 1379,
+		Name = "王者腰带(道)" ,
+		Type = 15,
+		TypeString = "腰带",
+		AtkPalsy = 29,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxAC = 4,
+		AC = 3,
+		MaxMAC = 4,
+		MAC = 3,
+		MaxSC = 6,
+		SC = 1,
+		MaxHP = 10000,
+		Tex = 1368,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1383] name [王者魔盔]
+	[1383] = {
+		ID = 1383,
+		Name = "王者魔盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 30,
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxAC = 6,
+		AC = 5,
+		MaxMAC = 5,
+		MAC = 4,
+		MaxMC = 6,
+		MC = 1,
+		MaxHP = 12000,
+		Tex = 1369,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1384] name [王者道盔]
+	[1384] = {
+		ID = 1384,
+		Name = "王者道盔" ,
+		Type = 7,
+		TypeString = "头盔",
+		AtkPalsy = 29,
+		Weight = 10,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxAC = 6,
+		AC = 5,
+		MaxMAC = 5,
+		MAC = 4,
+		MaxSC = 6,
+		SC = 1,
+		MaxHP = 12000,
+		Tex = 1369,
+		Price = 28000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1385] name [王者护腕(法)]
+	[1385] = {
+		ID = 1385,
+		Name = "王者护腕(法)" ,
+		Type = 4,
+		TypeString = "手镯",
+		AtkPalsy = 30,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxAC = 2,
+		MaxMAC = 2,
+		MaxMC = 8,
+		MC = 1,
+		MaxHP = 8000,
+		Tex = 1365,
+		Price = 22000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1386] name [王者护腕(道)]
+	[1386] = {
+		ID = 1386,
+		Name = "王者护腕(道)" ,
+		Type = 4,
+		TypeString = "手镯",
+		Hide = 4,
+		AtkPalsy = 29,
+		Weight = 3,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxSC = 8,
+		SC = 1,
+		MaxHP = 8000,
+		Tex = 1365,
+		Price = 22000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1394] name [王者魔衣(男)]
+	[1394] = {
+		ID = 1394,
+		Name = "王者魔衣(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		AtkPalsy = 30,
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 52,
+		Sex = 1,
+		MaxAC = 15,
+		AC = 10,
+		MaxMAC = 12,
+		MAC = 10,
+		MaxMC = 7,
+		MC = 3,
+		MaxHP = 50000,
+		Tex = 1394,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1395] name [王者魔衣(女)]
+	[1395] = {
+		ID = 1395,
+		Name = "王者魔衣(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		AtkPalsy = 30,
+		Weight = 20,
+		ReqType = 1,
+		ReqValue = 52,
+		Sex = 2,
+		MaxAC = 15,
+		AC = 10,
+		MaxMAC = 12,
+		MAC = 10,
+		MaxMC = 7,
+		MC = 3,
+		MaxHP = 50000,
+		Tex = 1395,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1396] name [王者战甲(男)]
+	[1396] = {
+		ID = 1396,
+		Name = "王者战甲(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		AtkPalsy = 28,
+		Weight = 60,
+		ReqType = 1,
+		ReqValue = 52,
+		Sex = 1,
+		MaxDC = 4,
+		DC = 2,
+		MaxAC = 15,
+		AC = 10,
+		MaxMAC = 12,
+		MAC = 10,
+		MaxHP = 50000,
+		Tex = 1396,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1397] name [王者战甲(女)]
+	[1397] = {
+		ID = 1397,
+		Name = "王者战甲(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		AtkPalsy = 28,
+		Weight = 60,
+		ReqType = 1,
+		ReqValue = 52,
+		Sex = 2,
+		MaxDC = 4,
+		DC = 2,
+		MaxAC = 15,
+		AC = 10,
+		MaxMAC = 12,
+		MAC = 10,
+		MaxHP = 50000,
+		Tex = 1397,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1398] name [王者道袍(男)]
+	[1398] = {
+		ID = 1398,
+		Name = "王者道袍(男)" ,
+		Type = 2,
+		TypeString = "衣服",
+		AtkPalsy = 29,
+		Weight = 35,
+		ReqType = 1,
+		ReqValue = 52,
+		Sex = 1,
+		MaxAC = 15,
+		AC = 10,
+		MaxMAC = 12,
+		MAC = 10,
+		MaxSC = 7,
+		SC = 3,
+		MaxHP = 50000,
+		Tex = 1398,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1399] name [王者道袍(女)]
+	[1399] = {
+		ID = 1399,
+		Name = "王者道袍(女)" ,
+		Type = 2,
+		TypeString = "衣服",
+		AtkPalsy = 29,
+		Weight = 35,
+		ReqType = 1,
+		ReqValue = 52,
+		Sex = 2,
+		MaxAC = 15,
+		AC = 10,
+		MaxMAC = 12,
+		MAC = 10,
+		MaxSC = 7,
+		SC = 3,
+		MaxHP = 50000,
+		Tex = 1399,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1402] name [王者道戒]
+	[1402] = {
+		ID = 1402,
+		Name = "王者道戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 29,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxMAC = 2,
+		MaxSC = 15,
+		SC = 1,
+		MaxHP = 7000,
+		Tex = 1364,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1403] name [王者项链(道)]
+	[1403] = {
+		ID = 1403,
+		Name = "王者项链(道)" ,
+		Type = 3,
+		TypeString = "项链",
+		Lucky = 2,
+		AtkPalsy = 29,
+		Weight = 2,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxSC = 10,
+		SC = 2,
+		MaxHP = 7000,
+		Tex = 1366,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1405] name [魔血剑]
+	[1405] = {
+		ID = 1405,
+		Name = "魔血剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Lucky = 1,
+		Weight = 113,
+		ReqType = 2,
+		ReqValue = 140,
+		MaxDC = 58,
+		DC = 5,
+		MaxHP = 40000,
+		MP = 1536,
+		Tex = 1405,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1406] name [龙血剑]
+	[1406] = {
+		ID = 1406,
+		Name = "龙血剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Lucky = 1,
+		Weight = 44,
+		ReqType = 4,
+		ReqValue = 120,
+		MaxDC = 25,
+		DC = 8,
+		MaxSC = 32,
+		SC = 7,
+		MaxHP = 25000,
+		MP = 1536,
+		Tex = 1406,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1407] name [神血枪]
+	[1407] = {
+		ID = 1407,
+		Name = "神血枪" ,
+		Type = 9,
+		TypeString = "武器",
+		Lucky = 1,
+		Weight = 26,
+		ReqType = 3,
+		ReqValue = 120,
+		MaxDC = 19,
+		DC = 6,
+		MaxMC = 25,
+		MC = 6,
+		MaxHP = 18000,
+		MP = 1536,
+		Tex = 1407,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1410] name [王者之杖]
+	[1410] = {
+		ID = 1410,
+		Name = "王者之杖" ,
+		Type = 9,
+		TypeString = "武器",
+		AtkPalsy = 30,
+		Weight = 26,
+		ReqType = 1,
+		ReqValue = 67,
+		MaxDC = 26,
+		DC = 7,
+		MaxMC = 23,
+		MC = 9,
+		MaxHP = 20000,
+		Tex = 1410,
+		Price = 60000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1418] name [王者魔戒]
+	[1418] = {
+		ID = 1418,
+		Name = "王者魔戒" ,
+		Type = 5,
+		TypeString = "戒指",
+		AtkPalsy = 30,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxMAC = 2,
+		MaxMC = 15,
+		MC = 1,
+		MaxHP = 6000,
+		Tex = 1364,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1419] name [王者项链(法)]
+	[1419] = {
+		ID = 1419,
+		Name = "王者项链(法)" ,
+		Type = 3,
+		TypeString = "项链",
+		Lucky = 2,
+		AtkPalsy = 30,
+		Weight = 1,
+		ReqType = 1,
+		ReqValue = 57,
+		MaxMC = 10,
+		MC = 2,
+		MaxHP = 6000,
+		Tex = 1366,
+		Price = 42000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1420] name [王者之刃]
+	[1420] = {
+		ID = 1420,
+		Name = "王者之刃" ,
+		Type = 9,
+		TypeString = "武器",
+		AtkPalsy = 28,
+		Weight = 73,
+		ReqType = 1,
+		ReqValue = 67,
+		MaxDC = 55,
+		DC = 8,
+		MaxHP = 35000,
+		Tex = 1420,
+		Price = 120000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1421] name [王者之剑]
+	[1421] = {
+		ID = 1421,
+		Name = "王者之剑" ,
+		Type = 9,
+		TypeString = "武器",
+		Accuracy = 1,
+		AtkPalsy = 29,
+		Weight = 44,
+		ReqType = 1,
+		ReqValue = 67,
+		MaxDC = 32,
+		DC = 8,
+		MaxSC = 23,
+		SC = 8,
+		MaxHP = 25000,
+		Tex = 1421,
+		Price = 120000,
+		Desc = ""
+	},
+-- const attrib of Item iD [1664] name [千里传音]
+	[1664] = {
+		ID = 1664,
+		Name = "千里传音" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 3,
+		Weight = 1,
+		Tex = 1664,
+		Price = 1,
+		Desc = "通过该道具可以将您说的话传遍整个玛法大陆"
+	},
+-- const attrib of Item iD [1665] name [五彩礼花]
+	[1665] = {
+		ID = 1665,
+		Name = "五彩礼花" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 16,
+		Weight = 1,
+		Tex = 1665,
+		Price = 1,
+		Desc = "右键燃放后可以使整个服务器经验值提升0.5倍，持续一小时"
+	},
+-- const attrib of Item iD [1674] name [千里传音礼包]
+	[1674] = {
+		ID = 1674,
+		Name = "千里传音礼包" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Lucky = 10,
+		Curse = 12,
+		Weight = 10,
+		MaxDC = 1664,
+		Tex = 1674,
+		Price = 5,
+		Desc = "打开后可获得10个千里传音"
+	},
+-- const attrib of Item iD [1676] name [炫紫礼花]
+	[1676] = {
+		ID = 1676,
+		Name = "炫紫礼花" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 16,
+		Weight = 1,
+		Tex = 1665,
+		Price = 2,
+		Desc = "右键燃放后可以使整个服务器爆率提升0.5倍，持续一小时"
+	},
+-- const attrib of Item iD [1677] name [魔法礼花]
+	[1677] = {
+		ID = 1677,
+		Name = "魔法礼花" ,
+		Type = 11,
+		TypeString = "消耗品",
+		Curse = 16,
+		Weight = 1,
+		Tex = 1665,
+		Price = 5,
+		Desc = "右键燃放后可以使整个服务器魔法装备加成&#43;8，持续一小时"
+	},
 
--- map info
-config_mapInfo = {
-	-- 0
-	{
-		MapType = 0,
-		MapResFile = "xzz",
-		MapChName = "不知道"
-	},
-	-- 1
-	{
-		MapType = 0,
-		MapResFile = "tty",
-		MapChName = "不"
-	},
-	-- 2
-	{
-		MapType = 0,
-		MapResFile = "hte",
-		MapChName = "哈"
-	}
-}
-
--- fix maps, MapID == MapResID
-config_fixedLoadMaps = {
-	"hte",
-	"tty",
-	"xzz",
-	"tty",
-	"tty",
-	"xzz"
 }

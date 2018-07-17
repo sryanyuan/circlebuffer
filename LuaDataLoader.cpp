@@ -6,6 +6,7 @@ extern "C"
 #include "LuaIterator.h"
 #include "LuaStackGuard.h"
 #include "item.h"
+#include <Windows.h>
 
 bool LuaDataLoader::loadKeyString(lua_State *L, const char *pKeyName, char *pBuf) {
     // now we get the config table , read all need fields
@@ -23,6 +24,53 @@ bool LuaDataLoader::loadKeyString(lua_State *L, const char *pKeyName, char *pBuf
     // OK, stack : table key value Grade
     strcpy(pBuf, lua_tostring(L, -1));
     // pop the grade value
+    lua_pop(L, 1);
+    return true;
+}
+
+bool LuaDataLoader::loadKeyIntArray(lua_State *L, const char* pKeyName, vector<int> &refVals) {
+    // Stack: bottom | table key value | top
+    // Get exprs from value table
+    lua_getfield(L, -1, pKeyName);
+    if (!lua_istable(L, -1)) {
+        lua_pop(L, 1);
+        return false;
+    }
+    // Stack: table key table table
+    // Index from 1
+    for (int i = 1; ;i++) {
+        // table key table table index
+        lua_pushnumber(L, i);
+        lua_rawget(L, -2);
+        if (!lua_isnumber(L, -1)) {
+            // table key table table nil
+            // Pop the top 1 vals
+            lua_pop(L, 1);
+            break;
+        }
+        refVals.push_back(lua_tonumber(L, -1));
+        // Pop the value
+        lua_pop(L, 1);
+    }
+    /*LuaIterator it(L);
+    if (!it.Begin())
+    {
+        return false;
+    }
+    while (it.Next()) {
+        if (it.GetKeyType() != LUA_TNUMBER) {
+            // Pop key and value
+            lua_pop(L, 2);
+            return false;
+        }
+        if (it.GetValueType() != LUA_TNUMBER) {
+            // Pop key and value
+            lua_pop(L, 2);
+            return false;
+        }
+        refVals.push_back(it.GetValueInt());
+    }*/
+    // Pop the table
     lua_pop(L, 1);
     return true;
 }
@@ -98,7 +146,6 @@ bool LuaDataLoader::LoadItemAttrib(lua_State* L, const char *pKeyName, std::map<
         }
 
         ItemFullAttrib config;
-        memset(&config, 0, sizeof(config));
         // get the id (value)
         config.baseAttrib.id = it.GetKeyInt();
 
@@ -255,8 +302,50 @@ bool LuaDataLoader::LoadItemAttrib(lua_State* L, const char *pKeyName, std::map<
     return true;
 }
 
+static bool loadMonsDropItems(lua_State *L, const char* pKeyName, MonsFullAttrib &ma) {
+    bool bRet = true;
+    // Top must be a table
+    // Stack table
+    lua_getfield(L, -1, pKeyName);
+    if (!lua_istable(L, -1)) {
+        lua_pop(L, 1);
+        return false;
+    }
+    char buf[20] = {0};
+    for (int i = 1; ;i++) {
+        lua_pushnumber(L, i);
+        lua_rawget(L, -2);
+        if (!lua_istable(L, -1)) {
+            lua_pop(L, 1);
+            break;
+        }
+        // Read keys from top table
+        // Stack: table table
+        MonsDropItemInfo di;
+        if (!LuaDataLoader::loadKeyString(L, "Item", buf)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        di.strItemName = buf;
+        if (!LuaDataLoader::loadKeyInt(L, "Prob", di.nProb)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Push result
+        ma.xDropItems.push_back(di);
+        // Pop the table value
+        lua_pop(L, 1);
+    }
+    // Pop the value table
+    lua_pop(L, 1);
+    return bRet;
+}
+
 bool LuaDataLoader::LoadMonsAttrib(lua_State* L, const char *pKeyName, std::map<int, MonsFullAttrib> &refMons) {
     LuaStackGuard guard(L);
+    bool bRet = true;
 
     lua_getglobal(L, pKeyName);
     if (!lua_istable(L, -1))
@@ -287,7 +376,6 @@ bool LuaDataLoader::LoadMonsAttrib(lua_State* L, const char *pKeyName, std::map<
         }
 
         MonsFullAttrib config;
-        memset(&config, 0, sizeof(config));
         // get the id (value)
         config.baseAttrib.id = it.GetKeyInt();
 
@@ -429,6 +517,12 @@ bool LuaDataLoader::LoadMonsAttrib(lua_State* L, const char *pKeyName, std::map<
         if (!loadKeyString(L, "Desc", szDesc)) {
             //return false;
         }
+        // Get drop items
+        if (!loadMonsDropItems(L, "DropItems", config)) {
+            lua_pop(L, 2);
+            bRet = false;
+            break;
+        }
         config.strDesc = szDesc;
 
         refMons.insert(std::make_pair(config.baseAttrib.id, config));
@@ -437,5 +531,470 @@ bool LuaDataLoader::LoadMonsAttrib(lua_State* L, const char *pKeyName, std::map<
     // pop the table
     lua_pop(L, 1);
 
-    return true;
+    return bRet;
+}
+
+bool LuaDataLoader::LoadLifeSkill(lua_State *L, const char* pKeyName, LifeSkillInfo (&refSkills)[kLifeSkill_Total]) {
+    LuaStackGuard guard(L);
+    bool bRet = true;
+
+    lua_getglobal(L, pKeyName);
+    if (!lua_istable(L, -1))
+    {
+        // LUA_TNIL
+        lua_pop(L, 1);
+        return false;
+    }
+
+    LuaIterator it(L);
+    if (!it.Begin())
+    {
+        return false;
+    }
+
+    int nSkillCount = 0;
+    while (it.Next())
+    {
+        if (LUA_TNUMBER != it.GetKeyType())
+        {
+            continue;
+        }
+        if (LUA_TTABLE != it.GetValueType())
+        {
+            continue;
+        }
+        
+        int nSkillID = it.GetKeyInt();
+        if (nSkillID >= sizeof(refSkills) / sizeof(refSkills[0])) {
+            // Pop key and value
+            lua_pop(L, 2);
+            bRet = false;
+            break;
+        }
+        LifeSkillInfo& si = refSkills[nSkillID];
+        if (si.nMaxLevel != 0 || si.nSkillType != 0) {
+            // Skill conflict
+            // Pop key and value
+            lua_pop(L, 2);
+            bRet = false;
+            break;
+        }
+        memset(&si, 0, sizeof(si));
+        // get the skill type (as lua table key)
+        si.nSkillType = it.GetKeyInt();
+        // Get the skill exprs
+        vector<int> exprs;
+        if (!loadKeyIntArray(L, "exprs", exprs)) {
+            // Pop key and value
+            lua_pop(L, 2);
+            bRet = false;
+            break;
+        }
+        if (exprs.size() > sizeof(si.uExp) / sizeof(si.uExp[0])) {
+            // Pop key and value
+            lua_pop(L, 2);
+            bRet = false;
+            break;
+        }
+        for (int i = 0; i < exprs.size(); i++) {
+            si.uExp[i] = exprs[i];
+        }
+        si.nMaxLevel = exprs.size() + 1;
+        ++nSkillCount;
+    }
+
+    // pop the table
+    lua_pop(L, 1);
+
+    // Check skill all load
+    for (int i = 0; i < nSkillCount; i++) {
+        if (refSkills[i].nMaxLevel == 0) {
+            return false;
+        }
+    }
+
+    return bRet;
+}
+
+static bool loadMakeEquipMaterials(lua_State *L, const char* pKeyName, MakeEquipInfo &ei) {
+    bool bRet = true;
+    // Top must be a table
+    // Stack table
+    lua_getfield(L, -1, pKeyName);
+    if (!lua_istable(L, -1)) {
+        lua_pop(L, 1);
+        return false;
+    }
+    for (int i = 1; ;i++) {
+        if (i - 1 >= sizeof(ei.nMaterialsCount) / sizeof(ei.nMaterialsCount[0])) {
+            bRet = false;
+            break;
+        }
+        lua_pushnumber(L, i);
+        lua_rawget(L, -2);
+        if (!lua_istable(L, -1)) {
+            lua_pop(L, 1);
+            ei.nMaterialCount = i - 1;
+            break;
+        }
+        // Read keys from top table
+        // Stack: table table
+        if (!LuaDataLoader::loadKeyInt(L, "id", ei.nMaterialsId[i - 1])) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        if (!LuaDataLoader::loadKeyInt(L, "count", ei.nMaterialsCount[i - 1])) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Pop the table value
+        lua_pop(L, 1);
+    }
+    // Pop the value table
+    lua_pop(L, 1);
+    return bRet;
+}
+
+bool LuaDataLoader::LoadMakeEquip(lua_State *L, const char* pKeyName, MakeEquipInfoMap &refEquip) {
+    LuaStackGuard guard(L);
+    bool bRet = true;
+
+    lua_getglobal(L, pKeyName);
+    if (!lua_istable(L, -1))
+    {
+        // LUA_TNIL
+        lua_pop(L, 1);
+        return false;
+    }
+
+    LuaIterator it(L);
+    if (!it.Begin())
+    {
+        return false;
+    }
+
+    int nSkillCount = 0;
+    while (it.Next())
+    {
+        if (LUA_TNUMBER != it.GetKeyType())
+        {
+            continue;
+        }
+        if (LUA_TTABLE != it.GetValueType())
+        {
+            continue;
+        }
+
+        MakeEquipInfo mi;
+        memset(&mi, 0, sizeof(mi));
+        mi.nItemId = it.GetKeyInt();
+        // Read need level
+        if (!loadKeyInt(L, "needLevel", mi.nNeedLevel)) {
+            lua_pop(L, 2);
+            bRet = false;
+            break;
+        }
+        // Read needMoney
+        if (!loadKeyInt(L, "needMoney", mi.nNeedMoney)) {
+            lua_pop(L, 2);
+            bRet = false;
+            break;
+        }
+        // Read expr
+        if (!loadKeyInt(L, "expr", mi.nExp)) {
+            lua_pop(L, 2);
+            bRet = false;
+            break;
+        }
+        // Read materials
+        if (!loadMakeEquipMaterials(L, "materials", mi)) {
+            lua_pop(L, 2);
+            bRet = false;
+            break;
+        }
+        refEquip.insert(std::make_pair(mi.nItemId, mi));
+    }
+
+    // pop the table
+    lua_pop(L, 1);
+
+    return bRet;
+}
+
+static bool loadStoveAttribs(lua_State *L, const char* pKeyName, StoveAttribInfo &si) {
+    bool bRet = true;
+    // Top must be a table
+    // Stack table
+    lua_getfield(L, -1, pKeyName);
+    if (!lua_istable(L, -1)) {
+        lua_pop(L, 1);
+        return false;
+    }
+    for (int i = 1; ;i++) {
+        if (i - 1 >= sizeof(si.dwAttribs) / sizeof(si.dwAttribs[0])) {
+            bRet = false;
+            break;
+        }
+        lua_pushnumber(L, i);
+        lua_rawget(L, -2);
+        if (!lua_istable(L, -1)) {
+            lua_pop(L, 1);
+            si.nAttribCount = i - 1;
+            break;
+        }
+        // Read keys from top table
+        // Stack: table table
+        int nId = 0;
+        if (!LuaDataLoader::loadKeyInt(L, "id", nId)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        int nValue = 0;
+        if (!LuaDataLoader::loadKeyInt(L, "value", nValue)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        if (0 == nId || 0 == nValue) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        si.dwAttribs[i - 1] = MAKELONG(nId, nValue);
+        // Pop the table value
+        lua_pop(L, 1);
+    }
+    // Pop the value table
+    lua_pop(L, 1);
+    return bRet;
+}
+
+bool LuaDataLoader::LoadStoveAttrib(lua_State *L, const char* pKeyName, StoveAttribVector &refAttribs) {
+    LuaStackGuard guard(L);
+    bool bRet = true;
+
+    lua_getglobal(L, pKeyName);
+    if (!lua_istable(L, -1))
+    {
+        // LUA_TNIL
+        lua_pop(L, 1);
+        return false;
+    }
+
+    int nAttribCount = 0;
+    for (int i = 1; ;i++)
+    {
+        lua_pushnumber(L, i);
+        lua_rawget(L, -2);
+        if (!lua_istable(L, -1)) {
+            // Pop nil value
+            lua_pop(L, 1);
+            break;
+        }
+
+        StoveAttribInfo si;
+        memset(&si, 0, sizeof(si));
+        si.nAttribId = i - 1;
+        // Read name
+        if (!loadKeyString(L, "name", si.szName)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Read level
+        if (!loadKeyInt(L, "level", si.nLevel)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Read expr
+        vector<int> vals;
+        if (!loadKeyIntArray(L, "types", vals)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        unsigned int uFlag = 0;
+        for (int i = 0; i < vals.size(); i++) {
+            uFlag |= (1 << vals[i]);
+        }
+        si.dwActiveItemType = uFlag;
+        // Read attribs
+        if (!loadStoveAttribs(L, "attribs", si)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        refAttribs.push_back(si);
+        // Pop the value
+        lua_pop(L, 1);
+    }
+
+    // pop the table
+    lua_pop(L, 1);
+
+    return bRet;
+}
+
+static bool loadSuitActives(lua_State *L, const char* pKeyName, ItemExtraAttribList &si) {
+    bool bRet = true;
+    // Top must be a table
+    // Stack table
+    lua_getfield(L, -1, pKeyName);
+    if (!lua_istable(L, -1)) {
+        lua_pop(L, 1);
+        return false;
+    }
+    for (int i = 1; ;i++) {
+        if (i - 1 >= sizeof(si.nActiveSum) / sizeof(si.nActiveSum[0])) {
+            bRet = false;
+            break;
+        }
+        lua_pushnumber(L, i);
+        lua_rawget(L, -2);
+        if (!lua_istable(L, -1)) {
+            lua_pop(L, 1);
+            break;
+        }
+        // Read keys from top table
+        // Stack: table table
+        if (!LuaDataLoader::loadKeyInt(L, "count", si.nActiveSum[i - 1])) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        if (!LuaDataLoader::loadKeyInt(L, "active", si.nActiveAttribSum[i - 1])) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Pop the table value
+        lua_pop(L, 1);
+    }
+    // Pop the value table
+    lua_pop(L, 1);
+    return bRet;
+}
+
+static bool loadSuitAttribs(lua_State *L, const char* pKeyName, ItemExtraAttribList &si) {
+    bool bRet = true;
+    // Top must be a table
+    // Stack table
+    lua_getfield(L, -1, pKeyName);
+    if (!lua_istable(L, -1)) {
+        lua_pop(L, 1);
+        return false;
+    }
+    for (int i = 1; ;i++) {
+        if (i - 1 >= sizeof(si.stExtraAttrib) / sizeof(si.stExtraAttrib[0])) {
+            bRet = false;
+            break;
+        }
+        lua_pushnumber(L, i);
+        lua_rawget(L, -2);
+        if (!lua_istable(L, -1)) {
+            lua_pop(L, 1);
+            break;
+        }
+        // Read keys from top table
+        // Stack: table table
+        if (!LuaDataLoader::loadKeyInt(L, "id", si.stExtraAttrib[i - 1].nAttribID)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        if (!LuaDataLoader::loadKeyInt(L, "value", si.stExtraAttrib[i - 1].nAttribValue)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Pop the table value
+        lua_pop(L, 1);
+    }
+    // Pop the value table
+    lua_pop(L, 1);
+    return bRet;
+}
+
+bool LuaDataLoader::LoadSuitAttrib(lua_State *L, const char* pKeyName, std::map<int, ItemExtraAttribList*> &refSuits) {
+    LuaStackGuard guard(L);
+    bool bRet = true;
+
+    lua_getglobal(L, pKeyName);
+    if (!lua_istable(L, -1))
+    {
+        // LUA_TNIL
+        lua_pop(L, 1);
+        return false;
+    }
+
+    int nAttribCount = 0;
+    for (int i = 1; ;i++)
+    {
+        lua_pushnumber(L, i);
+        lua_rawget(L, -2);
+        if (!lua_istable(L, -1)) {
+            // Pop nil value
+            lua_pop(L, 1);
+            break;
+        }
+
+        ItemExtraAttribList si;
+        memset(&si, 0, sizeof(si));
+        si.nSuitID = i;
+        // Read name
+        if (!loadKeyString(L, "name", si.szSuitChName)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Read level
+        vector<int> vals;
+        if (!loadKeyIntArray(L, "items", vals)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        if (vals.size() > sizeof(si.nSuitEquipID) / sizeof(si.nSuitEquipID[0])) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        for (int i = 0; i < vals.size(); i++) {
+            si.nSuitEquipID[i] = vals[i];
+        }
+        vals.clear();
+        // Read actives
+        if (!loadSuitActives(L, "actives", si)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Read attribs
+        if (!loadSuitAttribs(L, "attribs", si)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Read look
+        if (!loadKeyInt(L, "look", si.nSuitShowType)) {
+            lua_pop(L, 1);
+            bRet = false;
+            break;
+        }
+        // Insert copy
+        ItemExtraAttribList *pCopy = new ItemExtraAttribList;
+        memcpy(pCopy, &si, sizeof(ItemExtraAttribList));
+        refSuits.insert(std::make_pair(pCopy->nSuitID, pCopy));
+        // Pop the value
+        lua_pop(L, 1);
+    }
+
+    // pop the table
+    lua_pop(L, 1);
+
+    return bRet;
 }
